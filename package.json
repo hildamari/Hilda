@@ -1,0 +1,23 @@
+{
+  "name": "hilda",
+  "version": "0.0.0",
+  "description": "Discord bot for the 3DSFE ROM hacking server",
+  "main": "hilda.js",
+  "author": "KunoichiZ",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "better-sqlite3": "^5.4.3",
+    "discord.js": "discordjs/discord.js",
+    "discord.js-commando": "discordjs/Commando",
+    "dotenv": "^8.1.0",
+    "moment": "^2.24.0",
+    "moment-duration-format": "2.2.2",
+    "sqlite": "^3.0.3"
+  },
+  "scripts": {
+    "test": "node hilda.js",
+    "lint": "eslint .",
+    "start": "node hilda.js"
+  }
+}

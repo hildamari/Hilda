@@ -1,0 +1,23 @@
+# Node modules
+node_modules/
+
+# Environment variables
+data/.env
+
+# Any logs created
+*.log
+
+# ignore sqlite databases
+*.sqlite3
+*.sqlite
+data/databases/*.sqlite
+data/databases/*.sqlite3
+
+# VSCode settings
+.vscode/
+
+# DS Store
+.DS_Store
+
+# Images folder
+images/
