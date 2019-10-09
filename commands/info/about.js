@@ -17,13 +17,22 @@ module.exports = class AboutCommand extends Command {
 
   run (msg) {
     const nickname = msg.guild.members.get("147800635046232064").nickname;
+    let displayName = '';
+
     const aboutEmbed = new MessageEmbed()
         .setColor(msg.member.displayHexColor)
-        .setAuthor(`${this.client.user.username} Stats`, this.client.user.displayAvatarURL({ format: 'png' }))
-        .addField('Owner', this.client.owners[0].tag + ' (' + nickname + ')', true)
-        .addField('Uptime', moment.duration(process.uptime() * 1000).format('D [days], H [hours] [and] m [minutes]'))
-        .addField('License', 'MIT')
-        .addField('Source Code', 'https://github.com/KunoichiZ/Hilda');
+        .setAuthor(`${this.client.user.username} Stats`, this.client.user.displayAvatarURL({ format: 'png' }));
+
+    if(typeof nickname == 'undefined') {
+      displayName = "No nickname";
+      aboutEmbed.addField('Owner', this.client.owners[0].tag + ' (' + displayName + ')', true)
+    } else {
+      aboutEmbed.addField('Owner', this.client.owners[0].tag + ' (' + nickname + ')', true)
+    }
+        
+      aboutEmbed.addField('Uptime', moment.duration(process.uptime() * 1000).format('D [days], H [hours] [and] m [minutes]'))
+      aboutEmbed.addField('License', 'MIT')
+      aboutEmbed.addField('Source Code', 'https://github.com/KunoichiZ/Hilda');
 
     return msg.channel.send(aboutEmbed);
   }
