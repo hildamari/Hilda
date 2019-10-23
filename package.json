@@ -10,7 +10,7 @@
     "better-sqlite3": "^5.4.3",
     "discord.js": "discordjs/discord.js",
     "discord.js-commando": "discordjs/Commando",
-    "dotenv": "^8.1.0",
+    "dotenv": "^8.2.0",
     "moment": "^2.24.0",
     "moment-duration-format": "2.2.2",
     "sqlite": "^3.0.3"
