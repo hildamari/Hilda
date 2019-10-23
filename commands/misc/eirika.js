@@ -1,5 +1,5 @@
 const { Command } = require('discord.js-commando');
-const { MessageEmbed, MessageAttachment } = require('discord.js');
+const { MessageEmbed } = require('discord.js');
 
 module.exports = class ReadmeCommand extends Command {
   constructor (client) {
@@ -15,12 +15,10 @@ module.exports = class ReadmeCommand extends Command {
   }
 
   run (msg) {
-    const exampleEmbed = new MessageEmbed()
-	// .attachFiles(['https://i.imgur.com/dTWvQGO.gif'])
-	.setImage('https://i.imgur.com/cH0bIOB.png');
+    const eirikaEmbed = new MessageEmbed()
+	  .setImage('https://i.imgur.com/cH0bIOB.png');
     
-    msg.channel.send(exampleEmbed);
-    // msg.channel.send(attachment);
+    msg.channel.send(eirikaEmbed);
     // <:Hilda:610937234337693716>
   }
 };

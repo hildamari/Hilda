@@ -1,5 +1,5 @@
 const { Command } = require('discord.js-commando');
-const { MessageEmbed, MessageAttachment } = require('discord.js');
+const { MessageEmbed } = require('discord.js');
 
 module.exports = class WhyCommand extends Command {
   constructor (client) {
@@ -15,14 +15,10 @@ module.exports = class WhyCommand extends Command {
   }
 
   run (msg) {
-    const attachment = new MessageAttachment('https://i.imgur.com/dTWvQGO.gif');
     const exampleEmbed = new MessageEmbed()
     .setTitle("IS WHY!?")
-	// .attachFiles(['https://i.imgur.com/dTWvQGO.gif'])
-	.setImage('https://i.imgur.com/dTWvQGO.gif');
+	  .setImage('https://i.imgur.com/dTWvQGO.gif');
 
     msg.channel.send(exampleEmbed);
-    // msg.channel.send(attachment);
-    // <:Hilda:610937234337693716>
   }
 };

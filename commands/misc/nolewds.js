@@ -1,5 +1,5 @@
 const { Command } = require('discord.js-commando');
-const { MessageEmbed, MessageAttachment } = require('discord.js');
+const { MessageEmbed } = require('discord.js');
 
 module.exports = class WhyCommand extends Command {
   constructor (client) {
@@ -15,10 +15,9 @@ module.exports = class WhyCommand extends Command {
   }
 
   run (msg) {
-    const exampleEmbed = new MessageEmbed()
+    const noLewdsEmbed = new MessageEmbed()
+	  .setImage('https://i.imgur.com/sNKwZ8m.png');
 
-	.setImage('https://i.imgur.com/sNKwZ8m.png');
-
-    msg.channel.send(exampleEmbed);
+    msg.channel.send(noLewdsEmbed);
   }
 };
