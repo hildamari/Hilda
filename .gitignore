@@ -21,3 +21,6 @@ data/databases/*.sqlite3
 
 # Images folder
 images/
+
+# package-lock.json
+package-lock.json
