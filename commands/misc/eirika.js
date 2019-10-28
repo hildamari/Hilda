@@ -15,10 +15,10 @@ module.exports = class ReadmeCommand extends Command {
   }
 
   run (msg) {
-    const eirikaEmbed = new MessageEmbed()
-	  .setImage('https://i.imgur.com/cH0bIOB.png');
-    
-    msg.channel.send(eirikaEmbed);
+    // const eirikaEmbed = new MessageEmbed()
+	  // .setImage('https://i.imgur.com/cH0bIOB.png');
+    msg.channel.send({ files: ["./images/hdnotlikeeirika.png"] });
+    // msg.channel.send(eirikaEmbed);
     // <:Hilda:610937234337693716>
   }
 };

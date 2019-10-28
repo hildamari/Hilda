@@ -14,9 +14,9 @@ module.exports = class ReadmeCommand extends Command {
   }
 
   run (msg) {
-    const readmeEmbed = new MessageEmbed()
-	  .setImage('https://i.imgur.com/sgHpp4E.png');
-
-    msg.channel.send(readmeEmbed);
+    // const readmeEmbed = new MessageEmbed()
+	  // .setImage('https://i.imgur.com/sgHpp4E.png');
+    msg.channel.send({ files: ["./images/readme.png"] });
+    // msg.channel.send(readmeEmbed);
   }
 };

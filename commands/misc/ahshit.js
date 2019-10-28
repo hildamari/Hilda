@@ -14,10 +14,10 @@ module.exports = class AhShitCommand extends Command {
   }
 
   run (msg) {
-    const ahShitEmbed = new MessageEmbed()
-	  .setImage('https://i.imgur.com/SgNoXXY.png');
-    
-    msg.channel.send(ahShitEmbed);
+    // const ahShitEmbed = new MessageEmbed()
+	  // .setImage('https://i.imgur.com/SgNoXXY.png');
+    msg.channel.send({ files: ["./images/ahshit.png"] });
+    // msg.channel.send(ahShitEmbed);
     // <:Hilda:610937234337693716>
   }
 };

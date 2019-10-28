@@ -15,9 +15,9 @@ module.exports = class WhyCommand extends Command {
   }
 
   run (msg) {
-    const noLewdsEmbed = new MessageEmbed()
-	  .setImage('https://i.imgur.com/sNKwZ8m.png');
-
-    msg.channel.send(noLewdsEmbed);
+    // const noLewdsEmbed = new MessageEmbed()
+	  // .setImage('https://i.imgur.com/sNKwZ8m.png');
+    msg.channel.send({ files: ["./images/nolewds.png"] });
+    // msg.channel.send(noLewdsEmbed);
   }
 };

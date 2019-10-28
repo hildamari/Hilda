@@ -15,9 +15,9 @@ module.exports = class ImBabyCommand extends Command {
   }
 
   run (msg) {
-    const imBabyEmbed = new MessageEmbed()
-    .setImage('https://i.imgur.com/lEwWnW7.png');
-
-    msg.channel.send(imBabyEmbed);
+    // const imBabyEmbed = new MessageEmbed()
+    // .setImage('https://i.imgur.com/lEwWnW7.png');
+    msg.channel.send({ files: ["./images/imbaby.png"] });
+    // msg.channel.send(imBabyEmbed);
   }
 };
