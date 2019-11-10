@@ -30,6 +30,7 @@ client.registry
     .registerDefaultTypes()
     .registerGroups([
         ['info', 'info commands'],
+        ['links', 'link commands'],
         ['misc', 'misc commands']
     ])
     .registerDefaultGroups()
