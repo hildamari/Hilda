@@ -1,6 +1,6 @@
 {
   "name": "hilda",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Discord bot for the 3DSFE ROM hacking server",
   "main": "hilda.js",
   "author": "KunoichiZ",
