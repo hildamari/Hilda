@@ -31,7 +31,8 @@ client.registry
     .registerGroups([
         ['info', 'info commands'],
         ['links', 'link commands'],
-        ['misc', 'misc commands']
+        ['misc', 'misc commands'],
+        ['owner', 'owner commands']
     ])
     .registerDefaultGroups()
     .registerDefaultCommands({
