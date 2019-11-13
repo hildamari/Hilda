@@ -18,6 +18,7 @@ module.exports = class CethleannCommand extends Command {
             .setColor(msg.member.displayHexColor)
             .setTitle("Cethleann by HealingBrew")
             .addField("URL", "https://github.com/healingbrew/Cethleann")
+            .addField("Continuous Integration Builds", "https://dev.azure.com/yretenai/Cethleann/_build")
             .setDescription("Soft Engine data exploration and research, specifically centered around FE: Three Houses");
 
         msg.channel.send(cethleannEmbed);
