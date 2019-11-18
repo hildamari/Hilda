@@ -4,20 +4,31 @@
   "description": "Discord bot for the 3DSFE ROM hacking server",
   "main": "hilda.js",
   "author": "KunoichiZ",
-  "license": "MIT",
+  "license": "GPL-3.0",
   "private": true,
   "dependencies": {
     "better-sqlite3": "^5.4.3",
     "discord.js": "discordjs/discord.js",
     "discord.js-commando": "discordjs/Commando",
     "dotenv": "^8.2.0",
+    "ffmpeg-static": "^2.7.0",
     "moment": "^2.24.0",
     "moment-duration-format": "2.2.2",
-    "sqlite": "^3.0.3"
+    "node-opus": "^0.3.3",
+    "simple-youtube-api": "^5.2.1",
+    "sqlite": "^3.0.3",
+    "ytdl-core": "^1.0.0"
   },
   "scripts": {
     "test": "node hilda.js",
     "lint": "eslint .",
-    "start": "node hilda.js"
+    "start": "node hilda.js",
+    "docs:start": "cd docs && react-scripts start",
+    "docs:build": "cd docs && react-scripts build",
+    "docs:test": "cd docs && react-scripts test",
+    "docs:eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "react-scripts": "^3.2.0"
   }
 }
