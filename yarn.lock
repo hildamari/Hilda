@@ -6141,12 +6141,12 @@ lru-cache@^5.1.1:
   dependencies:
     yallist "^3.0.2"
 
-m3u8stream@^0.6.2:
-  version "0.6.2"
-  resolved "https://registry.yarnpkg.com/m3u8stream/-/m3u8stream-0.6.2.tgz#c2c62ddce88156d80378dd59be010c8b8e9d120b"
-  integrity sha512-WsuM2bd5pPN80xvfrB+1DZqr4M7+kJl8byi6+ZCy6cmVjEiHhmr/desN53Ngsa6Hs13kYumeVgT4wL0oIJ+v6g==
+m3u8stream@^0.6.3:
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/m3u8stream/-/m3u8stream-0.6.3.tgz#f3dc8c25a96a68640903cab47450b6a5ac36e585"
+  integrity sha512-HNUco8ef9kOvMRH7tYxJqbk9IuRA+AuZG8a/dQwqI+jfuEs1/DUaPbfTIlUDB4JmTZNkTOZHvZI5TvnQGR8nKA==
   dependencies:
-    miniget "^1.4.0"
+    miniget "^1.6.1"
     sax "^1.2.4"
 
 make-dir@^2.0.0, make-dir@^2.1.0:
@@ -6347,7 +6347,7 @@ mini-css-extract-plugin@0.8.0:
     schema-utils "^1.0.0"
     webpack-sources "^1.1.0"
 
-miniget@^1.4.0, miniget@^1.6.0:
+miniget@^1.6.0, miniget@^1.6.1:
   version "1.6.1"
   resolved "https://registry.yarnpkg.com/miniget/-/miniget-1.6.1.tgz#f1ae08a34e06a2b1c3ace568384ea0def2fe5813"
   integrity sha512-I5oBwZmcaOuJrjQn7lpS29HM+aAZDbzKbX5ouxVyhFYdg6fA6YKOTwOCgzZQwlHuMek3FlCxz6eNrd4pOXbwOA==
@@ -10504,12 +10504,12 @@ yargs@^13.3.0:
     y18n "^4.0.0"
     yargs-parser "^13.1.1"
 
-ytdl-core@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/ytdl-core/-/ytdl-core-1.0.0.tgz#afd3cb24123c00888a1bf8fb0fdb2dddb2a6c5ff"
-  integrity sha512-aP/UBWbZtBSYlqHRYOx1oZ4tMRCAk2I5Y+OJy20/hrrr5XOhgxZ6+vJ20397h1FxYRzOTRSwb3VpBs3/CLe3fA==
+ytdl-core@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/ytdl-core/-/ytdl-core-1.0.1.tgz#5c6a25eb8feeed17180400b2c5e91c3ecb7ff3f5"
+  integrity sha512-7N3t/8rHpsAgVKk3tbRzZOvJ1rg3tJuGDye94UI3YQmvZU+rZS2qUB0MGXuVG3gVr/cRJyqBlfTs5BAXMP7hkA==
   dependencies:
     html-entities "^1.1.3"
-    m3u8stream "^0.6.2"
+    m3u8stream "^0.6.3"
     miniget "^1.6.0"
     sax "^1.1.3"
