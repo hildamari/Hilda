@@ -19,6 +19,7 @@ module.exports = class QueueCommand extends Command {
     const titleArray = [];
     msg.guild.musicData.queue.map(obj => {
       titleArray.push(obj.title);
+      // console.log(titleArray)
     });
     var queueEmbed = new MessageEmbed()
       .setColor('#ff7373')
