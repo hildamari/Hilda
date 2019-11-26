@@ -7,7 +7,7 @@
   "license": "GPL-3.0",
   "private": true,
   "dependencies": {
-    "@favware/ytdl-prismplayer": "^2.4.0",
+    "@favware/ytdl-prismplayer": "^2.4.3",
     "better-sqlite3": "^5.4.3",
     "common-tags": "^1.8.0",
     "discord.js": "discordjs/discord.js",
