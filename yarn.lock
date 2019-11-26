@@ -933,10 +933,10 @@
   resolved "https://registry.yarnpkg.com/@discordjs/collection/-/collection-0.1.3.tgz#af9b1c22ccb2ee5c0cad1e1bd2bc3d82a817b05f"
   integrity sha512-4ek19SmNcPI92942RkuBrZrBK8hg7nG+ae/skkNNDeOaUG+XvxTPkv/jPZVgXwVPDkU5EFsewsI+0n4dTwFvgA==
 
-"@favware/ytdl-prismplayer@^2.4.0":
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@favware/ytdl-prismplayer/-/ytdl-prismplayer-2.4.0.tgz#5f505aa1b006815872de9249b6a744467af1cd3b"
-  integrity sha512-hQ7/Gxu/uw1t1UfU/+VW3TiRRFv+LbWrlasmJ/CHkVFWBy2QQp3XzHf1eMK5/SB6gD7CvSfkqsG80HnRUPHqwA==
+"@favware/ytdl-prismplayer@^2.4.3":
+  version "2.4.3"
+  resolved "https://registry.yarnpkg.com/@favware/ytdl-prismplayer/-/ytdl-prismplayer-2.4.3.tgz#588f98d4d3b3f8e21d282eb7f09d41adcea9221d"
+  integrity sha512-OwliNPPlEUnoEdUszFzgPvpqaQmbGFW9kEaBtdh3kfZeB1FiudEcTU4i52AxXt/6oNHfz2mCV/V9D1JBvC9Bsw==
 
 "@hapi/address@2.x.x":
   version "2.1.4"
