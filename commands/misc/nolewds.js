@@ -16,8 +16,14 @@ module.exports = class WhyCommand extends Command {
 
   run (msg) {
     // const noLewdsEmbed = new MessageEmbed()
-	  // .setImage('https://i.imgur.com/sNKwZ8m.png');
-    msg.channel.send({ files: ["./images/nolewds.png"] });
+    // .setImage('https://i.imgur.com/sNKwZ8m.png');
+    if(msg.guild.id == 649054519556308992) {
+      
+      msg.say("You cannot use this command.")
+    } else {
+      msg.channel.send({ files: ["./images/nolewds.png"] });
+    }
+    
     // msg.channel.send(noLewdsEmbed);
   }
 };

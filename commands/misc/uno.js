@@ -13,8 +13,18 @@ module.exports = class UnoCommand extends Command {
   }
 
   run (msg) {
+
     const imbaby = this.client.emojis.find(emoji => emoji.name === "ImBaby");
-    return msg.say(`${imbaby} Everyone has uno, dipshit.`);
+    if(msg.guild.id == 649054519556308992) {
+      if(msg.channel.id != 649489304514461706) {
+        msg.say("You cannot use this command in a non-nsfw channel! Please go to <#650489311095029780>")
+      } else {
+        return msg.say(`${imbaby} Everyone has uno, dipshit.`);
+      }
+    } else {
+      return msg.say(`${imbaby} Everyone has uno, dipshit.`);
+    }
+    
     // <:Hilda:610937234337693716>
   }
 };
