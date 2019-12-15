@@ -28,7 +28,7 @@ const client = new Client({
   presence: {
     status: 'online',
     activity: {
-        name: 'Chanting'
+        name: 'Uno'
     }
   }
 });
