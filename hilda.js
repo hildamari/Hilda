@@ -40,6 +40,7 @@ client.setProvider(new SyncSQLiteProvider(database));
 client.registry
     .registerDefaultTypes()
     .registerGroups([
+        ['fun', 'fun commands'],
         ['info', 'info commands'],
         ['links', 'link commands'],
         ['misc', 'misc commands'],
