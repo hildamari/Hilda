@@ -6,7 +6,7 @@ module.exports = class UnoCommand extends Command {
       name: 'uno',
       group: 'misc',
       memberName: 'uno',
-      description: 'Replies with Everyone has uno',
+      description: 'Replies with "Everyone has uno"',
       examples: ['uno'],
       guildOnly: true
     });
