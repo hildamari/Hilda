@@ -15,10 +15,10 @@ module.exports = class WhyCommand extends Command {
   }
 
   run (msg) {
-    const exampleEmbed = new MessageEmbed()
+    const whyEmbed = new MessageEmbed()
     .setTitle("IS WHY!?")
 	  .setImage('https://i.imgur.com/dTWvQGO.gif');
 
-    msg.channel.send(exampleEmbed);
+    msg.channel.send(whyEmbed);
   }
 };
