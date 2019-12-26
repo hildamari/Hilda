@@ -21,6 +21,7 @@ module.exports = class AboutCommand extends Command {
 
     const aboutEmbed = new MessageEmbed()
         .setColor(msg.member.displayHexColor)
+        .setDescription("Hilda is brought to you by memes for memes.")
         .setAuthor(`${this.client.user.username} Stats`, this.client.user.displayAvatarURL({ format: 'png' }));
 
     if(typeof nickname == 'undefined') {
