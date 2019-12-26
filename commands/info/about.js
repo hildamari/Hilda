@@ -7,10 +7,11 @@ module.exports = class AboutCommand extends Command {
   constructor (client) {
     super(client, {
       name: 'about',
+      aliases: ['info'],
       group: 'info',
       memberName: 'about',
       description: 'Replies with information about the bot',
-      examples: ['about'],
+      examples: ['about', 'info'],
       guildOnly: true
     });
   }
