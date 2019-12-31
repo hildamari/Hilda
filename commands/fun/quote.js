@@ -1,6 +1,7 @@
 const { Command } = require('discord.js-commando');
 const { MessageEmbed } = require('discord.js');
 const moment = require('moment');
+
 module.exports = class QuoteCommand extends Command {
     constructor(client) {
         super(client, {
@@ -31,7 +32,7 @@ module.exports = class QuoteCommand extends Command {
                 const formatted = moment(timestamp).format('L');
 
                 const quoteEmbed = new MessageEmbed()
-                .setAuthor(fetchdMsg.author.username + "#" + fetchdMsg.author.discriminator, user.displayAvatarURL())
+                    .setAuthor(fetchdMsg.author.username + "#" + fetchdMsg.author.discriminator, user.displayAvatarURL())
                     .setColor(member.displayHexColor)
                     .setDescription(fetchdMsg.content)
                     .setFooter(formatted)
