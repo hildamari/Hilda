@@ -1,0 +1,17 @@
+# node_modules
+node_modules
+
+# environment variables
+src/data/.env
+
+# txt files
+*.txt
+
+# logs
+*.log
+
+# .DS_Store
+.DS_Store
+
+# bwd folder
+bwd/
