@@ -1,0 +1,35 @@
+const { Command } = require('klasa');
+const { MessageEmbed } = require('discord.js');
+const moment = require('moment');
+require('moment-duration-format');
+
+module.exports = class extends Command {
+
+    constructor(...args) {
+        super(...args, { description: 'Replies with information about the bot' });
+    }
+
+    run(msg) {
+        const nickname = msg.guild.members.get("147800635046232064").nickname;
+        let displayName = '';
+    
+        const aboutEmbed = new MessageEmbed()
+            .setColor(msg.member.displayHexColor)
+            .setDescription("Hilda is brought to you by memes for memes.")
+            .setAuthor(`${this.client.user.username} Stats`, this.client.user.displayAvatarURL({ format: 'png' }));
+
+        if(typeof nickname == 'undefined') {
+            displayName = "No nickname";
+            aboutEmbed.addField('Owner', (this.client.users.get(this.client.options.owners[0]).username + '#' + this.client.users.get(this.client.options.owners[0]).discriminator) + ' (' + displayName + ')', true)
+        } else {
+            aboutEmbed.addField('Owner', (this.client.users.get(this.client.options.owners[0]).username + '#' + this.client.users.get(this.client.options.owners[0]).discriminator) + ' (' + nickname + ')', true)
+        }
+            
+        aboutEmbed.addField('Uptime', moment.duration(process.uptime() * 1000).format('D [days], H [hours] [and] m [minutes]'))
+        aboutEmbed.addField('License', 'Apache 2.0')
+        aboutEmbed.addField('Source Code', 'https://github.com/KunoichiZ/Hilda');
+
+        return msg.channel.send(aboutEmbed);
+    }
+
+};
