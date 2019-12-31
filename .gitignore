@@ -3,6 +3,7 @@ node_modules/
 
 # Environment variables
 data/.env
+src/data/.env
 
 # Any logs created
 *.log
@@ -27,3 +28,6 @@ package-lock.json
 
 # docs folder
 docs/
+
+# bwd folder
+src/bwd/
