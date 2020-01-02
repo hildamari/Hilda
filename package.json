@@ -21,7 +21,7 @@
     "prism-media": "^1.1.0",
     "simple-youtube-api": "^5.2.1",
     "sqlite": "^3.0.3",
-    "ytdl-core": "^1.0.5"
+    "ytdl-core": "^1.0.6"
   },
   "scripts": {
     "test": "node hilda.js",
