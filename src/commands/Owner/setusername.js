@@ -6,7 +6,8 @@ module.exports = class extends Command {
         super(...args, { 
             aliases: ['setun'],
             description: 'Sets the username of the bot.',
-            usage: '<username:string>'
+            usage: '<username:string>',
+            permissionLevel: 10,
         });
     }
 

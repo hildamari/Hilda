@@ -3,7 +3,10 @@ const { Command } = require('klasa');
 module.exports = class extends Command {
 
     constructor(...args) {
-        super(...args, { description: 'Sets the avatar of the bot.' });
+        super(...args, { 
+          description: 'Sets the avatar of the bot.',
+          permissionLevel: 10,
+        });
     }
 
     async run(msg) {
