@@ -20,9 +20,9 @@ module.exports = class extends Command {
 
         if(typeof nickname == 'undefined') {
             displayName = "No nickname";
-            aboutEmbed.addField('Owner', (this.client.users.get(this.client.options.owners[0]).username + '#' + this.client.users.get(this.client.options.owners[0]).discriminator) + ' (' + displayName + ')', true)
+            aboutEmbed.addField('Owner', (this.client.users.get(this.client.options.owner).username + '#' + this.client.users.get(this.client.options.owner).discriminator) + ' (' + displayName + ')', true)
         } else {
-            aboutEmbed.addField('Owner', (this.client.users.get(this.client.options.owners[0]).username + '#' + this.client.users.get(this.client.options.owners[0]).discriminator) + ' (' + nickname + ')', true)
+            aboutEmbed.addField('Owner', (this.client.users.get(this.client.options.owner).username + '#' + this.client.users.get(this.client.options.owner).discriminator) + ' (' + nickname + ')', true)
         }
             
         aboutEmbed.addField('Uptime', moment.duration(process.uptime() * 1000).format('D [days], H [hours] [and] m [minutes]'))
