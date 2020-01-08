@@ -8,6 +8,7 @@ module.exports = class extends Command {
             description: 'Sets the username of the bot.',
             usage: '<username:string>',
             permissionLevel: 10,
+            hidden: true
         });
     }
 

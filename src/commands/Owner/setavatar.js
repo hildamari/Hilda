@@ -6,6 +6,7 @@ module.exports = class extends Command {
         super(...args, { 
           description: 'Sets the avatar of the bot.',
           permissionLevel: 10,
+          hidden: true
         });
     }
 
