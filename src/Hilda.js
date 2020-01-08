@@ -39,7 +39,7 @@ const HildaClient = new Client ({
     presence: { activity: { name: 'Uno', type: 'PLAYING' } },
     typing: false,
     prefixCaseInsensitive: true,
-    owners: ['147800635046232064'],
+    owner: '147800635046232064',
     readyMessage: (client) => `Successfully initialized. Ready to serve ${client.guilds.size} guilds.`});
 
 HildaClient.login(process.env.TOKEN);
