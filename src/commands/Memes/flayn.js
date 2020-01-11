@@ -6,7 +6,7 @@ module.exports = class extends Command {
     constructor(...args) {
         super(...args, { 
             aliases: ['fishy'],
-            description: 'Chants FI-SHY FI-SHY' 
+            description: 'Sends a parody of Edge of Dawn, Flayn style' 
         });
     }
 
