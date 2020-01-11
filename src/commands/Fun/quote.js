@@ -7,8 +7,8 @@ module.exports = class extends Command {
     constructor(...args) {
         super(...args, { 
             aliases: ['add', 'pin'],
-            description: 'Quote a message',
-            usage: "<quote:string>"
+            description: 'Quote a message using a message ID',
+            usage: "<quote:message>"
         });
     }
 
