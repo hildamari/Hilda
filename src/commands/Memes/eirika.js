@@ -5,7 +5,7 @@ module.exports = class extends Command {
     constructor(...args) {
         super(...args, { 
             aliases: ['hdnotlikeeirika', 'hd'],
-            description: 'Sends with HDNotLikeEirika image' 
+            description: 'Sends the HDNotLikeEirika image' 
         });
     }
 
