@@ -8,14 +8,14 @@ module.exports = class extends Command {
         super(...args, { 
             aliases: ['add', 'pin'],
             description: 'Quote a message using a message ID',
-            usage: "<quote:message>"
+            usage: "<quote:string>"
         });
     }
 
     run(msg, [quote]) {
-        msg.channel.messages.fetch({around: quote, limit: 1})
-            .then(messages => {
-                const fetchdMsg = messages.first()
+        msg.channel.messages.fetch(quote)
+            .then(message => {
+                const fetchdMsg = message;
                 const user = this.client.users.get(fetchdMsg.author.id);
                 const member = msg.guild.members.get(fetchdMsg.author.id);
                 const timestamp = fetchdMsg.createdTimestamp;
@@ -26,13 +26,12 @@ module.exports = class extends Command {
                     .setColor(member.displayHexColor)
                     .setDescription(fetchdMsg.content)
                     .setFooter(formatted)
-                
-                if(msg.guild.id == 354835055623012352) {
-                    const channel = this.client.channels.get('659864561679204411');
-                    return channel.send(quoteEmbed);
-                } else {
-                    return msg.channel.send(quoteEmbed)   
-                }
+                    if(msg.guild.id == 354835055623012352) {
+                        const channel = this.client.channels.get('659864561679204411');
+                        return channel.send(quoteEmbed);
+                    } else {
+                        return msg.channel.send(quoteEmbed);   
+                    }
             });
     }
 
