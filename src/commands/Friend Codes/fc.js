@@ -25,7 +25,7 @@ module.exports = class extends Command {
         const fcEmbed = new MessageEmbed()
             .setAuthor(user.username + "#" + user.discriminator, user.displayAvatarURL())
             .setColor(member.displayHexColor)
-            .addField("Friend Code", user.settings.get('fc'))
+            .addField("Friend Code", user.settings.get('fc'));
         msg.send(fcEmbed)
         // console.log(user.settings.get('fc'))
         // console.log(user)
@@ -36,7 +36,7 @@ module.exports = class extends Command {
         const fcEmbed = new MessageEmbed()
             .setAuthor(msg.author.username + "#" + msg.author.discriminator, msg.author.displayAvatarURL())
             .setColor(member.displayHexColor)
-            .addField("Friend Code", msg.author.settings.get('fc'))
+            .addField("Friend Code", msg.author.settings.get('fc'));
         msg.send(fcEmbed)
         // console.log(msg.author.settings.get('fc'))
         // console.log(msg.author)
