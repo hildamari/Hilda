@@ -13,7 +13,7 @@ module.exports = class extends Command {
             if(msg.channel.id == 669560106614259722 || msg.channel.id == 649063924607614978) {
                 msg.channel.send({ files: ["./assets/images/ahselk.png"] });
             } else {
-                msg.send("You cannot use this command in a non-nsfw channel! Please go to <#650489311095029780>")
+                msg.send("You cannot use this command in a non-nsfw channel! Please go to <#649063924607614978>")
             }
         } else {
             msg.channel.send({ files: ["./assets/images/ahselk.png"] });
