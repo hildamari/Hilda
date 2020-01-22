@@ -12,10 +12,10 @@ module.exports = class extends Command {
 
     run(msg) {
         if(msg.guild.id == 649054519556308992) {
-            if(msg.channel.id != 649063924607614978) {
-                msg.send("You cannot use this command in a non-nsfw channel! Please go to <#649063924607614978>")
-            } else {
+            if(msg.channel.id == 669560106614259722 || msg.channel.id == 649063924607614978) {
                 return msg.channel.send({ files: ["./assets/images/nolewds.png"] });
+            } else {
+                msg.send("You cannot use this command in a non-nsfw channel! Please go to <#649063924607614978>")
             }
         } else {
             return msg.channel.send({ files: ["./assets/images/nolewds.png"] });
