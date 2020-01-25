@@ -16,13 +16,13 @@
     "discord.js": "github:discordjs/discord.js",
     "dotenv": "^8.2.0",
     "eightball": "^1.0.1",
-    "ffmpeg-static": "^2.7.0",
+    "ffmpeg-static": "^3.0.0",
     "fuse.js": "^3.4.6",
     "klasa": "github:dirigeants/klasa#settings",
     "moment": "^2.24.0",
     "moment-duration-format": "2.2.2",
     "node-opus": "^0.3.3",
     "simple-youtube-api": "^5.2.1",
-    "ytdl-core": "^1.0.5"
+    "ytdl-core": "^1.0.7"
   }
 }
