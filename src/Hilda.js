@@ -35,7 +35,7 @@ const HildaClient = new Client ({
     prefix: process.env.PREFIX,
     commandEditing: true,
     disableEveryone: true,
-    ignoreBots: true,
+    ignoreBots: false,
     presence: { activity: { name: 'Uno', type: 'PLAYING' } },
     typing: false,
     prefixCaseInsensitive: true,
