@@ -1,6 +1,22 @@
 const { Client } = require('klasa');
 const path = require('path');
 require('dotenv').config({path: path.join(__dirname, 'data/.env')});
+const { Structures } = require('discord.js')
+
+Structures.extend('Guild', Guild => {
+    class MusicGuild extends Guild {
+      constructor(client, data) {
+        super(client, data);
+        this.musicData = {
+          queue: [],
+          isPlaying: false,
+          nowPlaying: null,
+          songDispatcher: null
+        };
+      }
+    }
+    return MusicGuild;
+});
 
 Client.defaultUserSchema.add('experience', 'Integer', {
     default: 1,
