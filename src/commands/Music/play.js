@@ -10,6 +10,7 @@ module.exports = class extends Command {
 
     constructor(...args) {
         super(...args, { 
+            aliases: ['add'],
             description: 'Play any song or playlist from YouTube',
             usage: '<query:string>'
         });
