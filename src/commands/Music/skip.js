@@ -4,7 +4,7 @@ module.exports = class extends Command {
 
     constructor(...args) {
         super(...args, { 
-            aliases: ['skip-song', 'advance-song'],
+            aliases: ['skip-song', 'advance-song', 'advance'],
             description: 'Skip the current playing song'
         });
     }
