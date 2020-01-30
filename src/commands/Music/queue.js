@@ -22,7 +22,7 @@ module.exports = class extends Command {
             .setColor('#ff7373')
             .setTitle('Music Queue')
             for (let i = 0; i < titleArray.length; i++) {
-                queueEmbed.addField(`${i + 1}:`, `${titleArray[i]}`);
+                queueEmbed.addField(`Song ${i + 1}:`, `${titleArray[i]}`);
             }
         return msg.send(queueEmbed);
     }
