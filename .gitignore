@@ -13,6 +13,9 @@ src/data/.env
 # .DS_Store
 .DS_Store
 
+# bwd folder
+bwd/
+
 # pm2 stuff
 ecosystem.config.js
 
