@@ -19,6 +19,7 @@ module.exports = class extends Command {
 
             dispatcher.on('finish', () => {
                 console.log('Finished playing!');
+                msg.guild.me.voice.channel.leave();
             });
             const hilda = this.client.emojis.find(emoji => emoji.name === "Hilda");
             msg.send(`${hilda} HIL-DA HIL-DA ${hilda}`);
