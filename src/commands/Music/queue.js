@@ -12,6 +12,7 @@ module.exports = class extends Command {
     }
 
     run(msg) {
+        console.log(msg.guild.musicData.queue)
         if (msg.guild.musicData.queue.length == 0)
             return msg.send(`There are no songs in queue! Add some with ${msg.guild.settings.get('prefix')}play or ${msg.guild.settings.get('prefix')}add`);
         const titleArray = [];
