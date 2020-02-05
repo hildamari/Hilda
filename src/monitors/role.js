@@ -16,7 +16,7 @@ module.exports = class extends Monitor {
             let memberRole = msg.guild.roles.find(roles => roles.name === "members");
             if(!member.roles.has(memberRole.id)) {
                 msg.member.roles.add(memberRole).catch(console.error);
-                console.log("Gave user the Member role")
+                msg.reply("Hey, you're a member now! Have fun. Or not, I'm not your boss.")
             }
         }
 
