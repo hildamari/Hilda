@@ -14,7 +14,7 @@ module.exports = class extends Monitor {
 
         if(msg.guild.id == 354835055623012352) {
             let memberRole = msg.guild.roles.find(roles => roles.name === "members");
-            if(!member.roles.has(member.id)) {
+            if(!member.roles.has(memberRole.id)) {
                 msg.member.roles.add(memberRole).catch(console.error);
                 console.log("Gave user the Member role")
             }
