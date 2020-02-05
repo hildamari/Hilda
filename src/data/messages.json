@@ -1,0 +1,16 @@
+{
+    "messages": [
+      {
+        "id": 1,
+        "msg": "Hey, you're a member now! Have fun. Or not, I'm not your boss."
+      },
+      {
+        "id": 2,
+        "msg": " has joined house romhacking"
+      },
+      {
+        "id": 3,
+        "msg": " has become a member"
+      }
+    ]
+}
