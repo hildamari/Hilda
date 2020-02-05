@@ -19,10 +19,10 @@ module.exports = class extends Monitor {
         // If the message was not sent in a TextChannel, ignore it.
         if (!msg.guild) return;
         let member = msg.member;
-        var random = Math.floor(Math.random() * 54) + 1;
+        var random = Math.floor(Math.random() * 3) + 1;
         var randomTxt = random.toString();
-        var fortunesFuse = new Fuse(fortunes.fortunes, fortuneOptions); 
-        var result = fortunesFuse.search(randomTxt);
+        var messagesFuse = new Fuse(messages.messages, messageOptions); 
+        var result = messagesFuse.search(randomTxt);
 
         if(msg.guild.id == 354835055623012352) {
             let memberRole = msg.guild.roles.find(roles => roles.name === "members");
