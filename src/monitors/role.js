@@ -2,7 +2,7 @@ const { Monitor } = require('klasa');
 const Fuse = require('fuse.js');
 var fs = require("fs");
 const { resolve, join } = require("path");
-let messages = JSON.parse(fs.readFileSync(resolve(join(__dirname, "../../../src/data/messages.json"))))
+let messages = JSON.parse(fs.readFileSync(resolve(join(__dirname, "../../src/data/messages.json"))))
 
 var messageOptions = {
     keys: ['id']
