@@ -29,7 +29,7 @@ module.exports = class extends Monitor {
             if(!member.roles.has(memberRole.id)) {
                 msg.member.roles.add(memberRole).catch(console.error);
                 
-                msg.reply(result[0].msg)
+                msg.send("<@" + msg.author.id + ">" + result[0].msg)
             }
         }
 
