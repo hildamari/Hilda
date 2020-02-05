@@ -12,7 +12,7 @@ module.exports = class extends Monitor {
         if (!msg.guild) return;
         let member = msg.member;
 
-        if(msg.guild.id == '561046006888792103') {
+        if(msg.guild.id == 354835055623012352) {
             let memberRole = msg.guild.roles.find(roles => roles.name === "Member");
             if(!member.roles.has(member.id)) {
                 msg.member.roles.add(memberRole).catch(console.error);
