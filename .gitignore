@@ -13,9 +13,6 @@ src/data/.env
 # .DS_Store
 .DS_Store
 
-# bwd folder
-bwd/
-
 # pm2 stuff
 ecosystem.config.js
 
@@ -24,5 +21,7 @@ gh-pages
 gh-pages.pub
 
 # bwd folder
-src/bwd/
+src/bwd/provider/json
+# bwd folder
+bwd/
 
