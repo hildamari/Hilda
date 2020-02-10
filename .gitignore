@@ -23,3 +23,6 @@ ecosystem.config.js
 gh-pages
 gh-pages.pub
 
+# bwd folder
+src/bwd/
+
