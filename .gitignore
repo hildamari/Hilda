@@ -21,7 +21,8 @@ gh-pages
 gh-pages.pub
 
 # bwd folder
-src/bwd/provider/json
-# bwd folder
+src/bwd/provider/json/clientStorage/*
+src/bwd/provider/json/guilds/*
+src/bwd/provider/json/users/*
 bwd/
 
