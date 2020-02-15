@@ -18,6 +18,8 @@ Structures.extend('Guild', Guild => {
     return MusicGuild;
 });
 
+Client.use(require('klasa-dashboard-hooks'));
+
 Client.defaultUserSchema.add('experience', 'Integer', {
     default: 1,
     configurable: false
@@ -56,6 +58,10 @@ const HildaClient = new Client ({
     typing: false,
     prefixCaseInsensitive: true,
     owner: '147800635046232064',
+    dashboardHooks: {
+        apiPrefix: '',
+		port: 2030
+    },
     readyMessage: (client) => `Successfully initialized. Ready to serve ${client.guilds.size} guilds.`});
 
 HildaClient.login(process.env.TOKEN);
