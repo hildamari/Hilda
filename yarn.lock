@@ -15,11 +15,6 @@
     node-addon-api "^2.0.0"
     node-pre-gyp "^0.14.0"
 
-"@klasa/request-handler@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@klasa/request-handler/-/request-handler-0.0.3.tgz#ed72de611ece3dd99725cb797fc13e07bb05e618"
-  integrity sha512-Z1O+Aa2kW/I4Uos4EZalByveIuQKRfuRx+JCsgsogDBd95N5Ub47AH+LEd5i+uzjnJ6iDHfodpVlaHojJ4Q+ZQ==
-
 abbrev@1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
@@ -410,10 +405,17 @@ iso8601-duration@^1.2.0:
   resolved "https://registry.yarnpkg.com/iso8601-duration/-/iso8601-duration-1.2.0.tgz#5fa6fc180a8fe95ad6a6721c9bdd9069cb59e80e"
   integrity sha512-ErTBd++b17E8nmWII1K1uZtBgD1E8RjyvwmxlCjPHNqHMD7gmcMHOw0E8Ro/6+QT4PhHRSnnMo7bxa1vFPkwhg==
 
+klasa-dashboard-hooks@kyranet/klasa-dashboard-hooks#master:
+  version "0.0.1-dev"
+  resolved "https://codeload.github.com/kyranet/klasa-dashboard-hooks/tar.gz/74ac1a8503ba09a728948377ea92feeaebf30bd0"
+  dependencies:
+    node-fetch "^2.6.0"
+
 "klasa@github:dirigeants/klasa#settings":
   version "0.5.0-dev"
   resolved "https://codeload.github.com/dirigeants/klasa/tar.gz/aee79a51a6e845b6678e96fdd1a7cc1e27fda435"
   dependencies:
+    "@klasa/request-handler" "^0.0.3"
     fs-nextra "^0.4.5"
 
 m3u8stream@^0.6.3:
