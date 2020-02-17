@@ -15,6 +15,11 @@
     node-addon-api "^2.0.0"
     node-pre-gyp "^0.14.0"
 
+"@klasa/request-handler@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@klasa/request-handler/-/request-handler-0.0.3.tgz#ed72de611ece3dd99725cb797fc13e07bb05e618"
+  integrity sha512-Z1O+Aa2kW/I4Uos4EZalByveIuQKRfuRx+JCsgsogDBd95N5Ub47AH+LEd5i+uzjnJ6iDHfodpVlaHojJ4Q+ZQ==
+
 abbrev@1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
