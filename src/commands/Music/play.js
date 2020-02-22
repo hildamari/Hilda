@@ -27,7 +27,7 @@ module.exports = class extends Command {
               voiceChannel: msg.member.voice.channel,
               connection: null,
               songs: [],
-              volume: 5,
+              volume: 0.5,
               playing: true,
           };
   
