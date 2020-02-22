@@ -12,7 +12,6 @@ module.exports = class extends Command {
 
     run(msg) {
         const serverQueue = msg.guild.musicData.queue.get(msg.guild.id);
-        console.log(msg.guild.musicData.nowPlaying)
 
         let songLength = msg.guild.musicData.nowPlaying.info.length;
         msg.channel.send(new MessageEmbed()
