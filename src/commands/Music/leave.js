@@ -14,10 +14,16 @@ module.exports = class extends Command {
         if (!voiceChannel) return msg.reply('Join a channel and try again');
 
         const serverQueue = msg.guild.musicData.queue.get(msg.guild.id);
-        serverQueue.songs = [];
+        if(!serverQueue) {
+            await this.client.player.leave(msg.guild.id);
+        } else {
+            serverQueue.songs = [];
+            await this.client.player.leave(msg.guild.id);
+        }
+        
         // console.log(msg.guild.musicData.queue.get(msg.guild.id).clear())
         msg.send('Guess that\'s it for me. I\'ll just go rest up or...something.');
-        await this.client.player.leave(msg.guild.id);
+        
     }
     
 };
