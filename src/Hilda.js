@@ -68,11 +68,11 @@ class HildaClient extends Client {
 }
 
 const client = new HildaClient ({
-    clientID: process.env.CLIENT_ID2,
-    clientSecret: process.env.CLIENT_SECRET2,
+    clientID: process.env.CLIENT_ID,
+    clientSecret: process.env.CLIENT_SECRET,
     fetchAllMembers: false,
     createPiecesFolders: false,
-    prefix: process.env.PREFIX2,
+    prefix: process.env.PREFIX,
     commandEditing: true,
     disableEveryone: true,
     ignoreBots: false,
@@ -86,4 +86,4 @@ const client = new HildaClient ({
     },
     readyMessage: (client) => `Successfully initialized. Ready to serve ${client.guilds.size} guilds.`});
 
-client.login(process.env.TOKEN2);
+client.login(process.env.TOKEN);
