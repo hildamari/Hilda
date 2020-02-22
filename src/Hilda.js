@@ -1,14 +1,18 @@
 const { Client } = require('klasa');
 const path = require('path');
 require('dotenv').config({path: path.join(__dirname, 'data/.env')});
+const config = require("./config.json");
+const { PlayerManager } = require("discord.js-lavalink");
 const { Structures } = require('discord.js')
+
+const queue = new Map();
 
 Structures.extend('Guild', Guild => {
     class MusicGuild extends Guild {
       constructor(client, data) {
         super(client, data);
         this.musicData = {
-          queue: [],
+          queue,
           isPlaying: false,
           nowPlaying: null,
           songDispatcher: null
@@ -45,12 +49,30 @@ Client.defaultUserSchema.add('fc', 'String', {
     configurable: false
 });
 
-const HildaClient = new Client ({
-    clientID: process.env.CLIENT_ID,
-    clientSecret: process.env.CLIENT_SECRET,
+class HildaClient extends Client {
+
+    constructor(...args) {
+        super(...args);
+
+        this.player = null;
+
+        this.on("ready", () => {
+            this.player = new PlayerManager(client, config.nodes, {
+                user: client.user.id,
+                shards: 0
+            });
+
+            console.log("Bot is online!");
+        }).on("error", console.error).on("warn", console.warn);
+    }
+}
+
+const client = new HildaClient ({
+    clientID: process.env.CLIENT_ID2,
+    clientSecret: process.env.CLIENT_SECRET2,
     fetchAllMembers: false,
     createPiecesFolders: false,
-    prefix: process.env.PREFIX,
+    prefix: process.env.PREFIX2,
     commandEditing: true,
     disableEveryone: true,
     ignoreBots: false,
@@ -64,4 +86,4 @@ const HildaClient = new Client ({
     },
     readyMessage: (client) => `Successfully initialized. Ready to serve ${client.guilds.size} guilds.`});
 
-HildaClient.login(process.env.TOKEN);
+client.login(process.env.TOKEN2);
