@@ -23,7 +23,6 @@ module.exports = class extends Command {
             .addField("Time", msg.guild.musicData.nowPlaying ? this.millisToMinutesAndSeconds(songLength) : "N/A", true)
             .addField("Songs Left", serverQueue.songs.length ? serverQueue.songs.length - 1 : 0, true)
             .setDescription(`[**${msg.guild.musicData.nowPlaying ? msg.guild.musicData.nowPlaying.info.title : "No Name"}**](${msg.guild.musicData.nowPlaying.info.uri})`));
-        // msg.send(`${msg.guild.musicData.nowPlaying.info.title} by ${msg.guild.musicData.nowPlaying.info.author}`)
     }
 
     millisToMinutesAndSeconds(millis) {
