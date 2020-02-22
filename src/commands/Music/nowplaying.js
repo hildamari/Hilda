@@ -11,15 +11,25 @@ module.exports = class extends Command {
     }
 
     run(msg) {
-        var voiceChannel = msg.member.voice.channel;
-        if (!voiceChannel) return msg.reply('Join a channel and try again');
-    
-        const songStatusEmbed = new MessageEmbed()
-            .setThumbnail(msg.guild.musicData.nowPlaying.thumbnail)
-            .addField('Now Playing:', msg.guild.musicData.nowPlaying.title)
-            .addField('URL', msg.guild.musicData.nowPlaying.url)
-      
-        return msg.send(songStatusEmbed);
+        const serverQueue = msg.guild.musicData.queue.get(msg.guild.id);
+        console.log(msg.guild.musicData.nowPlaying)
+
+        let songLength = msg.guild.musicData.nowPlaying.info.length;
+        msg.channel.send(new MessageEmbed()
+            .setTitle("⏯ | Now Playing")
+            .setTimestamp()
+            .setColor("#5cb85c")
+            .addField("Author", msg.guild.musicData.nowPlaying ? msg.guild.musicData.nowPlaying.info.author : "No Name", true)
+            .addField("Time", msg.guild.musicData.nowPlaying ? this.millisToMinutesAndSeconds(songLength) : "N/A", true)
+            .addField("Songs Left", serverQueue.songs.length ? serverQueue.songs.length - 1 : 0, true)
+            .setDescription(`[**${msg.guild.musicData.nowPlaying ? msg.guild.musicData.nowPlaying.info.title : "No Name"}**](${msg.guild.musicData.nowPlaying.info.uri})`));
+        // msg.send(`${msg.guild.musicData.nowPlaying.info.title} by ${msg.guild.musicData.nowPlaying.info.author}`)
+    }
+
+    millisToMinutesAndSeconds(millis) {
+        var minutes = Math.floor(millis / 60000);
+        var seconds = ((millis % 60000) / 1000).toFixed(0);
+        return minutes + ":" + (seconds < 10 ? '0' : '') + seconds;
     }
     
 };

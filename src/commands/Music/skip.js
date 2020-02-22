@@ -10,13 +10,12 @@ module.exports = class extends Command {
     }
 
     run(msg) {
-        const voiceChannel = msg.member.voice.channel;
-        if (!voiceChannel) return msg.reply('Join a channel and try again');
-    
-        if (typeof msg.guild.musicData.songDispatcher == 'undefined' || msg.guild.musicData.songDispatcher == null) {
-          return msg.reply('There is no song playing right now!');
-        }
-        msg.guild.musicData.songDispatcher.end();
+        var serverQueue = msg.guild.musicData.queue.get(msg.guild.id)
+        if (!serverQueue) return message.channel.send('There is no song that I could skip!');
+        if (serverQueue.playing === false) serverQueue.playing = true;
+        serverQueue.connection.stop();
+
+        return msg.channel.send(`Skipping...`)
     }
     
 };

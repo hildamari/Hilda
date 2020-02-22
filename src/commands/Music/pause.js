@@ -9,17 +9,11 @@ module.exports = class extends Command {
         });
     }
 
-    run(msg) {
-        var voiceChannel = msg.member.voice.channel;
-        if (!voiceChannel) return msg.reply('Join a channel and try again');
-    
-        if (typeof msg.guild.musicData.songDispatcher == 'undefined' || msg.guild.musicData.songDispatcher == null) {
-          return msg.send('There is no song playing right now!');
-        }
-    
-        msg.send('Song paused :pause_button:');
-    
-        msg.guild.musicData.songDispatcher.pause();
+    async run(msg) {
+        const player = this.client.player.get(msg.guild.id);
+        if (!player) return msg.reply("No lavalink player found");
+        await player.pause(true);
+        msg.send('Song paused :pause_button:')
     }
     
 };

@@ -1,6 +1,5 @@
 const { Command } = require('klasa');
 const { MessageEmbed } = require('discord.js');
-const { stripIndents } = require('common-tags')
 
 module.exports = class extends Command {
 
@@ -12,18 +11,23 @@ module.exports = class extends Command {
     }
 
     run(msg) {
-        console.log(msg.guild.musicData.queue)
-        if (msg.guild.musicData.queue.length == 0)
+        const serverQueue = msg.guild.musicData.queue.get(msg.guild.id);
+        console.log(serverQueue)
+
+        if (serverQueue.songs.length == 0)
             return msg.send(`There are no songs in queue! Add some with ${msg.guild.settings.get('prefix')}play or ${msg.guild.settings.get('prefix')}add`);
         const titleArray = [];
-        msg.guild.musicData.queue.map(obj => {
-            titleArray.push(obj.title);
-        });
+        const artistArray = [];
+        for(let i = 0; i < serverQueue.songs.length; i++) {
+            titleArray.push(serverQueue.songs[i].info.title)
+            artistArray.push(serverQueue.songs[i].info.author)
+        }
+
         var queueEmbed = new MessageEmbed()
             .setColor('#ff7373')
-            .setTitle('Music Queue')
+            .setTitle(':musical_note: Music Queue :musical_note: ')
             for (let i = 0; i < titleArray.length; i++) {
-                queueEmbed.addField(`Song ${i + 1}:`, `${titleArray[i]}`);
+                queueEmbed.addField(`Song ${i + 1}:`, `${titleArray[i]} by ${artistArray[i]}`);
             }
         return msg.send(queueEmbed);
     }
