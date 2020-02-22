@@ -14,21 +14,21 @@ module.exports = class extends Command {
         let displayName = '';
     
         const aboutEmbed = new MessageEmbed()
-            .setColor(msg.member.displayHexColor)
+            .setColor('#fcafb7')
             .setDescription("Hilda is brought to you by memes for memes.")
             .setAuthor(`${this.client.user.username} Stats`, this.client.user.displayAvatarURL({ format: 'png' }));
 
-        if(typeof nickname == 'undefined') {
+        if(typeof nickname == 'undefined' || nickname == null) {
             displayName = "No nickname";
             aboutEmbed.addField('Owner', (this.client.users.get(this.client.options.owner).username + '#' + this.client.users.get(this.client.options.owner).discriminator) + ' (' + displayName + ')', true)
         } else {
             aboutEmbed.addField('Owner', (this.client.users.get(this.client.options.owner).username + '#' + this.client.users.get(this.client.options.owner).discriminator) + ' (' + nickname + ')', true)
         }
             
-        aboutEmbed.addField('Uptime', moment.duration(process.uptime() * 1000).format('D [days], H [hours] [and] m [minutes]'))
-        aboutEmbed.addField('License', 'Apache 2.0')
-        aboutEmbed.addField('Source Code', 'https://github.com/hildamari/Hilda');
-        aboutEmbed.addField('Documentation', 'https://hilda.pw');
+        aboutEmbed.addField('Uptime', moment.duration(process.uptime() * 1000).format('D [days], H [hours] [and] m [minutes]'), true)
+        aboutEmbed.addField('License', 'Apache 2.0', true)
+        aboutEmbed.addField('Source Code', 'https://github.com/hildamari/Hilda', true);
+        aboutEmbed.addField('Documentation', 'https://hilda.pw', true);
 
         return msg.channel.send(aboutEmbed);
     }
