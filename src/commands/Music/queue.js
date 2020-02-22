@@ -5,7 +5,7 @@ module.exports = class extends Command {
 
     constructor(...args) {
         super(...args, { 
-            aliases: ['song-list', 'next-songs'],
+            aliases: ['song-list', 'next-songs', 'q'],
             description: 'Display the song queue'
         });
     }
