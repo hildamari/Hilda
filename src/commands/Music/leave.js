@@ -18,7 +18,7 @@ module.exports = class extends Command {
             msg.send('Guess that\'s it for me. I\'ll just go rest up or...something.');
             await this.client.player.leave(msg.guild.id);
         } else {
-            serverQueue.songs = [];
+            msg.guild.musicData.queue.delete(msg.guild.id);
             msg.send('Guess that\'s it for me. I\'ll just go rest up or...something.');
             await this.client.player.leave(msg.guild.id);
         }
