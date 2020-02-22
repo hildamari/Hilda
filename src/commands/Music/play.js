@@ -8,7 +8,8 @@ module.exports = class extends Command {
     constructor(...args) {
         super(...args, { 
             aliases: ['add'],
-            description: 'Play any song or playlist from YouTube',
+            description: 'Play any song from YouTube',
+            extendedHelp: 'Does not support playlists',
             usage: '<track:string>'
         });
     }
