@@ -9,6 +9,7 @@ src/data/.env
 
 # logs
 *.log
+logs/
 
 # .DS_Store
 .DS_Store
