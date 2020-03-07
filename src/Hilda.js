@@ -3,7 +3,8 @@ const path = require('path');
 require('dotenv').config({path: path.join(__dirname, 'data/.env')});
 const config = require("./config.json");
 const { PlayerManager } = require("discord.js-lavalink");
-const { Structures } = require('discord.js')
+const { Structures } = require('discord.js');
+const DBL = require("dblapi.js");
 
 const queue = new Map();
 
@@ -85,5 +86,17 @@ const client = new HildaClient ({
 		port: 2030
     },
     readyMessage: (client) => `Successfully initialized. Ready to serve ${client.guilds.size} guilds.`});
+
+const dbl = new DBL(process.env.DBL_API, client);
+
+client.on('ready', () => {
+    setInterval(() => {
+        dbl.postStats(client.guilds.size);
+    }, 1800000);
+});
+
+dbl.on('posted', () => {
+    console.log('Server count posted!');
+})
 
 client.login(process.env.TOKEN);
