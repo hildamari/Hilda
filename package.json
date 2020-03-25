@@ -20,10 +20,10 @@
     "dotenv": "^8.2.0",
     "eightball": "^1.0.1",
     "ffmpeg-static": "^4.0.0",
-    "fuse.js": "^3.4.6",
+    "fuse.js": "^3.6.1",
     "klasa": "github:dirigeants/klasa#settings",
     "klasa-dashboard-hooks": "kyranet/klasa-dashboard-hooks#master",
-    "lavalink": "^2.9.0",
+    "lavalink": "^2.10.0",
     "moment": "^2.24.0",
     "moment-duration-format": "2.2.2",
     "simple-youtube-api": "^5.2.1"
