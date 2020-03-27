@@ -50,6 +50,31 @@ Client.defaultUserSchema.add('fc', 'String', {
     configurable: false
 });
 
+Client.defaultUserSchema.add('islandname', 'String', {
+    default: '',
+    configurable: false
+});
+
+Client.defaultUserSchema.add('charactername', 'String', {
+    default: '',
+    configurable: false
+});
+
+Client.defaultUserSchema.add('fruit', 'String', {
+    default: '',
+    configurable: false
+});
+
+Client.defaultUserSchema.add('profilename', 'String', {
+    default: '',
+    configurable: false
+});
+
+Client.defaultUserSchema.add('hemisphere', 'String', {
+    default: '',
+    configurable: false
+});
+
 class HildaClient extends Client {
 
     constructor(...args) {
