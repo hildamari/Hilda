@@ -23,6 +23,7 @@
     "fuse.js": "^3.6.1",
     "klasa": "github:dirigeants/klasa#settings",
     "klasa-dashboard-hooks": "kyranet/klasa-dashboard-hooks#master",
+    "lavacord": "^1.1.4",
     "lavalink": "^2.10.0",
     "moment": "^2.24.0",
     "moment-duration-format": "2.2.2",
