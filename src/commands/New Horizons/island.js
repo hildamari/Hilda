@@ -1,5 +1,6 @@
 const { Command } = require('klasa');
 const { MessageEmbed } = require('discord.js');
+const { stripIndents } = require('common-tags');
 
 module.exports = class extends Command {
 
@@ -9,7 +10,7 @@ module.exports = class extends Command {
             description: 'Set up your Animal Crossing: New Horizons Island info',
             usage: '<profilename|charactername|islandname|hemisphere|fruit|show:default> [value:string]',
             usageDelim: " ",
-            extendedHelp: "**island profilename <name>** to set your Switch's profile name\n**island charactername <name>** to set your in-game character name\n**island islandname <name>** to set your island name\n**island hemisphere <hemisphere>** to set your island's hemisphere\n**island fruit <fruit>** to set your island's native fruit\n**island show** to show your island info"
+            extendedHelp: "Each option <profilename|charactername|islandname|hemisphere|fruit> must be set individually.\n**island profilename <name>** to set your Switch's profile name\n**island charactername <name>** to set your in-game character name\n**island islandname <name>** to set your island name\n**island hemisphere <hemisphere>** to set your island's hemisphere\n**island fruit <fruit>** to set your island's native fruit\n**island show** to show your island info"
         });
     }
 
@@ -89,7 +90,7 @@ module.exports = class extends Command {
         const islandEmbed = new MessageEmbed()
             .setAuthor(`${msg.author.username}'s Island`, msg.author.displayAvatarURL({ format: 'png' }))
             .setColor(msg.member.displayHexColor)
-            .setDescription(`Friend Code: **${friendCode}**
+            .setDescription(stripIndents`Friend Code: **${friendCode}**
             Switch Profile Name: **${profileName}**
             Character Name: **${characterName}**
             Island Name: **${islandName}**
