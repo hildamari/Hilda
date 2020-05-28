@@ -25,6 +25,8 @@ Structures.extend('Guild', Guild => {
 
 Client.use(require('klasa-dashboard-hooks'));
 
+Client.defaultGuildSchema.add('quoteChannel', 'textchannel')
+
 Client.defaultUserSchema.add('experience', 'Integer', {
     default: 1,
     configurable: false
