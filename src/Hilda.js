@@ -5,7 +5,6 @@ const config = require("./config.json");
 const { PlayerManager } = require("discord.js-lavalink");
 const { Structures } = require('discord.js');
 const DBL = require("dblapi.js");
-let statcord = require('statcord.js')
 
 const queue = new Map();
 
@@ -114,13 +113,11 @@ const client = new HildaClient ({
     readyMessage: (client) => `Successfully initialized. Ready to serve ${client.guilds.size} guilds.`});
 
 const dbl = new DBL(process.env.DBL_API, client);
-const statClient = new statcord(process.env.STATCORD, client)
 
 client.on('ready', async () => {
     setInterval(() => {
         dbl.postStats(client.guilds.size);
     }, 1800000);
-    await statClient.autoPost()
 });
 
 dbl.on('posted', () => {

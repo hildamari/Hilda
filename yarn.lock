@@ -775,13 +775,6 @@ simple-youtube-api@^5.2.1:
     iso8601-duration "^1.2.0"
     node-fetch "^2.6.0"
 
-statcord.js@^2.0.5:
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/statcord.js/-/statcord.js-2.0.5.tgz#9d3a8f8f0f7e09c088b20e28c6850ff4479d02fa"
-  integrity sha512-BaqA3rZa4FPjWN4n1gqSumUiLuslPZIa3MEFoF7BqNT6V1psHNtcUKxbT5dbzihbwo8Ckqd66dJ7E/+VUMJJKQ==
-  dependencies:
-    node-fetch "^2.6.0"
-
 string-width@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-1.0.2.tgz#118bdf5b8cdc51a2a7e70d211e07e2b0b9b107d3"

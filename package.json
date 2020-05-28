@@ -27,8 +27,7 @@
     "lavalink": "^2.10.0",
     "moment": "^2.24.0",
     "moment-duration-format": "2.2.2",
-    "simple-youtube-api": "^5.2.1",
-    "statcord.js": "^2.0.5"
+    "simple-youtube-api": "^5.2.1"
   },
   "bugs": {
     "url": "https://github.com/hildamari/Hilda/issues"
