@@ -10,7 +10,7 @@ module.exports = class extends Command {
     }
 
     run(msg) {
-        var serverQueue = msg.guild.musicData.queue.get(msg.guild.id)
+        let serverQueue = msg.guild.musicData.queue.get(msg.guild.id)
         if (!serverQueue) return message.channel.send('There is no song that I could skip!');
         if (serverQueue.playing === false) serverQueue.playing = true;
         serverQueue.connection.stop();

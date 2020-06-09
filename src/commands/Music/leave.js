@@ -10,7 +10,7 @@ module.exports = class extends Command {
     }
 
     async run(msg) {
-        var voiceChannel = msg.member.voice.channel;
+        let voiceChannel = msg.member.voice.channel;
         if (!voiceChannel) return msg.reply('Join a channel and try again');
 
         const serverQueue = msg.guild.musicData.queue.get(msg.guild.id);

@@ -23,7 +23,7 @@ module.exports = class extends Command {
             artistArray.push(serverQueue.songs[i].info.author)
         }
 
-        var queueEmbed = new MessageEmbed()
+        let queueEmbed = new MessageEmbed()
             .setColor('#ff7373')
             .setTitle(':musical_note: Music Queue :musical_note: ')
             for (let i = 0; i < titleArray.length; i++) {

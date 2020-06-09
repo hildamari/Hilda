@@ -17,7 +17,7 @@ module.exports = class extends Command {
     async run(msg, [track]) {
       if (!msg.member || !msg.member.voice.channel) return msg.reply("You must be in a voice channel for this command.");
 
-      const [song] = await this.getSongs(`ytsearch: ${track}`);
+      const [song] = await this.getSongs(`${track}`);
       if (!song) return msg.reply("No songs found. try again!");
 
       const serverQueue = msg.guild.musicData.queue.get(msg.guild.id);
@@ -116,8 +116,8 @@ module.exports = class extends Command {
   }
 
   millisToMinutesAndSeconds(millis) {
-      var minutes = Math.floor(millis / 60000);
-      var seconds = ((millis % 60000) / 1000).toFixed(0);
+      let minutes = Math.floor(millis / 60000);
+      let seconds = ((millis % 60000) / 1000).toFixed(0);
       return minutes + ":" + (seconds < 10 ? '0' : '') + seconds;
   }
   
