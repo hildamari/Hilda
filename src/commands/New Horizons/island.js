@@ -31,7 +31,7 @@ module.exports = class extends Command {
 
     hemisphere(msg, [value]) {
         let hemispheres = ["north", "south", "northern", "southern", "Northern", "Southern", "North", "South"]
-        var n = hemispheres.includes(value);
+        let n = hemispheres.includes(value);
         if(n == true) {
             if(value == "north" || value == "south" || value == "North" || value == "South") {
                 let newValue = value + "ern"
@@ -51,7 +51,7 @@ module.exports = class extends Command {
 
     fruit(msg, [value]) {
         let fruits = ["Apples", "apples", "Apple", "apple", "Oranges", "oranges", "Orange", "orange", "Pears", "pears", "Pear", "pear", "Peaches", "peaches", "Peaches", "peach", "Cherries", "cherries", "Cherry", "cherry"]
-        var n = fruits.includes(value);
+        let n = fruits.includes(value);
         if(n == true) {
             if(value == "apple" || value == "Apple" || value == "orange" || value == "Orange" || value == "pear" || value == "Pear") {
                 let newValue = value + "s"
