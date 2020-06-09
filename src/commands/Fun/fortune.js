@@ -1,11 +1,11 @@
 const { Command } = require('klasa');
 const { MessageEmbed } = require('discord.js');
 const Fuse = require('fuse.js');
-var fs = require("fs");
+let fs = require("fs");
 const { resolve, join } = require("path");
 let fortunes = JSON.parse(fs.readFileSync(resolve(join(__dirname, "../../../src/data/fortunes.json"))))
 
-var fortuneOptions = {
+let fortuneOptions = {
     keys: ['id']
 }
 
@@ -20,10 +20,10 @@ module.exports = class extends Command {
 
     run(msg) {
         const fortune = this.client.emojis.find(emoji => emoji.name === "fortune");
-        var random = Math.floor(Math.random() * 54) + 1;
-        var randomTxt = random.toString();
-        var fortunesFuse = new Fuse(fortunes.fortunes, fortuneOptions); 
-        var result = fortunesFuse.search(randomTxt);
+        let random = Math.floor(Math.random() * 54) + 1;
+        let randomTxt = random.toString();
+        let fortunesFuse = new Fuse(fortunes.fortunes, fortuneOptions); 
+        let result = fortunesFuse.search(randomTxt);
         const fortuneEmbed = new MessageEmbed();
 
         fortuneEmbed
