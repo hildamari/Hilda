@@ -10,8 +10,8 @@ module.exports = class extends Command {
 
     run(msg) {
         function randomNumber() {
-            var sides = 6;
-            var randomNumber = Math.floor(Math.random() * sides) + 1;
+            let sides = 6;
+            let randomNumber = Math.floor(Math.random() * sides) + 1;
             return randomNumber;
         }
 
