@@ -19,7 +19,7 @@
     "discord.js-lavalink": "^2.2.3",
     "dotenv": "^8.2.0",
     "eightball": "^1.0.1",
-    "ffmpeg-static": "^4.2.3",
+    "ffmpeg-static": "^4.2.4",
     "fuse.js": "^6.0.4",
     "klasa": "github:dirigeants/klasa#settings",
     "klasa-dashboard-hooks": "kyranet/klasa-dashboard-hooks#master",
