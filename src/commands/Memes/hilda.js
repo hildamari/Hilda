@@ -23,14 +23,14 @@ module.exports = class extends Command {
                     console.log('Finished playing!');
                     msg.guild.me.voice.channel.leave();
                 });
-                const hilda = this.client.emojis.find(emoji => emoji.name === "Hilda");
+                const hilda = this.client.emojis.find(emoji => emoji.name === "HildaCheer");
                 msg.send(`${hilda} HIL-DA HIL-DA ${hilda}`);
             } else {
                 msg.send("You can't use this command while a song is playing!")
             }
             
         } else {
-            const hilda = this.client.emojis.find(emoji => emoji.name === "Hilda");
+            const hilda = this.client.emojis.find(emoji => emoji.name === "HildaCheer");
             msg.send(`${hilda} HIL-DA HIL-DA ${hilda}`);
         }
     }
