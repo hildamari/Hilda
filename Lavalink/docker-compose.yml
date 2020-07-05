@@ -1,0 +1,9 @@
+version: "2.4"
+services:
+  lavalink:
+    network_mode: host
+    container_name: lavalink
+    image: docker.pkg.github.com/skyra-project/docker-images/lavalink:master
+    restart: always
+    ports:
+      - "2333:2333"
