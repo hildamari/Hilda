@@ -2,6 +2,16 @@
 # yarn lockfile v1
 
 
+"@derhuerst/http-basic@^8.2.0":
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/@derhuerst/http-basic/-/http-basic-8.2.0.tgz#d009a4a6820dea756061d21842e79d1dbf9a1e11"
+  integrity sha512-v1cqPUpFjU8DInW4YkC9caGKy8kUkqz0z10yCHawkxgpaJPId0F5xKi8fUY5rqC58F9Muz9T136jNReZQH9xIw==
+  dependencies:
+    caseless "^0.12.0"
+    concat-stream "^1.6.2"
+    http-response-object "^3.0.1"
+    parse-cache-control "^1.0.1"
+
 "@discordjs/collection@^0.1.1":
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/@discordjs/collection/-/collection-0.1.4.tgz#b8815e84be94934b1ce86f506896ed8562d7ebd8"
@@ -286,13 +296,13 @@ event-target-shim@^5.0.0:
   resolved "https://registry.yarnpkg.com/event-target-shim/-/event-target-shim-5.0.1.tgz#5d4d3ebdf9583d63a5333ce2deb7480ab2b05789"
   integrity sha512-i/2XbnSz/uxRCU6+NdVJgKWDTM427+MqYbkQzD321DuCQJUqOuJKIA0IM2+W2xtYHdKOmZ4dR6fExsd4SXL+WQ==
 
-ffmpeg-static@^4.2.5:
-  version "4.2.5"
-  resolved "https://registry.yarnpkg.com/ffmpeg-static/-/ffmpeg-static-4.2.5.tgz#37c2cca00bc971951daa1bd243976fbb18a2d074"
-  integrity sha512-4JykaxRgU5z/GfL0YLkBetJyXgaQXh67etMJlJMMTTcoA33voU6y/KFMg/RUehBj3DGDIs9HYhf7tozwabibaQ==
+ffmpeg-static@^4.2.6:
+  version "4.2.6"
+  resolved "https://registry.yarnpkg.com/ffmpeg-static/-/ffmpeg-static-4.2.6.tgz#3930b34b8c9012864d99cb027cf4e8f755832d91"
+  integrity sha512-86I0hm7BqfcNdlJqWw+BoKFyA39xzroa5JQq7GMEBNifzzSRXULVyI8AxoXyVoqDVnclptPhZ37UkmbqVQvO0w==
   dependencies:
+    "@derhuerst/http-basic" "^8.2.0"
     env-paths "^2.2.0"
-    http-basic "github:derhuerst/http-basic#8.2.0"
     https-proxy-agent "^5.0.0"
     progress "^2.0.3"
 
@@ -376,16 +386,6 @@ has-unicode@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/has-unicode/-/has-unicode-2.0.1.tgz#e0e6fe6a28cf51138855e086d1691e771de2a8b9"
   integrity sha1-4Ob+aijPUROIVeCG0Wkedx3iqLk=
-
-"http-basic@github:derhuerst/http-basic#8.2.0":
-  version "8.2.0"
-  uid "0abee462a1e04a1cdada369b1a4d5b2d4698e3bc"
-  resolved "https://codeload.github.com/derhuerst/http-basic/tar.gz/0abee462a1e04a1cdada369b1a4d5b2d4698e3bc"
-  dependencies:
-    caseless "^0.12.0"
-    concat-stream "^1.6.2"
-    http-response-object "^3.0.1"
-    parse-cache-control "^1.0.1"
 
 http-response-object@^3.0.1:
   version "3.0.2"
