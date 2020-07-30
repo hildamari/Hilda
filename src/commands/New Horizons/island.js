@@ -8,9 +8,9 @@ module.exports = class extends Command {
         super(...args, { 
             subcommands: true,
             description: 'Set up your Animal Crossing: New Horizons Island info',
-            usage: '<profilename|charactername|islandname|hemisphere|fruit|show:default> [value:string]',
+            usage: '<profilename|charactername|islandname|hemisphere|fruit|dreamaddress|show:default> [value:string]',
             usageDelim: " ",
-            extendedHelp: "Each option <profilename|charactername|islandname|hemisphere|fruit> must be set individually.\n**island profilename <name>** to set your Switch's profile name\n**island charactername <name>** to set your in-game character name\n**island islandname <name>** to set your island name\n**island hemisphere <hemisphere>** to set your island's hemisphere\n**island fruit <fruit>** to set your island's native fruit\n**island show** to show your island info"
+            extendedHelp: "Each option <profilename|charactername|islandname|hemisphere|fruit|dreamaddress> must be set individually.\n**island profilename <name>** to set your Switch's profile name\n**island charactername <name>** to set your in-game character name\n**island islandname <name>** to set your island name\n**island hemisphere <hemisphere>** to set your island's hemisphere\n**island fruit <fruit>** to set your island's native fruit\n**island dreamaddress <address> (i.e. 1234-5678-9123 or DA-1234-5678-9123)** to set your island's dream address\n**island show** to show your island info"
         });
     }
 
@@ -79,6 +79,16 @@ module.exports = class extends Command {
 
     }
 
+    dreamaddress(msg, [value]) {
+        if(value.startsWith("DA-")) {
+            msg.author.settings.update('dreamaddress', value);
+        } else {
+            let dA = "DA-"
+            value = dA + value;
+            console.log(value)
+        }
+    }
+
     show(msg) {
         let friendCode = msg.author.settings.get('fc');
         let profileName = msg.author.settings.get('profilename');
@@ -86,6 +96,7 @@ module.exports = class extends Command {
         let fruit = msg.author.settings.get('fruit');
         let islandName = msg.author.settings.get('islandname');
         let hemisphere = msg.author.settings.get('hemisphere');
+        let dreamaddress = msg.author.settings.get('dreamaddress')
 
         const islandEmbed = new MessageEmbed()
             .setAuthor(`${msg.author.username}'s Island`, msg.author.displayAvatarURL({ format: 'png' }))
@@ -95,7 +106,8 @@ module.exports = class extends Command {
             Character Name: **${characterName}**
             Island Name: **${islandName}**
             Fruit: **${fruit}**
-            Hemisphere: **${hemisphere}**`)
+            Hemisphere: **${hemisphere}**
+            Dream Address: **${dreamaddress}**`)
         msg.send(islandEmbed)
     }
     
