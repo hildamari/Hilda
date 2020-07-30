@@ -82,10 +82,12 @@ module.exports = class extends Command {
     dreamaddress(msg, [value]) {
         if(value.startsWith("DA-")) {
             msg.author.settings.update('dreamaddress', value);
+            msg.channel.send(`:white_check_mark: Successfully set your island's dream address!\nDream Address: **${value}**`)
         } else {
             let dA = "DA-"
             value = dA + value;
-            console.log(value)
+            msg.author.settings.update('dreamaddress', value);
+            msg.channel.send(`:white_check_mark: Successfully set your island's dream address!\nDream Address: **${value}**`)
         }
     }
 
