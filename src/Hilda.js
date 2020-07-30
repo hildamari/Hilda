@@ -77,6 +77,11 @@ Client.defaultUserSchema.add('hemisphere', 'String', {
     configurable: false
 });
 
+Client.defaultUserSchema.add('dreamaddress', 'String', {
+    default: '',
+    configurable: false
+});
+
 class HildaClient extends Client {
 
     constructor(...args) {
