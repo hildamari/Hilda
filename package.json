@@ -25,7 +25,7 @@
     "klasa-dashboard-hooks": "kyranet/klasa-dashboard-hooks#master",
     "lavacord": "^1.1.9",
     "lavalink": "^2.10.0",
-    "moment": "^2.28.0",
+    "moment": "^2.29.0",
     "moment-duration-format": "2.2.2",
     "simple-youtube-api": "^5.2.1"
   },
