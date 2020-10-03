@@ -501,10 +501,10 @@ lavacord@^1.1.9:
     node-fetch "^2.6.0"
     ws "^7.3.0"
 
-lavalink@^2.10.0:
-  version "2.10.0"
-  resolved "https://registry.yarnpkg.com/lavalink/-/lavalink-2.10.0.tgz#c2ce02926fc5e957252b407eb4f87dd67dd32378"
-  integrity sha512-3fgyzeHm98rL+S8lMsJKL3pIOkYNVGWLBdkm6U5Sk2KWHGKgKZnmLXWIyvVD3Yqrz4PzER0MWtEk3LknQ4VjCw==
+lavalink@^2.10.2:
+  version "2.10.2"
+  resolved "https://registry.yarnpkg.com/lavalink/-/lavalink-2.10.2.tgz#d189dee89a9a25b872dc8725c026da58b1a3c2ab"
+  integrity sha512-BtZOKsgiFGQ9BMNs96kR/M2cF/z0ZjZsf8zBy3y+89eJlaha66lzw+DV4ACOAk3SkSq99otuLZDSzbmOe4Di3w==
   dependencies:
     backoff "^2.5.0"
     ws "^6.0.0"
