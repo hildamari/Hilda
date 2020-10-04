@@ -4,7 +4,6 @@ module.exports = class extends Command {
 
     constructor(...args) {
         super(...args, { 
-            aliases: 'delete',
             description: 'Delete a song from the queue',
             usage: '<number:integer>'
         });
