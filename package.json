@@ -20,7 +20,7 @@
     "dotenv": "^8.2.0",
     "eightball": "^1.0.1",
     "ffmpeg-static": "^4.2.7",
-    "fuse.js": "^6.4.2",
+    "fuse.js": "^6.4.3",
     "klasa": "github:dirigeants/klasa#settings",
     "klasa-dashboard-hooks": "kyranet/klasa-dashboard-hooks#master",
     "lavacord": "^1.1.9",
