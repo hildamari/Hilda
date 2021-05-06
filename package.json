@@ -17,7 +17,7 @@
     "dblapi.js": "^2.4.1",
     "discord.js": "discordjs/discord.js#fe7df708e44e0280dfaf0f8e457b154781bb5140",
     "discord.js-lavalink": "^2.2.3",
-    "dotenv": "^8.2.0",
+    "dotenv": "^8.6.0",
     "eightball": "^1.0.1",
     "ffmpeg-static": "^4.3.0",
     "fuse.js": "^6.4.6",
