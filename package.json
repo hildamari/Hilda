@@ -16,11 +16,6 @@
 		"fire-emblem",
 		"three-houses"
 	],
-	"bugs": {
-		"url": "https://github.com/hildamari/Hilda/issues"
-	},
-	"repository": "https://github.com/hildamari/Hilda.git",
-  	"homepage": "https://hilda.pw",
 	"scripts": {
 		"build": "tsc -b src",
 		"dev": "yarn build && yarn start",
