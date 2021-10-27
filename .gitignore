@@ -1,29 +1,32 @@
 # node_modules
-node_modules
+node_modules/
 
-# environment variables
-src/data/.env
+# dist
+dist/
 
-# txt files
-*.txt
-*.rtf
+# .env
+src/lib/data/.env
+src/lib/data/.env.development
 
-# logs
-*.log
-logs/
+# config
+src/config.ts
 
-# .DS_Store
+# DS_Store
 .DS_Store
 
-# pm2 stuff
-ecosystem.config.js
+# error logs
+yarn-error.log
 
-# gh-pages stuff
-gh-pages
-gh-pages.pub
+# text documents
+*.rtf
 
-# bwd folder
-src/bwd/provider/json/clientStorage/*
-src/bwd/provider/json/guilds/*.json
-src/bwd/provider/json/users/*.json
-bwd/
+# basic command and test copy file
+src/basic command.ts
+src/commands/Test/test copy.ts
+src/commands/Test/basic command.ts
+
+# stash.patch
+stash.patch
+
+# .orig files
+*.orig
