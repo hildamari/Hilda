@@ -4,7 +4,7 @@ import { Pool } from 'pg';
 
 export const NAME = '';
 export const PREFIX = '';
-export const OWNER_ID = '';
+export const OWNER = '';
 export const CLIENT_ID = '';
 export const CLIENT_SECRET = '';
 
