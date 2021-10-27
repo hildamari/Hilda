@@ -3,7 +3,7 @@ name: Continuous Integration
 on:
   push:
     branches:
-      - main
+      - sapphire_rewrite
   pull_request:
 
 jobs:
