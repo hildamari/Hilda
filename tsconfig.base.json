@@ -1,0 +1,23 @@
+{
+	"extends": "@sapphire/ts-config",
+	"compilerOptions": {
+		"target": "ESNext",
+		"inlineSources": true,
+		"sourceMap": true,
+		"allowJs": true,
+		"resolveJsonModule": true,
+		"esModuleInterop": true,
+		"moduleResolution": "node",
+        "lib": ["DOM"],
+        "removeComments": true
+	},
+	"watchOptions": {
+		// Use native file system events for files and directories
+		"watchFile": "useFsEvents",
+		"watchDirectory": "useFsEvents",
+
+		// Poll files for updates more frequently
+		// when they're updated a lot.
+		"fallbackPolling": "dynamicPriority"
+	}
+}
