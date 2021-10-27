@@ -24,6 +24,6 @@ export class Hello extends HildaSlashCommand {
 		// 	text += x + ' ';
 		// }
 
-		await interaction.reply("text");
+		await interaction.reply("Hi!");
 	}
 }
