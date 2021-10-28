@@ -41,7 +41,7 @@ export class HildaClient extends SapphireClient {
 		})
 		container.database.connect((err: any) => {
 			if (err) throw err;
-			console.log('Connected to PostgresSQL');
+			this.logger.info('Connected to PostgresSQL');
 		})
 		return super.login(token);
 	}

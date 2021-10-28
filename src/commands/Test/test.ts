@@ -10,15 +10,18 @@ import HildaCommand from '#lib/HildaCommand';
 })
 export default class TestCommand extends HildaCommand {
     public async messageRun(message: Message) {
-        const selectQuery = `SELECT id, prefix FROM guild WHERE id=${message.guild?.id}`;
-        this.container.database.query(selectQuery, (err, res) => {
-			if (err) {
-				return console.log(err.stack);
-			} else {
-				const { prefix } = res.rows[0];
-                console.log(prefix);
-            }
-        })
+        this.container.logger.error(message.id)
+        this.container.logger.info(message.id)
+        // this.container.logger.write()
+        // const selectQuery = `SELECT id, prefix FROM guild WHERE id=${message.guild?.id}`;
+        // this.container.database.query(selectQuery, (err, res) => {
+		// 	if (err) {
+		// 		return console.log(err.stack);
+		// 	} else {
+		// 		const { prefix } = res.rows[0];
+        //         console.log(prefix);
+        //     }
+        // })
         
     }
 }

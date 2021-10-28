@@ -12,12 +12,12 @@ export class GuildCreate extends Listener {
 		};
 		this.container.database.query(selectQuery, (err, res) => {
 			if (err) {
-				return console.log(err.stack);
+				return this.container.logger.error(err.stack);
 			} else {
                 if(res.rows[0] === undefined) {
                     this.container.database.query(insertIntoQuery, (err) => {
                         if (err) {
-                            return console.log(err.stack);
+                            return this.container.logger.error(err.stack);
                         } else {
                             this.container.logger.info('Successfully added guild to database');
                         }

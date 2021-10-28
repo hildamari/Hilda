@@ -8,7 +8,7 @@ export class UserEvent extends Listener<'mentionPrefixOnly'> {
 		const selectQuery = `SELECT id, prefix FROM guild WHERE id=${message.guild?.id}`;
 			POOL.query(selectQuery, (err, res) => {
 				if (err) {
-					return console.log(err.stack);
+					return this.container.logger.error(err.stack);
 				} else {
 					const { prefix } = res.rows[0];
 					return message.channel.send(prefix ? `My prefix in this guild is: \`${prefix}\`` : 'You do not need a prefix in DMs.');

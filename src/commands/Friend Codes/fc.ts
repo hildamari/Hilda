@@ -23,11 +23,11 @@ export class FriendCodeCommand extends SubCommandPluginCommand {
         
         this.container.database.query(selectUserQuery, (err, res) => {
             if (err) {
-				return console.log(err.stack);
+				return this.container.logger.error(err.stack);
 			} else {
                 if(id === message.author.id) {
                     this.container.database.query(selectGuildQuery, (err, res) => {
-                        if (err) return console.log(err.stack);
+                        if (err) return this.container.logger.error(err.stack);
                         prefix = res.rows[0].prefix;
                         return message.channel.send(`You can't view your own friend code with this option. Please use \`${prefix}fc\` to view your own.`)
                     })
@@ -53,7 +53,7 @@ export class FriendCodeCommand extends SubCommandPluginCommand {
         const id = message.author.id as string;
         const fc = await args.pick('string').catch(() => null);
         const switch_name = await args.pick('string').catch(() => null);
-        // console.log(fc, switch_name)
+        // this.container.logger.info(fc, switch_name)
         const selectQuery = `SELECT id, switch_fc, switch_name FROM "user" WHERE id=${id}`;
         const insertIntoQuery = {
 			text: 'INSERT INTO "user"(id) VALUES($1)',
@@ -65,12 +65,12 @@ export class FriendCodeCommand extends SubCommandPluginCommand {
         else {
             POOL.query(selectQuery, (err, res) => {
 				if (err) {
-					return console.log(err.stack);
+					return this.container.logger.error(err.stack);
 				} else if (res.rows[0] === undefined) {
 					POOL.query(insertIntoQuery);
 					POOL.query(updateQuery, (err) => {
 						if (err) {
-							return console.log(err.stack);
+							return this.container.logger.error(err.stack);
 						} else {
 							return message.channel.send(`Your Nintendo Switch FC been set to ${fc} and your Switch name has been set to ${switch_name}`);
 						}
@@ -89,7 +89,7 @@ export class FriendCodeCommand extends SubCommandPluginCommand {
         // const selectQuery = `SELECT id, prefix, quotechannel, adminrole, modrole, disabledcommands FROM guild WHERE id=${id}`;
         POOL.query(selectQuery, (err, res) => {
 			if (err) {
-				return console.log(err.stack);
+				return this.container.logger.info(err.stack);
 			} else {
 				let switch_fc = res.rows[0].switch_fc;
                 let switch_name = res.rows[0].switch_name;

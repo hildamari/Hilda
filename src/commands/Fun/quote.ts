@@ -20,7 +20,7 @@ export default class QuoteCommand extends HildaCommand {
             const selectQuery = `SELECT id, prefix, quotechannel FROM guild WHERE id=${id}`;
 		this.container.database.query(selectQuery, (err, res) => {
 			if (err) {
-				return console.log(err.stack);
+				return this.container.logger.error(err.stack);
 			} else {
 				let quoteChannel = res.rows[0].quotechannel;
                 let prefix = res.rows[0].prefix;
@@ -76,7 +76,7 @@ export default class QuoteCommand extends HildaCommand {
         // const messageID = await args.pick('string');
         
         
-        // console.log(messageID)
+        // this.container.logger.info(messageID)
 		
     }
 }
