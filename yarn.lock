@@ -145,6 +145,16 @@
     "@sapphire/utilities" "^3.0.7"
     tslib "^2.3.1"
 
+"@sapphire/discord.js-utilities@^4.1.2":
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/@sapphire/discord.js-utilities/-/discord.js-utilities-4.1.2.tgz#130c61d7834df2fcbcbb7f7a1972f534a407e407"
+  integrity sha512-ZSIl2soIN1/4lEtGou0nqVmPZ0suLm8m29r0OJslDPc3CIv5tjTZ+kj52F2cHqo4o8v9jpBEQFTIQi5jH08GYQ==
+  dependencies:
+    "@sapphire/discord-utilities" "^2.2.3"
+    "@sapphire/time-utilities" "^1.4.8"
+    "@sapphire/utilities" "^3.0.8"
+    tslib "^2.3.1"
+
 "@sapphire/eslint-config@^4.0.4":
   version "4.0.4"
   resolved "https://registry.yarnpkg.com/@sapphire/eslint-config/-/eslint-config-4.0.4.tgz#eb07581768dca9e7f3a37ffee125aba3ceda24fd"
@@ -249,6 +259,13 @@
   dependencies:
     "@sapphire/utilities" "^3.0.7"
 
+"@sapphire/time-utilities@^1.4.8":
+  version "1.4.8"
+  resolved "https://registry.yarnpkg.com/@sapphire/time-utilities/-/time-utilities-1.4.8.tgz#cfe9ac72a7902b2f8a8daa684a86a94abf5a31e1"
+  integrity sha512-mSAH8t5Ourn40+26G1ogHWQN6ZaVl5KgMTVMGpynvK01foPQQQuplHum4x3Es2w/U5HQ8ygluFlLrh/QvDDhxA==
+  dependencies:
+    "@sapphire/utilities" "^3.0.8"
+
 "@sapphire/ts-config@^3.1.4":
   version "3.1.4"
   resolved "https://registry.yarnpkg.com/@sapphire/ts-config/-/ts-config-3.1.4.tgz#36845b6a6cd1621bd0fcde0cee6273773c497939"
@@ -275,6 +292,11 @@
   version "3.0.6"
   resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-3.0.6.tgz#ba14fcd6ca19a2665b78335d28477241f99494ea"
   integrity sha512-veCUmM1Q/zSscv223IveJBaQ/HlENycsmmLnakL79EWpAFnnayycrsa00rMDRUfqgizTJ2rsqoH0JVqqRbxKiA==
+
+"@sapphire/utilities@^3.0.8":
+  version "3.0.8"
+  resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-3.0.8.tgz#9e00f0872da0f39aed6b481a08028898dd764b00"
+  integrity sha512-qgksAkrIp6OMvxN6YjGEzB3M6iZWZjGvU3CIcULflNQR20efs9aupYCa7Tkb9Mp0bSw4AX0SZ9PRQJ5oJ340YQ==
 
 "@sindresorhus/is@^4.0.1", "@sindresorhus/is@^4.2.0":
   version "4.2.0"
