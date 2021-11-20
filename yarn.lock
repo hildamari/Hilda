@@ -145,14 +145,14 @@
     "@sapphire/utilities" "^3.0.7"
     tslib "^2.3.1"
 
-"@sapphire/discord.js-utilities@^4.1.2":
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/@sapphire/discord.js-utilities/-/discord.js-utilities-4.1.2.tgz#130c61d7834df2fcbcbb7f7a1972f534a407e407"
-  integrity sha512-ZSIl2soIN1/4lEtGou0nqVmPZ0suLm8m29r0OJslDPc3CIv5tjTZ+kj52F2cHqo4o8v9jpBEQFTIQi5jH08GYQ==
+"@sapphire/discord.js-utilities@^4.1.3":
+  version "4.1.3"
+  resolved "https://registry.yarnpkg.com/@sapphire/discord.js-utilities/-/discord.js-utilities-4.1.3.tgz#a8bfa396e1e14087c79e607901399b931218b9ef"
+  integrity sha512-4fZZWxLLdMyU3+zFiVxMdFZ8UMD4iNxWfHlYgNuLbCgKBXAwBAOJ8Leq+ub+vNCOtQQ23Qayw+Qq38+W1bzvew==
   dependencies:
     "@sapphire/discord-utilities" "^2.2.3"
-    "@sapphire/time-utilities" "^1.4.8"
-    "@sapphire/utilities" "^3.0.8"
+    "@sapphire/time-utilities" "^1.4.9"
+    "@sapphire/utilities" "^3.1.0"
     tslib "^2.3.1"
 
 "@sapphire/eslint-config@^4.0.5":
@@ -266,6 +266,13 @@
   dependencies:
     "@sapphire/utilities" "^3.0.8"
 
+"@sapphire/time-utilities@^1.4.9":
+  version "1.4.9"
+  resolved "https://registry.yarnpkg.com/@sapphire/time-utilities/-/time-utilities-1.4.9.tgz#d9909482e9bd76bf733b9aeeb06dcea50e3f6df1"
+  integrity sha512-wskXgmtC6v3uR5TqWwtTBSa2NfAYFHw/dLCM/EQnawPu0fNAqi/LHZeP/FTx/mpgYxkkVeNqwz3v/ATcaG/xOw==
+  dependencies:
+    "@sapphire/utilities" "^3.1.0"
+
 "@sapphire/ts-config@^3.1.4":
   version "3.1.4"
   resolved "https://registry.yarnpkg.com/@sapphire/ts-config/-/ts-config-3.1.4.tgz#36845b6a6cd1621bd0fcde0cee6273773c497939"
@@ -297,6 +304,11 @@
   version "3.0.8"
   resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-3.0.8.tgz#9e00f0872da0f39aed6b481a08028898dd764b00"
   integrity sha512-qgksAkrIp6OMvxN6YjGEzB3M6iZWZjGvU3CIcULflNQR20efs9aupYCa7Tkb9Mp0bSw4AX0SZ9PRQJ5oJ340YQ==
+
+"@sapphire/utilities@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-3.1.0.tgz#50f18c8ae10535c4fde6b2c68c2a45262c45756f"
+  integrity sha512-Vwsd567hZ1LPDh791r4DHwxlO1EzUefjYhNj+kwbliHWK2TVPhMvF5v1eZKtUCgdBmobqa8CBPwCwymHstuj5w==
 
 "@sindresorhus/is@^4.0.1", "@sindresorhus/is@^4.2.0":
   version "4.2.0"
