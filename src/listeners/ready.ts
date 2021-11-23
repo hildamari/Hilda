@@ -28,7 +28,10 @@ export class Ready extends Listener {
 		this.container.logger.info(`Bot is up and running as ${username}#${discrim}!`);
 		// this.container.logger.info(this.container.client.options.defaultPrefix)
 		this.printBanner();
-		this.printStoreDebugInformation();
+		if(DEV) {
+			this.printStoreDebugInformation();
+		}
+		
 	}
 
 	private printBanner() {
