@@ -200,12 +200,12 @@
     "@skyra/editable-commands" "^2.1.0"
     tslib "^2.3.1"
 
-"@sapphire/plugin-logger@^2.0.2":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@sapphire/plugin-logger/-/plugin-logger-2.0.2.tgz#e691b6d9bd3a4391abbe5193e68951d7c7e12914"
-  integrity sha512-qhfuDRjtUGl99WQRk60Vhh2D6togMSHlRV4s3e6HyLMGDKYdKY+hTVmBL1LboK+tAFn89t5dXlupwPCfoMyC+A==
+"@sapphire/plugin-logger@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@sapphire/plugin-logger/-/plugin-logger-2.1.0.tgz#4a80e3e19f4f7adc56ebe6bf417f7b3ee320a585"
+  integrity sha512-j67lcwSuuRt0lZnhxyWLMSBuUlAoDL9QLFUWC4uxA6qwoulZtdWehREbj8WTXVKZ4yM9M4aSV+OEaQDB0qKUEg==
   dependencies:
-    "@sapphire/time-utilities" "^1.4.7"
+    "@sapphire/time-utilities" "^1.4.9"
     colorette "^2.0.16"
     tslib "^2.3.1"
 
@@ -242,13 +242,6 @@
   dependencies:
     tslib "^2.3.1"
 
-"@sapphire/time-utilities@^1.4.7":
-  version "1.4.7"
-  resolved "https://registry.yarnpkg.com/@sapphire/time-utilities/-/time-utilities-1.4.7.tgz#1bd6f16c9e1eb4ca9eb38287a20c81a3183e858b"
-  integrity sha512-Qw3Q7nQG75bJS9hGw2EbU2pfaXpTHWTMaRSjRVtl3bbV70ygle7IUN7JvDY7Q4gKihpXv/oTfm+i9L9XWaJqKA==
-  dependencies:
-    "@sapphire/utilities" "^3.0.7"
-
 "@sapphire/time-utilities@^1.4.9":
   version "1.4.9"
   resolved "https://registry.yarnpkg.com/@sapphire/time-utilities/-/time-utilities-1.4.9.tgz#d9909482e9bd76bf733b9aeeb06dcea50e3f6df1"
@@ -273,7 +266,7 @@
     nan "^2.15.0"
     tslib "^2.3.1"
 
-"@sapphire/utilities@3.0.7", "@sapphire/utilities@^3.0.7":
+"@sapphire/utilities@3.0.7":
   version "3.0.7"
   resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-3.0.7.tgz#9e60ba5987cd8ab9126114fc639712dba3ff831d"
   integrity sha512-/l0nsS1Vb4aX+szQiqgfT7VvuJkCvo1ixTNFg7ie80Gv+6ERFKxHpVKl3mRA3IAWFNNjYXOYKCqwH9Fxu15pGg==
