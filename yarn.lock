@@ -117,10 +117,10 @@
   resolved "https://registry.yarnpkg.com/@sapphire/async-queue/-/async-queue-1.1.9.tgz#ce69611c8753c4affd905a7ef43061c7eb95c01b"
   integrity sha512-CbXaGwwlEMq+l1TRu01FJCvySJ1CEFKFclHT48nIfNeZXaAAmmwwy7scUKmYHPUa3GhoMp6Qr1B3eAJux6XgOQ==
 
-"@sapphire/decorators@^3.1.4":
-  version "3.1.4"
-  resolved "https://registry.yarnpkg.com/@sapphire/decorators/-/decorators-3.1.4.tgz#598aca9891691b205cf051912f82ddc0bd436c51"
-  integrity sha512-jZLMlv1rC8YPx9SGJmuip58fimL+FTBhhSmpH0Zwk0mdgsZnWG+3q2OcDg8+Q60VXRNKB9OT0M9KuQeRz0v9TA==
+"@sapphire/decorators@^3.1.5":
+  version "3.1.5"
+  resolved "https://registry.yarnpkg.com/@sapphire/decorators/-/decorators-3.1.5.tgz#7fd0d754fac843a456be187e356e5bf6eaf9ce45"
+  integrity sha512-3tUjTijOEny30Q1CLSdtVfdGhrCsGni1ldbVCJbEOJMlx8maGVvGaUmW049WJ76ToOm8RqjCuVLgW3LVOln+fg==
   dependencies:
     tslib "^2.3.1"
 
