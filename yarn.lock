@@ -231,10 +231,10 @@
   resolved "https://registry.yarnpkg.com/@sapphire/snowflake/-/snowflake-1.3.6.tgz#166e8c5c08d01c861edd7e2edc80b5739741715f"
   integrity sha512-QnzuLp+p9D7agynVub/zqlDVriDza9y3STArBhNiNBUgIX8+GL5FpQxstRfw1jDr5jkZUjcuKYAHxjIuXKdJAg==
 
-"@sapphire/stopwatch@^1.2.4":
-  version "1.2.4"
-  resolved "https://registry.yarnpkg.com/@sapphire/stopwatch/-/stopwatch-1.2.4.tgz#d7eaf7ab53ef9f43c4e4d1eb9185b5792237d8a7"
-  integrity sha512-THiIVTVYZbLloyFeRB0ISWSW275/l6ZatWrf15rYX/qCdTmn5ZyNfJHVZEUnCcO1juCQVEMK5/kXoYrHucxBaQ==
+"@sapphire/stopwatch@^1.2.5":
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/@sapphire/stopwatch/-/stopwatch-1.2.5.tgz#b3051ab78e2194099778b45c61f189135f6f4a16"
+  integrity sha512-1BSxSJviQlDOU/pQox+TTs9DyLA8RnOW5EdzQ+WvOvfXd0OYUujm6JfKYr0wZjaBYP/IygEx4eorNsKbAkTMYg==
   dependencies:
     tslib "^2.3.1"
 
