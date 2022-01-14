@@ -196,12 +196,12 @@
     "@skyra/editable-commands" "^2.1.2"
     tslib "^2.3.1"
 
-"@sapphire/plugin-logger@^2.1.1":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@sapphire/plugin-logger/-/plugin-logger-2.1.1.tgz#0dbb0dee203a97cc5cc6b2a1c33d1368a78e3735"
-  integrity sha512-pTJmKijQOy+CRV72znuECsTqgNsBWngSU1s3VNBj6nwQzAJzeu6G04Q5A0UuB1SGwy7gJh9njfoOvupIgUEaLg==
+"@sapphire/plugin-logger@^2.1.2":
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/@sapphire/plugin-logger/-/plugin-logger-2.1.2.tgz#20e24ab25e93a5c072f4ec7c7a7f66ceee4ae948"
+  integrity sha512-epxK2hay+PJVYWRwSyX/SKXQUjMNMMgbK0nynDwWNeS4EjHb9wKjH4HCR4MXCa7j44K30C5Lu+cjCIFbOnnfjA==
   dependencies:
-    "@sapphire/time-utilities" "^1.5.0"
+    "@sapphire/time-utilities" "^1.5.1"
     colorette "^2.0.16"
     tslib "^2.3.1"
 
