@@ -62,7 +62,7 @@
 		"chokidar": "^3.5.3",
 		"colorette": "^2.0.16",
 		"common-tags": "^1.8.2",
-		"discord-api-types": "^0.26.1",
+		"discord-api-types": "^0.27.0",
 		"discord.js": "^13.6.0",
 		"eightball": "^1.0.1",
 		"node-fetch": "^3.2.0",
