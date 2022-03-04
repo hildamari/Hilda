@@ -43,7 +43,7 @@
 	},
 	"dependencies": {
 		"@discordjs/rest": "^0.3.0",
-		"@sapphire/decorators": "^4.2.5",
+		"@sapphire/decorators": "^4.2.6",
 		"@sapphire/discord.js-utilities": "^4.8.1",
 		"@sapphire/event-iterator": "^1.5.0",
 		"@sapphire/fetch": "^2.1.0",
