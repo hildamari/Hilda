@@ -23,20 +23,20 @@
   resolved "https://registry.yarnpkg.com/@discordjs/collection/-/collection-0.4.0.tgz#b6488286a1cc7b41b644d7e6086f25a1c1e6f837"
   integrity sha512-zmjq+l/rV35kE6zRrwe8BHqV78JvIh2ybJeZavBi5NySjWXqN3hmmAKg7kYMMXSeiWtSsMoZ/+MQi0DiQWy2lw==
 
-"@discordjs/node-pre-gyp@^0.4.1":
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/@discordjs/node-pre-gyp/-/node-pre-gyp-0.4.1.tgz#93c8d1dc391aef8ff116b6daa7bbeffd152f1018"
-  integrity sha512-PLYLPG3R+m9QlMROOjdy2htQq54g6f9vRb1xPfZ97CL53yj0uNTfpB/jtY/AXY6OKNtZtrre5SKjei8Hcc44HQ==
+"@discordjs/node-pre-gyp@^0.4.2":
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/@discordjs/node-pre-gyp/-/node-pre-gyp-0.4.2.tgz#37dd27f8d353eeb87372fcce059c5249550b37ab"
+  integrity sha512-V239Czn+DXFGLhhuccwEDBoTdgMGrRu30dOlzm1GzrSIjwFj01ZJerNX7x+CEX1NG1Q/1gGfOOkeZFNHjycrRA==
   dependencies:
     detect-libc "^1.0.3"
     https-proxy-agent "^5.0.0"
     make-dir "^3.1.0"
-    node-fetch "^2.6.1"
+    node-fetch "^2.6.5"
     nopt "^5.0.0"
-    npmlog "^5.0.0"
+    npmlog "^5.0.1"
     rimraf "^3.0.2"
     semver "^7.3.5"
-    tar "^6.1.8"
+    tar "^6.1.11"
 
 "@discordjs/rest@^0.3.0":
   version "0.3.0"
@@ -275,12 +275,12 @@
     tslib "^2.3.1"
     typescript "^4.6.2"
 
-"@sapphire/type@^2.1.2":
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/@sapphire/type/-/type-2.1.2.tgz#bec6df98b7e70fd3d0dd23e92aa36824afdc72d3"
-  integrity sha512-+QnJFhmGYfUaWavNLTDv5SX5kuG8s0WjHJPOsmZtQO/rvjmixIexz9GmeFT4fJXuHZFUf5GNSAkZ/RO1BSDXjw==
+"@sapphire/type@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@sapphire/type/-/type-2.2.0.tgz#bfd6c96700e8f4f97b98b33cbbb113b6b0a2ced0"
+  integrity sha512-BEm/UStGHPs1UOgFeYct3UzniFOJtdhoRn0pKLI1TioEJfGjbQjoKCcxIEyXwipFavM8WiBTAI/ic+ksG21GEg==
   dependencies:
-    "@discordjs/node-pre-gyp" "^0.4.1"
+    "@discordjs/node-pre-gyp" "^0.4.2"
     nan "^2.15.0"
     tslib "^2.3.1"
 
@@ -1721,7 +1721,7 @@ npm-run-all@^4.1.5:
     shell-quote "^1.6.1"
     string.prototype.padend "^3.0.0"
 
-npmlog@^5.0.0:
+npmlog@^5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/npmlog/-/npmlog-5.0.1.tgz#f06678e80e29419ad67ab964e0fa69959c1eb8b0"
   integrity sha512-AqZtDUWOMKs1G/8lwylVjrdYgqA4d9nu8hc+0gzRxlDb1I10+FHBGMXs6aiQHFdCUUlqH99MUMuLfzWDNDtfxw==
@@ -2262,7 +2262,7 @@ supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
-tar@^6.1.8:
+tar@^6.1.11:
   version "6.1.11"
   resolved "https://registry.yarnpkg.com/tar/-/tar-6.1.11.tgz#6760a38f003afa1b2ffd0ffe9e9abbd0eab3d621"
   integrity sha512-an/KZQzQUkZCkuoAA64hM92X0Urb6VpRhAFllDzz44U2mcD5scmT3zBc4VgVpkugF580+DQn8eAFSyoQt0tznA==
