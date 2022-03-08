@@ -196,10 +196,10 @@
     "@sapphire/utilities" "^3.1.0"
     tslib "^2.3.1"
 
-"@sapphire/plugin-editable-commands@^1.1.3":
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/@sapphire/plugin-editable-commands/-/plugin-editable-commands-1.1.3.tgz#4c0d5e1914c1f5d543f733fa996365b6f2658d6c"
-  integrity sha512-CHNdU/zE9ugaPajygZ/vI8glp1jRKbEVumoWNMOUhzN7bsV3xyAxQa8f4nyDk2/WheKBPXGF/NRVcsDcuPqLPw==
+"@sapphire/plugin-editable-commands@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@sapphire/plugin-editable-commands/-/plugin-editable-commands-1.2.0.tgz#421bf57934a45be8566112e794308027ea293b68"
+  integrity sha512-hvQgyVIvTMWV/PB/tp3oOB0l3SXUWM2yqBZExAxMjXExuoSDm+oFDz+S2rIBZnVqM7csYxDGwxzWnlYHtPRUOQ==
   dependencies:
     "@skyra/editable-commands" "^2.1.2"
     tslib "^2.3.1"
@@ -2357,11 +2357,6 @@ type-fest@^0.20.2:
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.20.2.tgz#1bf207f4b28f91583666cb5fbd327887301cd5f4"
   integrity sha512-Ne+eE4r0/iWnpAxD852z3A+N0Bt5RN//NjJwRd2VFHEmrywxf5vsZlh4R6lixl6B+wz/8d+maTSAkN1FIkI3LQ==
-
-typescript@^4.5.5:
-  version "4.5.5"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.5.5.tgz#d8c953832d28924a9e3d37c73d729c846c5896f3"
-  integrity sha512-TCTIul70LyWe6IJWT8QSYeA54WQe8EjQFU4wY52Fasj5UKx88LNYKCgBEHcOMOrFF1rKGbD8v/xcNWVUq9SymA==
 
 typescript@^4.6.2:
   version "4.6.2"
