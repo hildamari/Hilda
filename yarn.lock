@@ -260,13 +260,6 @@
   dependencies:
     "@sapphire/utilities" "^3.2.1"
 
-"@sapphire/time-utilities@^1.6.0":
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/time-utilities/-/time-utilities-1.6.0.tgz#89624a63861814bd41fe29db80c9dbe9f3625760"
-  integrity sha512-GKS3LdHS7Bec+FUx9cZY88edebK9vdt5rm0VCgc8s17O/WHl5KFcuyXRlWyIF7TLlYe1vBmMIl5YBE1EjHvJBA==
-  dependencies:
-    "@sapphire/utilities" "^3.3.0"
-
 "@sapphire/time-utilities@^1.7.0":
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/@sapphire/time-utilities/-/time-utilities-1.7.0.tgz#c5a502378f7af0ad300e0d306afa5a35ed8e87f8"
@@ -291,7 +284,7 @@
     nan "^2.15.0"
     tslib "^2.3.1"
 
-"@sapphire/utilities@3.3.0", "@sapphire/utilities@^3.3.0":
+"@sapphire/utilities@3.3.0":
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-3.3.0.tgz#62ff0a52cd86bd6169a94b2f217d72da6772a3cd"
   integrity sha512-wWESfB03elALhci3GjcacRh8pnK89Qe5AEKCQplKyTCKabWl64SAFw52hQBth2fMmJStgK1fr87aGhRZAB8DNA==
