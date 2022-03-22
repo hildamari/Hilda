@@ -260,13 +260,6 @@
   dependencies:
     "@sapphire/utilities" "^3.4.0"
 
-"@sapphire/time-utilities@^1.7.1":
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/@sapphire/time-utilities/-/time-utilities-1.7.1.tgz#caeb198d1719d66b6d9dca434075651ca7ed22a5"
-  integrity sha512-0YLA/wPFozKQbmdfrtIOFTKznLINaCnj6NU0ydjKZOtofNa2MWGxwUd6ZtiU0NnxCtwvM7dYLw9H3c/IIeZCzQ==
-  dependencies:
-    "@sapphire/utilities" "^3.5.0"
-
 "@sapphire/time-utilities@^1.7.3":
   version "1.7.3"
   resolved "https://registry.yarnpkg.com/@sapphire/time-utilities/-/time-utilities-1.7.3.tgz#3ae91ed7548429412ed9a4cbdecbf94b98e6288d"
@@ -305,11 +298,6 @@
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-3.4.0.tgz#cc176dbab9d8854ef4ad6e1eba3bdac153758665"
   integrity sha512-d6IWoETMpyTbPgSvH8bDZ2eqVq1/8GhN3LWk/v44Ut4GxFaI5U23ig55DGIUC3z0Ace1TrYFvKKCBnY4NH0RqQ==
-
-"@sapphire/utilities@^3.5.0":
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-3.5.0.tgz#1caf5ae84941b55026298be244afb61b4bbcfe03"
-  integrity sha512-TKB6szXNBlKY9HfkiOvT1p79iQEnXVhr49QwWXgoQpGU9ODXcE1oGOTTAYixmYZLJfRw64+4gGiiUoSE1KiPEw==
 
 "@sapphire/utilities@^3.6.1":
   version "3.6.1"
@@ -364,10 +352,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-16.10.1.tgz#f3647623199ca920960006b3dccf633ea905f243"
   integrity sha512-4/Z9DMPKFexZj/Gn3LylFgamNKHm4K3QDi0gz9B26Uk0c8izYf97B5fxfpspMNkWlFupblKM/nV8+NA9Ffvr+w==
 
-"@types/node@^17.0.21":
-  version "17.0.21"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.21.tgz#864b987c0c68d07b4345845c3e63b75edd143644"
-  integrity sha512-DBZCJbhII3r90XbQxI8Y9IjjiiOGlZ0Hr32omXIZvwwZ7p4DMMXGrKXVyPfuoBOri9XNtL0UK69jYIBIsRX3QQ==
+"@types/node@^17.0.22":
+  version "17.0.22"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.22.tgz#38b6c4b9b2f3ed9f2e376cce42a298fb2375251e"
+  integrity sha512-8FwbVoG4fy+ykY86XCAclKZDORttqE5/s7dyWZKLXTdv3vRy5HozBEinG5IqhvPXXzIZEcTVbuHlQEI6iuwcmw==
 
 "@types/pg@^8.6.5":
   version "8.6.5"
