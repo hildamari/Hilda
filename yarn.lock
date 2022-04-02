@@ -204,12 +204,12 @@
     "@skyra/editable-commands" "^2.1.2"
     tslib "^2.3.1"
 
-"@sapphire/plugin-logger@^2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/plugin-logger/-/plugin-logger-2.2.0.tgz#c06a87dc1d5f99611a63b2972e56a96a21f3ab2e"
-  integrity sha512-r72gFCZnr1AQ71/VXx3DZXSMsPOihAUMWVG+i3klP1KAYKhlNL6veayerTCPxuq6QOL+uFx+yAL09TkifQj4zw==
+"@sapphire/plugin-logger@^2.2.1":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@sapphire/plugin-logger/-/plugin-logger-2.2.1.tgz#95f30dea6f17d519ac65fea1db01d4bcace4bc19"
+  integrity sha512-jaj7RPZ4cm5a4BbapdG20FBDlwRuNHwr/9R97xdML5h1yb4m65WPVZdWHrrjAD79sFwAtFMUfAhHtZMinziWgQ==
   dependencies:
-    "@sapphire/time-utilities" "^1.6.0"
+    "@sapphire/time-utilities" "^1.7.3"
     colorette "^2.0.16"
     tslib "^2.3.1"
 
@@ -253,13 +253,6 @@
   dependencies:
     "@sapphire/utilities" "^3.1.0"
 
-"@sapphire/time-utilities@^1.6.0":
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/time-utilities/-/time-utilities-1.7.0.tgz#c5a502378f7af0ad300e0d306afa5a35ed8e87f8"
-  integrity sha512-4dY8sFd+LOBAF/1ELoAlhetnrjINBIziaDNSNJvmWtxPGlSDjGcYqtDk+rIHwIF9ZnVnWqbshg5Tpne5Hw+X9g==
-  dependencies:
-    "@sapphire/utilities" "^3.4.0"
-
 "@sapphire/time-utilities@^1.7.3":
   version "1.7.3"
   resolved "https://registry.yarnpkg.com/@sapphire/time-utilities/-/time-utilities-1.7.3.tgz#3ae91ed7548429412ed9a4cbdecbf94b98e6288d"
@@ -293,11 +286,6 @@
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-3.1.0.tgz#50f18c8ae10535c4fde6b2c68c2a45262c45756f"
   integrity sha512-Vwsd567hZ1LPDh791r4DHwxlO1EzUefjYhNj+kwbliHWK2TVPhMvF5v1eZKtUCgdBmobqa8CBPwCwymHstuj5w==
-
-"@sapphire/utilities@^3.4.0":
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-3.4.0.tgz#cc176dbab9d8854ef4ad6e1eba3bdac153758665"
-  integrity sha512-d6IWoETMpyTbPgSvH8bDZ2eqVq1/8GhN3LWk/v44Ut4GxFaI5U23ig55DGIUC3z0Ace1TrYFvKKCBnY4NH0RqQ==
 
 "@sapphire/utilities@^3.6.1":
   version "3.6.1"
