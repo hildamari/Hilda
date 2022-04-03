@@ -46,7 +46,7 @@
 		"@sapphire/decorators": "^4.3.3",
 		"@sapphire/discord.js-utilities": "^4.9.3",
 		"@sapphire/event-iterator": "^1.6.1",
-		"@sapphire/fetch": "^2.3.0",
+		"@sapphire/fetch": "^2.3.1",
 		"@sapphire/framework": "^2.3.0",
 		"@sapphire/plugin-editable-commands": "^1.2.0",
 		"@sapphire/plugin-logger": "^2.2.1",
