@@ -174,10 +174,10 @@
   dependencies:
     tslib "^2.3.1"
 
-"@sapphire/fetch@^2.3.1":
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/@sapphire/fetch/-/fetch-2.3.1.tgz#e38a506705c490354db5c53b12f09450e3de8a5d"
-  integrity sha512-mOJ/1Xj7gRqKda3VKr65obHt+Iej9PVmIgpBQBHbvC8IZq599KPhbKcxHXjvh3I0cs+456DhU2BjlC6EkjJsQQ==
+"@sapphire/fetch@^2.4.0":
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/@sapphire/fetch/-/fetch-2.4.0.tgz#333ef10cbb29d5ddb4fb502606aa2b58ee1a9b83"
+  integrity sha512-YobIZa7d5rXZHL4KH9xRWOoBtBJOUnNYLimzTwq0puYXjtO4MTOojbVlxfwVs+b65/7j//OzGB/qqLn1xJtP4A==
   dependencies:
     cross-fetch "^3.1.5"
 
