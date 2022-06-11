@@ -120,12 +120,10 @@
   dependencies:
     tslib "^2.4.0"
 
-"@sapphire/discord-utilities@^2.11.1":
-  version "2.11.1"
-  resolved "https://registry.yarnpkg.com/@sapphire/discord-utilities/-/discord-utilities-2.11.1.tgz#30f24548e3186d946c36f7f85f548d6272e0d3b6"
-  integrity sha512-W9eu1B5SBW+XuxIfzayKZ4eWeL/FIvA+zqBDSA0mV5EtiH2k0VQ+bpjgwi2iANySEzIdzON4fqwUYE42ujaDdQ==
-  dependencies:
-    twemoji-parser "^14.0.0"
+"@sapphire/discord-utilities@^2.11.2":
+  version "2.11.2"
+  resolved "https://registry.yarnpkg.com/@sapphire/discord-utilities/-/discord-utilities-2.11.2.tgz#e30c82449f877bd9d99df05d986416e41325d54e"
+  integrity sha512-avkmhAw8kvKogYuTx3QSAnoYhQfJ5/fMHVOtM+7QztDz81y2VXMYySLOp4azboXqhR76XOk5lyHi/+Ho+FIqmQ==
 
 "@sapphire/discord-utilities@^2.4.0":
   version "2.4.0"
@@ -144,12 +142,12 @@
     "@sapphire/utilities" "^3.1.0"
     tslib "^2.3.1"
 
-"@sapphire/discord.js-utilities@^4.11.1":
-  version "4.11.1"
-  resolved "https://registry.yarnpkg.com/@sapphire/discord.js-utilities/-/discord.js-utilities-4.11.1.tgz#64b4122500ad38fb5bb4ee3705f6bae3471f9857"
-  integrity sha512-qDWSbSU214G86HYbNieqohuHyCJqYIMItvdGb8/nhHGrUePzD8qphGMDADxXLZS8zth+2vHLO70yX8QjF1QPiA==
+"@sapphire/discord.js-utilities@^4.11.2":
+  version "4.11.2"
+  resolved "https://registry.yarnpkg.com/@sapphire/discord.js-utilities/-/discord.js-utilities-4.11.2.tgz#03688904da68dd27dc0b6be424ef0fbde5a7bb1e"
+  integrity sha512-PEgwxIxXZgghLkJ6mpUGwrKT8kugaOB/fNiCyw0FhzUo1VPHJsHVKSGD9OSaFMsFTdUO4m9K6alTr3sjloqMTw==
   dependencies:
-    "@sapphire/discord-utilities" "^2.11.1"
+    "@sapphire/discord-utilities" "^2.11.2"
     "@sapphire/time-utilities" "^1.7.4"
     "@sapphire/utilities" "^3.6.2"
     tslib "^2.4.0"
@@ -2470,11 +2468,6 @@ twemoji-parser@^13.1.0:
   version "13.1.0"
   resolved "https://registry.yarnpkg.com/twemoji-parser/-/twemoji-parser-13.1.0.tgz#65e7e449c59258791b22ac0b37077349127e3ea4"
   integrity sha512-AQOzLJpYlpWMy8n+0ATyKKZzWlZBJN+G0C+5lhX7Ftc2PeEVdUU/7ns2Pn2vVje26AIZ/OHwFoUbdv6YYD/wGg==
-
-twemoji-parser@^14.0.0:
-  version "14.0.0"
-  resolved "https://registry.yarnpkg.com/twemoji-parser/-/twemoji-parser-14.0.0.tgz#13dabcb6d3a261d9efbf58a1666b182033bf2b62"
-  integrity sha512-9DUOTGLOWs0pFWnh1p6NF+C3CkQ96PWmEFwhOVmT3WbecRC+68AIqpsnJXygfkFcp4aXbOp8Dwbhh/HQgvoRxA==
 
 type-check@^0.4.0, type-check@~0.4.0:
   version "0.4.0"
