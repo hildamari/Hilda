@@ -142,10 +142,10 @@
     "@sapphire/utilities" "^3.1.0"
     tslib "^2.3.1"
 
-"@sapphire/discord.js-utilities@^4.11.2":
-  version "4.11.2"
-  resolved "https://registry.yarnpkg.com/@sapphire/discord.js-utilities/-/discord.js-utilities-4.11.2.tgz#03688904da68dd27dc0b6be424ef0fbde5a7bb1e"
-  integrity sha512-PEgwxIxXZgghLkJ6mpUGwrKT8kugaOB/fNiCyw0FhzUo1VPHJsHVKSGD9OSaFMsFTdUO4m9K6alTr3sjloqMTw==
+"@sapphire/discord.js-utilities@^4.11.3":
+  version "4.11.3"
+  resolved "https://registry.yarnpkg.com/@sapphire/discord.js-utilities/-/discord.js-utilities-4.11.3.tgz#78bc552fe0d7e7ccecde65ad83e4ba3d39b230d0"
+  integrity sha512-ZDQ3Bcw0gemMWmLwUk/dJm/LCPgLyYzJoP3muBJDkZXsyOpmTdJDYh98qxXGaxZ+bAFaqwc2HPWuiTZQNjmEsQ==
   dependencies:
     "@sapphire/discord-utilities" "^2.11.2"
     "@sapphire/time-utilities" "^1.7.4"
