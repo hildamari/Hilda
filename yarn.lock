@@ -209,14 +209,14 @@
     "@skyra/editable-commands" "^2.1.2"
     tslib "^2.3.1"
 
-"@sapphire/plugin-logger@^2.2.1":
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/@sapphire/plugin-logger/-/plugin-logger-2.2.1.tgz#95f30dea6f17d519ac65fea1db01d4bcace4bc19"
-  integrity sha512-jaj7RPZ4cm5a4BbapdG20FBDlwRuNHwr/9R97xdML5h1yb4m65WPVZdWHrrjAD79sFwAtFMUfAhHtZMinziWgQ==
+"@sapphire/plugin-logger@^2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@sapphire/plugin-logger/-/plugin-logger-2.2.3.tgz#a18a369a84a0545b9e6c960f1330f23e1acc8f8c"
+  integrity sha512-RDHxCEtMLACylBRR6PqBLVE5KVd7vyf1HsZ+RJSLoWfFU3yY9GNIZDiHMVl8gX+yXHSmjeQXyowsE4ory4QYyA==
   dependencies:
-    "@sapphire/time-utilities" "^1.7.3"
-    colorette "^2.0.16"
-    tslib "^2.3.1"
+    "@sapphire/time-utilities" "^1.7.4"
+    colorette "^2.0.19"
+    tslib "^2.4.0"
 
 "@sapphire/plugin-subcommands@^2.2.0":
   version "2.2.0"
@@ -263,13 +263,6 @@
   dependencies:
     "@sapphire/utilities" "^3.1.0"
 
-"@sapphire/time-utilities@^1.7.3":
-  version "1.7.3"
-  resolved "https://registry.yarnpkg.com/@sapphire/time-utilities/-/time-utilities-1.7.3.tgz#3ae91ed7548429412ed9a4cbdecbf94b98e6288d"
-  integrity sha512-D3YQ6tqeq7l7cdz1jhFTwHmpFPJ1+yCHS6wyWPy82+uJ0fILob8JfRWSYtLI1YGsQnaDdvCbARbLAWEobg2vMA==
-  dependencies:
-    "@sapphire/utilities" "^3.6.1"
-
 "@sapphire/time-utilities@^1.7.4":
   version "1.7.4"
   resolved "https://registry.yarnpkg.com/@sapphire/time-utilities/-/time-utilities-1.7.4.tgz#5f47de3741b77ae9752e8e45958461d92bc4420a"
@@ -303,11 +296,6 @@
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-3.1.0.tgz#50f18c8ae10535c4fde6b2c68c2a45262c45756f"
   integrity sha512-Vwsd567hZ1LPDh791r4DHwxlO1EzUefjYhNj+kwbliHWK2TVPhMvF5v1eZKtUCgdBmobqa8CBPwCwymHstuj5w==
-
-"@sapphire/utilities@^3.6.1":
-  version "3.6.1"
-  resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-3.6.1.tgz#dff636c3f767b1cbab7c1ca7d18d021dd1742355"
-  integrity sha512-pV5q7Qj0TS5hspfP+TFHyLll4icz5dI4qWCHek6p/rA5ApeZ2yTzzlC1oJKCfpmj0+e9mWWoV8mxsWiNAf1Tkg==
 
 "@sindresorhus/is@^4.6.0":
   version "4.6.0"
@@ -755,6 +743,11 @@ colorette@^2.0.16:
   version "2.0.16"
   resolved "https://registry.yarnpkg.com/colorette/-/colorette-2.0.16.tgz#713b9af84fdb000139f04546bd4a93f62a5085da"
   integrity sha512-hUewv7oMjCp+wkBv5Rm0v87eJhq4woh5rSR+42YSQJKecCqgIqNkZ6lAlQms/BwHPJA5NKMRlpxPRv0n8HQW6g==
+
+colorette@^2.0.19:
+  version "2.0.19"
+  resolved "https://registry.yarnpkg.com/colorette/-/colorette-2.0.19.tgz#cdf044f47ad41a0f4b56b3a0d5b4e6e1a2d5a798"
+  integrity sha512-3tlv/dIP7FWvj3BsbHrGLJ6l/oKh1O3TcgBqMn+yyCagOxc23fyzDS6HypQbgxWbkpDnf52p1LuR4eWDQ/K9WQ==
 
 combined-stream@^1.0.8:
   version "1.0.8"
