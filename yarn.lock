@@ -201,13 +201,13 @@
     "@sapphire/utilities" "^3.1.0"
     tslib "^2.3.1"
 
-"@sapphire/plugin-editable-commands@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/plugin-editable-commands/-/plugin-editable-commands-1.2.0.tgz#421bf57934a45be8566112e794308027ea293b68"
-  integrity sha512-hvQgyVIvTMWV/PB/tp3oOB0l3SXUWM2yqBZExAxMjXExuoSDm+oFDz+S2rIBZnVqM7csYxDGwxzWnlYHtPRUOQ==
+"@sapphire/plugin-editable-commands@^1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@sapphire/plugin-editable-commands/-/plugin-editable-commands-1.2.2.tgz#2af02a4e635454839d1c31b32d94bcc4715da18d"
+  integrity sha512-oy5DhHZCwfSVATF7BI7OpodluzPc5i/Yia7mRehcTbksL6hvG2fqB2osrjPQPqQd34YUbnpu+bRlr3iGq8p6LA==
   dependencies:
-    "@skyra/editable-commands" "^2.1.2"
-    tslib "^2.3.1"
+    "@skyra/editable-commands" "^2.1.3"
+    tslib "^2.4.0"
 
 "@sapphire/plugin-logger@^2.2.1":
   version "2.2.1"
@@ -314,10 +314,10 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-4.6.0.tgz#3c7c9c46e678feefe7a2e5bb609d3dbd665ffb3f"
   integrity sha512-t09vSN3MdfsyCHoFcTRCH/iUtG7OJ0CsjzB8cjAmKc/va/kIgeDI/TxsigdncE/4be734m0cvIYwNaV4i2XqAw==
 
-"@skyra/editable-commands@^2.1.2":
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/@skyra/editable-commands/-/editable-commands-2.1.2.tgz#93ea2502d00d715d4b6095f7b136f3eb97efb1d1"
-  integrity sha512-oS1fwZ/lIreqjw3V2fZthxxBWijAl+wZInExWjw1kC3eeF1ZKr/Sz9kqt554Aop9f7DjDtdV8vVqKbGl5iOx6A==
+"@skyra/editable-commands@^2.1.3":
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/@skyra/editable-commands/-/editable-commands-2.1.3.tgz#14086bbf7df4025edf7c4f6b3519a11f366e343b"
+  integrity sha512-L1Tg+LAnmbg2Ai8tklndRv4JUZI7cTD5jd8UgYfQc3qBcs2yTe+WKHc+bsuyISJquW6V841QoEwbxJsAb8cg1w==
 
 "@top-gg/sdk@^3.1.3":
   version "3.1.3"
