@@ -52,7 +52,7 @@
 		"@sapphire/plugin-logger": "^2.2.1",
 		"@sapphire/plugin-subcommands": "^2.2.2",
 		"@sapphire/stopwatch": "^1.4.1",
-		"@sapphire/time-utilities": "^1.7.4",
+		"@sapphire/time-utilities": "^1.7.5",
 		"@sapphire/type": "^2.2.4",
 		"@sapphire/utilities": "3.6.2",
 		"@top-gg/sdk": "^3.1.3",
