@@ -204,10 +204,10 @@
     "@sapphire/utilities" "^3.1.0"
     tslib "^2.3.1"
 
-"@sapphire/plugin-editable-commands@^1.2.2":
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/@sapphire/plugin-editable-commands/-/plugin-editable-commands-1.2.2.tgz#2af02a4e635454839d1c31b32d94bcc4715da18d"
-  integrity sha512-oy5DhHZCwfSVATF7BI7OpodluzPc5i/Yia7mRehcTbksL6hvG2fqB2osrjPQPqQd34YUbnpu+bRlr3iGq8p6LA==
+"@sapphire/plugin-editable-commands@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@sapphire/plugin-editable-commands/-/plugin-editable-commands-2.0.0.tgz#e1248378ba91e62951ce9c79ca475a58d8c3fa04"
+  integrity sha512-kxiZg61SYC1EOF1Xz6KTSFyypYA0yU/jsdy+czJv6Dmw7o1Anr6Tkp6eLgO4+43gGke07Kbdi6H/980Onm9png==
   dependencies:
     "@skyra/editable-commands" "^2.1.3"
     tslib "^2.4.0"
