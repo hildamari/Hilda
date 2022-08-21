@@ -49,7 +49,7 @@
 		"@sapphire/fetch": "^2.4.1",
 		"@sapphire/framework": "^2.3.0",
 		"@sapphire/plugin-editable-commands": "^1.2.2",
-		"@sapphire/plugin-logger": "^2.2.1",
+		"@sapphire/plugin-logger": "^3.0.0",
 		"@sapphire/plugin-subcommands": "^2.2.2",
 		"@sapphire/stopwatch": "^1.4.1",
 		"@sapphire/time-utilities": "^1.7.6",
