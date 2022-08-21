@@ -283,6 +283,13 @@
   dependencies:
     "@sapphire/utilities" "^3.7.0"
 
+"@sapphire/time-utilities@^1.7.6":
+  version "1.7.6"
+  resolved "https://registry.yarnpkg.com/@sapphire/time-utilities/-/time-utilities-1.7.6.tgz#846f1116fb36cc12a07b07d13daf0a7e4405ab10"
+  integrity sha512-VsMVYFmS9Iu0buPs7gwn1D6vqIC04ezVMBRIo8vRTB2s7UNN/vQReX2cLABFoDVqs7RHQsvr2DPoTWHEDYw9YA==
+  dependencies:
+    "@sapphire/utilities" "^3.9.2"
+
 "@sapphire/ts-config@^3.3.4":
   version "3.3.4"
   resolved "https://registry.yarnpkg.com/@sapphire/ts-config/-/ts-config-3.3.4.tgz#dabab6a3c1a862ea753b8d4e67a6ac07e9f5d7a7"
@@ -324,6 +331,11 @@
   version "3.9.0"
   resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-3.9.0.tgz#c0a30d3e743c0331daf1e96f9031b6ddb9fa36c2"
   integrity sha512-umKJMiss9Urq3ZTuskuXaZkqnRhypxAsEFzxC249z5QrBuhNeS9pELXhVs8L9f2mcVdsHQw+0mMSJ+NX99tuig==
+
+"@sapphire/utilities@^3.9.2":
+  version "3.9.2"
+  resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-3.9.2.tgz#fba479e5d7ee7e3a604caa6c98d48bce0706d45d"
+  integrity sha512-CG8mFPse+VDUVenj3PqZyh9PATFd/pzrQaX2gZqv0f7AzGnlyfm/ygh0tnQRVKpMDFr39uCQqVse8i0f51DAkg==
 
 "@skyra/editable-commands@^2.1.3":
   version "2.1.3"
