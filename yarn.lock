@@ -246,11 +246,12 @@
     colorette "^2.0.16"
     tslib "^2.3.1"
 
-"@sapphire/plugin-subcommands@^2.2.2":
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/@sapphire/plugin-subcommands/-/plugin-subcommands-2.2.2.tgz#3bd778721f5e690a1cd56a9cb3b018c345464755"
-  integrity sha512-FcIT5zR+HEennoeo0gxGJaVlPKuykKx2tqvHzM67rvV0j5u7FXhqAqAUhrmjrXVWdGZR6frMR+GUDvITdB36HQ==
+"@sapphire/plugin-subcommands@^3.2.1":
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/@sapphire/plugin-subcommands/-/plugin-subcommands-3.2.1.tgz#175b3b31a41de6e2a9ef372d83c8089bf961c4b0"
+  integrity sha512-I+NmbewS85oEfFx/0t8cGtimLmNGMzF6k5eigUmRakb7t6m1EK54cvWwV3zFbkhCMWI6e+ObiIe5XJVel8oWqg==
   dependencies:
+    "@sapphire/utilities" "^3.9.2"
     tslib "^2.4.0"
 
 "@sapphire/prettier-config@^1.4.4":
