@@ -27,6 +27,6 @@ jobs:
       - name: Install Dependencies
         run: yarn --ignore-scripts --frozen-lockfile
       - name: Generate Prisma
-        run: yarn prisma:generate
+        run: yarn prisma generate
       - name: Build code
         run: yarn build
