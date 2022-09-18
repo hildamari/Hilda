@@ -1,24 +1,41 @@
-import 'reflect-metadata';
-import '@sapphire/plugin-editable-commands/register';
-import '@sapphire/plugin-logger/register';
+import '#lib/setup';
+import { container, LogLevel } from '@sapphire/framework';
 import { HildaClient } from '#lib/HildaClient';
-import { DEV, TOKENS } from '#root/config';
-import SlashCommandStore from '#lib/structures/SlashCommandStore';
+import { PrismaClient } from '@prisma/client';
 
-export default class Hilda extends HildaClient {
-	constructor() {
-	  super();
-  
-	  if(DEV) {
-		this.stores.register(new SlashCommandStore());
-	  }
+const client = new HildaClient({
+	defaultPrefix: process.env.PREFIX,
+	regexPrefix: /^(hey +)?hilda[,! ]/i,
+	caseInsensitiveCommands: true,
+	logger: {
+		level: LogLevel.Debug
+	},
+	shards: 'auto',
+	intents: [
+		'GUILDS',
+		'GUILD_MEMBERS',
+		'GUILD_EMOJIS_AND_STICKERS',
+		'GUILD_MESSAGES',
+		'GUILD_MESSAGE_REACTIONS',
+	],
+	partials: ['CHANNEL'],
+	loadMessageCommandListeners: true
+});
+
+const main = async () => {
+	container.prisma = new PrismaClient();
+
+	try {
+		client.logger.info('Logging in');
+		container.prisma.$connect()
+		await client.login();
+		client.logger.info('logged in');
+	} catch (error) {
+		client.logger.fatal(error);
+		await container.prisma.$disconnect();
+		client.destroy();
+		process.exit(1);
 	}
-}
+};
 
-const client = new Hilda();
-
-if(DEV) {
-	client.login(TOKENS.DEV_BOT_TOKEN);
-} else {
-	client.login(TOKENS.BOT_TOKEN);
-}
+main();

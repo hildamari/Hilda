@@ -1,6 +1,5 @@
 import { LogLevel } from '@sapphire/framework';
 import type { ClientOptions } from 'discord.js';
-import { Pool } from 'pg';
 
 export const NAME = '';
 export const PREFIX = '';
@@ -45,28 +44,3 @@ export const TOKENS = {
 	BOT_TOKEN: '',
 	DEV_BOT_TOKEN: ''
 };
-
-export const PGSQL_ENABLED = false;
-export const PGSQL_DATABASE_NAME = 'hilda';
-export const PGSQL_DATABASE_PASSWORD = '';
-export const PGSQL_DATABASE_USER = '';
-export const PGSQL_DATABASE_PORT = 5432;
-export const PGSQL_DATABASE_HOST = 'localhost';
-
-export const PGSQL_DATABASE_URL = `postgresql://${PGSQL_DATABASE_USER}:${PGSQL_DATABASE_PASSWORD}@${PGSQL_DATABASE_HOST}:${PGSQL_DATABASE_PORT}/${PGSQL_DATABASE_NAME}`;
-
-export const POOL = new Pool({
-	connectionString: PGSQL_DATABASE_URL,
-	port: PGSQL_DATABASE_PORT,
-	host: PGSQL_DATABASE_HOST,
-	database: PGSQL_DATABASE_NAME,
-	user: PGSQL_DATABASE_USER,
-	password: PGSQL_DATABASE_PASSWORD
-});
-
-export const connectionString = PGSQL_DATABASE_URL
-export const port = PGSQL_DATABASE_PORT
-export const host = PGSQL_DATABASE_HOST
-export const database = PGSQL_DATABASE_NAME
-export const user = PGSQL_DATABASE_USER
-export const password = PGSQL_DATABASE_PASSWORD

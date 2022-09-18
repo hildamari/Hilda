@@ -1,40 +1,75 @@
+import { BrandingColors } from '#lib/utils/Branding';
 import { ApplyOptions } from '@sapphire/decorators';
-import type { CommandOptions } from '@sapphire/framework';
-import { Message, MessageAttachment, MessageEmbed } from 'discord.js';
-import HildaCommand from '#lib/HildaCommand';
-import { BrandingColors, Character, Relatives } from '#utils/Branding';
+import { ChatInputCommand, Command } from '@sapphire/framework';
+import { Message, MessageEmbed } from 'discord.js';
 
-@ApplyOptions<CommandOptions>({
-	fullCategory: ['Info'],
-	description: "Shows you useful information about the bot's character."
+@ApplyOptions<Command.Options>({
+    name: 'about',
+	description: 'Replies with information about the bot',
+	fullCategory: ['Info']
 })
-export default class AboutCommand extends HildaCommand {
-	public async messageRun(message: Message) {
-        const file = new MessageAttachment('./src/lib/data/assets/images/hilda.png');
-		const aboutEmbed = new MessageEmbed()
-			.setColor(BrandingColors.Primary)
-			.setThumbnail('attachment://hilda.png')
-            .setTitle(`${Character.Name}`)
-			.setDescription(
-				'Hilda Valentine Goneril is a playable character appearing in Fire Emblem: Three Houses. She is a student at the Officers Academy and a member of the Golden Deer.'
-			)
-            .addField('Gender', Character.Gender, true)
-            .addField('Fódlan Birthday', Character.FodlanBirthday, true)
-            .addField('Birthday', Character.Birthday, true)
-            .addField('Age', Character.Age, true)
-            .addField('Hair Color', Character.HairColor, true)
-            .addField('Eye Color', Character.EyeColor, true)
-            .addField('Hometown', Character.Hometown, true)
-            .addField('Crest', Character.Crest, true)
-            .addField('Hometown', Character.Hometown, true)
-            .addField('Height', Character.Height, true)
-            .addField('Occupation', Character.Occupation, true)
-            .addField('Faction', Character.Faction, true)
-            .addField('Starting Class', Character.StartingClass, true)
-            .addField('Nationality', Character.Nationality, true)
-            .addField('Residence', Character.Residence, true)
-            .addField('Relatives', Relatives.join(', '), true)
+export class AboutCommand extends Command {
+	// Register slash and context menu command
+	public override registerApplicationCommands(
+		registry: ChatInputCommand.Registry
+	  ) {
+		registry.registerChatInputCommand(
+		  (builder) =>
+			builder
+			  .setName(this.name)
+			  .setDescription(this.description)
+			  .setDMPermission(false),
+	
+		//   {
+		// 	idHints: ['1014618954943176854'],
+		//   }
+		);
+	}
 
-		return message.channel.send({ embeds: [aboutEmbed], files: [file] });
+	public async messageRun(message: Message) {
+		let totalSeconds = (this.container.client.uptime as number / 1000);
+		let days = Math.floor(totalSeconds / 86400);
+		totalSeconds %= 86400;
+		let hours = Math.floor(totalSeconds / 3600);
+		totalSeconds %= 3600;
+		let minutes = Math.floor(totalSeconds / 60);
+		let seconds = Math.floor(totalSeconds % 60);
+		let uptime = `${days} days, ${hours} hours, ${minutes} minutes and ${seconds} seconds`;
+
+        const aboutEmbed = new MessageEmbed()
+             .setColor(BrandingColors.Primary)
+             .setDescription("Hilda is brought to you by memes for memes.")
+             .setAuthor({ name: `${this.container.client.user?.username} Stats`, iconURL: this.container.client.user?.displayAvatarURL({ format: 'png' })})
+            .addFields({ name: 'Uptime', value: `${uptime}`, inline: true})
+            .addFields({ name: 'License', value: 'Apache 2.0', inline: true})
+            .addFields({ name: 'Source Code', value: 'https://github.com/hildamari/Hilda', inline: true})
+			.addFields({ name: 'Support Server', value: 'https://discord.gg/WAVdN4E', inline: false});
+//         aboutEmbed.addField('Documentation', 'https://hilda.pw', true);
+
+		return message.channel.send({ embeds: [ aboutEmbed ] });
+	}
+
+	public async chatInputRun(interaction: Command.ChatInputInteraction) {
+
+        let totalSeconds = (this.container.client.uptime as number / 1000);
+		let days = Math.floor(totalSeconds / 86400);
+		totalSeconds %= 86400;
+		let hours = Math.floor(totalSeconds / 3600);
+		totalSeconds %= 3600;
+		let minutes = Math.floor(totalSeconds / 60);
+		let seconds = Math.floor(totalSeconds % 60);
+		let uptime = `${days} days, ${hours} hours, ${minutes} minutes and ${seconds} seconds`;
+
+        const aboutEmbed = new MessageEmbed()
+             .setColor(BrandingColors.Primary)
+             .setDescription("Hilda is brought to you by memes for memes.")
+             .setAuthor({ name: `${this.container.client.user?.username} Stats`, iconURL: this.container.client.user?.displayAvatarURL({ format: 'png' })})
+            .addFields({ name: 'Uptime', value: `${uptime}`, inline: true})
+            .addFields({ name: 'License', value: 'Apache 2.0', inline: true})
+            .addFields({ name: 'Source Code', value: 'https://github.com/hildamari/Hilda', inline: true})
+			.addFields({ name: 'Support Server', value: 'https://discord.gg/WAVdN4E', inline: false});
+//         aboutEmbed.addField('Documentation', 'https://hilda.pw', true);
+
+		return interaction.reply({ embeds: [ aboutEmbed ] });
 	}
 }

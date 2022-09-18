@@ -1,45 +1,47 @@
-// Stats command from godfather (https://github.com/Stitch07/godfather) Copyright 2020 Stitch07, used under the AGPL-3.0 License
 import { ApplyOptions } from '@sapphire/decorators';
-import type { CommandOptions } from '@sapphire/framework';
+import { Command, CommandOptions } from '@sapphire/framework';
 import { roundNumber } from '@sapphire/utilities';
 import { Message, MessageEmbed } from 'discord.js';
 import { cpus } from 'os';
-import HildaCommand from '#lib/HildaCommand';
-import { format } from '#utils/durationFormat';
-import { BrandingColors } from '#utils/Branding';
+import { format } from '#lib/utils/durationFormat';
+import { BrandingColors } from '#lib/utils/Branding';
 
 @ApplyOptions<CommandOptions>({
     fullCategory: ['Info'],
 	description: 'View bot statistics'
 })
-export default class StatsCommand extends HildaCommand {
+export default class StatsCommand extends Command {
 	public async messageRun(message: Message) {
 		return message.channel.send({ embeds: [await this.buildEmbed()] });
+	}
+
+	public async chatInputRun(interaction: Command.ChatInputInteraction) {
+		return interaction.reply({ embeds: [await this.buildEmbed()]})
 	}
 
 	private async buildEmbed() {
 		const { generalStatistics, serverStatistics } = this;
 		return new MessageEmbed()
 			.setColor(BrandingColors.Primary)
-			.setAuthor(this.container.client.user!.username, this.container.client.user!.displayAvatarURL({ format: 'png' }))
-			.addField(
-				'Connected To',
-				[
+			.setAuthor({ name: this.container.client.user!.username, iconURL: this.container.client.user!.displayAvatarURL({ format: 'png' })})
+			.addFields({
+				name: 'Connected To',
+				value: [
 					`**Servers**: ${generalStatistics.guilds}`,
 					`**Users**: ${generalStatistics.members}`,
 					`**Channels**: ${generalStatistics.channels}`
 				].join('\n'),
-				true
-			)
-			.addField(
-				'Server Stats',
-				[
+				inline: true
+			})
+			.addFields({
+				name: 'Server Stats',
+				value: [
 					`**CPU Load**: ${serverStatistics.cpuLoad.map((load) => `${load}%`).join(' | ')}`,
 					`**RAM Used**: ${serverStatistics.ramUsed} (Total: ${serverStatistics.ramTotal})`,
 					`**Uptime**: ${format(this.container.client.uptime ?? 0)}`
 				].join('\n'),
-				true
-			);
+				inline: true
+			});
 	}
 
 	private get generalStatistics() {

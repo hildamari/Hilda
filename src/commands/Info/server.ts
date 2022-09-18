@@ -1,29 +1,49 @@
 import { ApplyOptions } from '@sapphire/decorators';
-import type { CommandOptions } from '@sapphire/framework';
-import { Timestamp } from '@sapphire/time-utilities';
-import { Message, MessageEmbed } from 'discord.js';
-import HildaCommand from '#lib/HildaCommand';
-import { BrandingColors } from '#utils/Branding';
+import { ChatInputCommand, Command } from '@sapphire/framework';
+import { MessageEmbed } from 'discord.js';
+// import { isMessageInstance } from '@sapphire/discord.js-utilities';
 
-@ApplyOptions<CommandOptions>({
-    fullCategory: ['Info'],
-	description: 'Shows you information about the server'
+@ApplyOptions<Command.Options>({
+    name: 'Server',
+	aliases: ['guildInfo', 'serverInfo', 'guild'],
+    description: 'Replies with information about the server',
+	fullCategory: ['Info']
 })
-export default class ServerCommand extends HildaCommand {
-	public async messageRun(message: Message) {
-		const createdAt = new Date(message.guild?.createdTimestamp as number);
-		const timestamp = new Timestamp('MMMM DD, YYYY [at] HH:mm:ss [UTC]Z');
-		const formatted = timestamp.display(createdAt);
-        const memberCount = message.guild?.memberCount;
-        const serverTitle = message.guild?.name as string;
+export class ServerCommand extends Command {
+	// Register slash and context menu command
+	public override registerApplicationCommands(
+		registry: ChatInputCommand.Registry
+	  ) {
+		registry.registerChatInputCommand(
+		  (builder) =>
+			builder
+			  .setName(this.name)
+			  .setDescription(this.description)
+			  .setDMPermission(false),
+		//   {
+		// 	idHints: ['1014618956000137327'],
+		//   }
+		);
+	}
 
-		const serverEmbed = new MessageEmbed()
-			.setColor(BrandingColors.Primary)
-            .setTitle(`${serverTitle} Server Statistics`)
-			.addField('Server Name', message.guild?.name as string, true)
-			.addField('Members', `${memberCount}`, true)
-			.addField('Created At', formatted);
+	public async chatInputRun(interaction: Command.ChatInputInteraction) {
+        // const owner = await this.container.client.users.fetch(interaction.guild?.ownerId as string);
+        let rolemap = interaction.guild?.roles.cache
+            .sort((a, b) => b.position - a.position)
+            .map(r => r)
+            .join(",") as String;
+            if (rolemap.length > 1024) rolemap = "To many roles to display";
+            if (!rolemap) rolemap = "No roles";
+        
+        const owner = await interaction.guild?.fetchOwner()
+        const createdAt = interaction.guild?.createdAt as Date
 
-        return message.channel.send({ embeds: [serverEmbed] });
+        const serverEmbed = new MessageEmbed()
+            .setTitle(`${interaction.guild?.name} [${interaction.guild?.id}]`)
+            .setDescription(`Roles: ${rolemap}`)
+            .addFields({ name: 'Members', value: `• **${interaction.guild?.memberCount}** members\n • Owner: **${owner?.displayName}** (ID: **${owner?.id}**)`, inline: true})
+            .addFields({ name: 'Others', value: `• Roles: **${interaction.guild?.roles.cache.size}**\n• Region: **${interaction.guild?.preferredLocale}**\n• Created at: ${createdAt.toDateString()}`, inline: true});
+        
+        await interaction.reply({ embeds: [ serverEmbed ] });
 	}
 }

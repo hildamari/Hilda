@@ -1,21 +1,42 @@
 import { ApplyOptions } from '@sapphire/decorators';
-import type { CommandOptions } from '@sapphire/framework';
+import { ChatInputCommand, Command } from '@sapphire/framework';
 import type { Message } from 'discord.js';
-import HildaCommand from '#lib/HildaCommand';
 
-@ApplyOptions<CommandOptions>({
-	aliases: ['roll', 'die'],
+@ApplyOptions<Command.Options>({
+    name: 'dice',
+    aliases: ['roll', 'die'],
 	fullCategory: ['Fun'],
 	description: 'Roll a 6-sided die'
 })
-export default class DiceCommand extends HildaCommand {
-	public messageRun(message: Message) {
-		function randomNumber() {
-			const sides = 6;
-			const randomNumber = Math.floor(Math.random() * sides) + 1;
-			return randomNumber;
-		}
-
-		return message.channel.send(`The dice roll was ${randomNumber()}.`);
+export class DiceCommand extends Command {
+	// Register slash and context menu command
+	public override registerApplicationCommands(
+		registry: ChatInputCommand.Registry
+	  ) {
+		registry.registerChatInputCommand(
+		  (builder) =>
+			builder
+			  .setName(this.name)
+			  .setDescription(this.description)
+			  .setDMPermission(false),
+		//   {
+		// 	idHints: ['1013303438148374628'],
+		//   }
+		);
 	}
+
+    public messageRun(message: Message) {
+
+		return message.channel.send(`The dice roll was ${this.randomNumber()}.`);
+	}
+
+	public async chatInputRun(interaction: Command.ChatInputInteraction) {
+		return interaction.reply({ content: `The dice roll was ${this.randomNumber()}.`});
+    }
+
+    private randomNumber() {
+        const sides = 6;
+        const randomNumber = Math.floor(Math.random() * sides) + 1;
+        return randomNumber;
+    }
 }

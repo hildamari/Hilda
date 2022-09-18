@@ -1,17 +1,17 @@
 {
 	"extends": "../tsconfig.base.json",
 	"compilerOptions": {
-        "experimentalDecorators": true,
+		"experimentalDecorators": true,
+		"skipLibCheck": true,
 		"outDir": "../dist",
 		"rootDir": ".",
 		"baseUrl": ".",
 		"paths": {
-			"#utils/*": ["lib/utils/*"],
+			"#utils/*": ["lib/util/*"],
 			"#lib/*": ["lib/*"],
 			"#root/*": ["*"],
 			"#data/*": ["lib/data/*"]
 		},
 		"composite": true
-	},
-	"include": [".", "./**/*.json"]
+	}
 }

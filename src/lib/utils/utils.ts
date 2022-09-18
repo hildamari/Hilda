@@ -1,17 +1,7 @@
 import { Message, MessageEmbed } from "discord.js"
-import Hilda from '#root/Hilda';
 import { send } from '@sapphire/plugin-editable-commands';
 
-const client = new Hilda();
 export const RandomLoadingMessage = ['Computing...', 'Thinking...', 'Cooking some food', 'Give me a moment', 'Loading...'];
-
-export async function getGuildID(message: Message) {
-    
-    let guild_id = message.guild?.id as string;
-    let guildID = client.guilds.fetch(guild_id)
-
-    return guildID as unknown as string;
-}
 
 export async function getMessage(message: Message) {
     return message;
