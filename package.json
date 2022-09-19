@@ -43,12 +43,12 @@
 		"colorette": "^2.0.19",
 		"common-tags": "^1.8.2",
 		"discord-api-types": "^0.33.5",
-		"discord.js": "^13.10.2",
+		"discord.js": "^14.3.0",
 		"dotenv-cra": "^3.0.2",
 		"redis": "^4.3.0",
 		"reflect-metadata": "^0.1.13"
-	  },
-	  "devDependencies": {
+	},
+	"devDependencies": {
 		"@prisma/client": "^4.3.1",
 		"@sapphire/prettier-config": "^1.4.3",
 		"@sapphire/ts-config": "^3.3.4",
@@ -60,7 +60,7 @@
 		"prisma": "^4.3.1",
 		"tsc-watch": "^5.0.3",
 		"typescript": "^4.7.4"
-	  },
+	},
 	"imports": {
 		"#data/*": "./dist/lib/data/*.js",
 		"#database/*": "./dist/lib/database/*.js",
