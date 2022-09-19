@@ -34,7 +34,7 @@
 		"@sapphire/plugin-api": "next",
 		"@sapphire/plugin-editable-commands": "next",
 		"@sapphire/plugin-logger": "next",
-		"@sapphire/plugin-scheduled-tasks": "^4.0.0",
+		"@sapphire/plugin-scheduled-tasks": "^4.0.1",
 		"@sapphire/plugin-subcommands": "next",
 		"@sapphire/stopwatch": "^1.4.1",
 		"@sapphire/time-utilities": "^1.7.5",
@@ -47,8 +47,8 @@
 		"dotenv-cra": "^3.0.2",
 		"redis": "^4.3.0",
 		"reflect-metadata": "^0.1.13"
-	  },
-	  "devDependencies": {
+	},
+	"devDependencies": {
 		"@prisma/client": "^4.3.1",
 		"@sapphire/prettier-config": "^1.4.3",
 		"@sapphire/ts-config": "^3.3.4",
@@ -60,7 +60,7 @@
 		"prisma": "^4.3.1",
 		"tsc-watch": "^5.0.3",
 		"typescript": "^4.7.4"
-	  },
+	},
 	"imports": {
 		"#data/*": "./dist/lib/data/*.js",
 		"#database/*": "./dist/lib/database/*.js",

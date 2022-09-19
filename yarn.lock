@@ -206,12 +206,13 @@
     colorette "^2.0.19"
     tslib "^2.4.0"
 
-"@sapphire/plugin-scheduled-tasks@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/plugin-scheduled-tasks/-/plugin-scheduled-tasks-4.0.0.tgz#b20f7c9b56995d2ff227acfbb8f28698c2c2b6dd"
-  integrity sha512-MIYiG40HW9kPeZGPcGlLX3uPkKaruG2GIkUhu5gNS1kJogtx6NdZlY5hKBDnpjl1jND5+d2gX9aaLNFA7+UxKA==
+"@sapphire/plugin-scheduled-tasks@^4.0.1":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@sapphire/plugin-scheduled-tasks/-/plugin-scheduled-tasks-4.0.1.tgz#9e34eaacb8bd853650c7bf2ed7e78352f7e5b03c"
+  integrity sha512-vLxfHBu2vKaJZ9v2f4z+VDZaPeDqS8bm+Sc2minRwJPw1hWAHiPqmxCBPIONY7eOQ9qKayvhKYTIwwruxgO/Mg==
   dependencies:
-    "@sapphire/time-utilities" "^1.7.6"
+    "@sapphire/stopwatch" "^1.4.1"
+    "@sapphire/utilities" "^3.9.3"
     tslib "^2.4.0"
 
 "@sapphire/plugin-subcommands@next":
