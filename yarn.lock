@@ -268,6 +268,13 @@
   dependencies:
     tslib "^2.3.1"
 
+"@sapphire/stopwatch@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@sapphire/stopwatch/-/stopwatch-1.5.0.tgz#4acf7352f969f0c81d69a838ecbfc8b6026ff660"
+  integrity sha512-DtyKugdy3JTqm6JnEepTY64fGJAqlusDVrlrzifEgSCfGYCqpvB+SBldkWtDH+z+zLcp+PyaFLq7xpVfkhmvGg==
+  dependencies:
+    tslib "^2.4.0"
+
 "@sapphire/time-utilities@^1.7.4", "@sapphire/time-utilities@^1.7.6":
   version "1.7.6"
   resolved "https://registry.yarnpkg.com/@sapphire/time-utilities/-/time-utilities-1.7.6.tgz#846f1116fb36cc12a07b07d13daf0a7e4405ab10"
