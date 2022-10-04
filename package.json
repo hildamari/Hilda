@@ -36,10 +36,10 @@
 		"@sapphire/plugin-logger": "next",
 		"@sapphire/plugin-scheduled-tasks": "^4.0.0",
 		"@sapphire/plugin-subcommands": "next",
-		"@sapphire/stopwatch": "^1.4.1",
-		"@sapphire/time-utilities": "^1.7.5",
+		"@sapphire/stopwatch": "^1.5.0",
+		"@sapphire/time-utilities": "^1.7.8",
 		"@sapphire/type": "^2.2.4",
-		"@sapphire/utilities": "^3.9.1",
+		"@sapphire/utilities": "^3.10.1",
 		"colorette": "^2.0.19",
 		"common-tags": "^1.8.2",
 		"discord-api-types": "^0.33.5",
@@ -47,20 +47,20 @@
 		"dotenv-cra": "^3.0.2",
 		"redis": "^4.3.0",
 		"reflect-metadata": "^0.1.13"
-	  },
-	  "devDependencies": {
-		"@prisma/client": "^4.3.1",
+	},
+	"devDependencies": {
+		"@prisma/client": "^4.4.0",
 		"@sapphire/prettier-config": "^1.4.3",
 		"@sapphire/ts-config": "^3.3.4",
 		"@types/common-tags": "^1.8.1",
-		"@types/node": "^18.7.14",
+		"@types/node": "^18.8.0",
 		"@types/ws": "^8.5.3",
 		"npm-run-all": "^4.1.5",
 		"prettier": "^2.7.1",
-		"prisma": "^4.3.1",
+		"prisma": "^4.4.0",
 		"tsc-watch": "^5.0.3",
-		"typescript": "^4.7.4"
-	  },
+		"typescript": "^4.8.4"
+	},
 	"imports": {
 		"#data/*": "./dist/lib/data/*.js",
 		"#database/*": "./dist/lib/database/*.js",
