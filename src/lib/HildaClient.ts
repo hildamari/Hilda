@@ -1,5 +1,6 @@
 import type { PrismaClient } from "@prisma/client";
-import { SapphireClient } from "@sapphire/framework";
+import { container, SapphireClient } from "@sapphire/framework";
+import type { Message } from "discord.js";
 
 export class HildaClient extends SapphireClient {
 	public ownerID: string | undefined = undefined;
@@ -12,6 +13,11 @@ export class HildaClient extends SapphireClient {
 	public get version() {
 		const versionStr = this._version.join('.');
 		return versionStr;
+	}
+
+	public fetchPrefix = async (message: Message) => {
+		const guild = await container.prisma.guild.findUnique({ where: { id: message.guild?.id } });
+		return guild?.prefix ?? 'h!';
 	}
 }
 
