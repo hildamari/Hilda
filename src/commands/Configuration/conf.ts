@@ -1,15 +1,14 @@
 import { Subcommand } from '@sapphire/plugin-subcommands';
 import { ApplyOptions } from '@sapphire/decorators';
 import type { Args, ChatInputCommand, Command } from '@sapphire/framework';
-// import { isNullish, isNullishOrEmpty } from '@sapphire/utilities';
-// import { inlineCode, time, TimestampStyles } from '@discordjs/builders';
-// import { escapeInlineCode } from '#lib/utils';
 import { Message, MessageEmbed } from 'discord.js';
 import { BrandingColors } from '#lib/utils/Branding';
+import { isNullishOrEmpty } from '@sapphire/utilities';
 
 @ApplyOptions<Subcommand.Options>({
 	name: 'Conf',
     description: 'View settings, change guild prefix, and change guild quote channel',
+    preconditions: ['AdminOnly', 'ModeratorOnly'],
     subcommands: [
 		{
 			name: 'prefix',
@@ -17,7 +16,7 @@ import { BrandingColors } from '#lib/utils/Branding';
 			chatInputRun: 'setIntPrefix'
 		},
 		{
-			name: 'quoteChannel',
+			name: 'quote',
             messageRun: 'setQuoteMsgChannel',
 			chatInputRun: 'setQuoteIntChannel'
 		},
@@ -57,25 +56,26 @@ export class ConfCommand extends Subcommand {
                     .setDescription('Set the server\'s quote channel')
                     .addStringOption((option => 
                         option
-                            .setName('quoteChannel')
+                            .setName('quote')
                             .setDescription('Which channel do you want to set the quote channel to? Use the channel\'s ID')
-                            .setRequired(true))))
-            //   {
-		    // 	    idHints: ['1013303438148374628'],
-		    //   }
+                            .setRequired(true)))),
+              {
+		    	    idHints: ['1021173829357293729'],
+		      }
             );
     }
 
     public async setMsgPrefix(message: Message, args: Args) {
+        console.log(this.container.client.fetchPrefix.toString())
         const guild = await this.container.prisma.guild.findUnique({ where: { id: message.guild?.id } });
 
         if(!guild) {
-            message.channel.send('Your server was not found in the database. Adding your server to the database now.')
+            message.channel.send('Your server was not found in the database. Adding your server to the database now. Please run this command again.')
             await this.container.prisma.guild.create({
                 data: {
                   id: message.guild?.id as string,
                   prefix: 'h!',
-                  quoteChannel: ''
+                  quoteChannel: 'N/A'
                 },
             })
         } else {
@@ -87,7 +87,7 @@ export class ConfCommand extends Subcommand {
                     where: { id: message.guild?.id },
                     data: { prefix: newPrefix },
                   })
-                message.channel.send(`This server\'s prefix has been changed to ${newPrefix}`)
+                message.channel.send(`This server\'s prefix has been changed to \'${newPrefix.trimStart()}\'`)
             }
             
         }
@@ -97,12 +97,12 @@ export class ConfCommand extends Subcommand {
         const guild = await this.container.prisma.guild.findUnique({ where: { id: interaction.guild?.id } });
 
         if(!guild) {
-            interaction.reply('Your server was not found in the database. Adding your server to the database now.')
+            interaction.reply('Your server was not found in the database. Adding your server to the database now. Please run this command again.')
             await this.container.prisma.guild.create({
                 data: {
                   id: interaction.guild?.id as string,
                   prefix: 'h!',
-                  quoteChannel: ''
+                  quoteChannel: 'N/A'
                 },
             })
         } else {
@@ -114,7 +114,7 @@ export class ConfCommand extends Subcommand {
                     where: { id: interaction.guild?.id },
                     data: { prefix: newPrefix },
                   })
-                interaction.reply(`This server\'s prefix has been changed to ${newPrefix}`)
+                interaction.reply(`This server\'s prefix has been changed to \'${newPrefix.trimStart()}\'`)
             }
             
         }
@@ -124,24 +124,25 @@ export class ConfCommand extends Subcommand {
         const guild = await this.container.prisma.guild.findUnique({ where: { id: message.guild?.id } });
 
         if(!guild) {
-            message.channel.send('Your server was not found in the database. Adding your server to the database now.')
+            message.channel.send('Your server was not found in the database. Adding your server to the database now. Please run this command again.')
             await this.container.prisma.guild.create({
                 data: {
                   id: message.guild?.id as string,
                   prefix: 'h!',
-                  quoteChannel: ''
+                  quoteChannel: 'N/A'
                 },
             })
         } else {
             const quoteChannel = await args.rest('string');
-            if(quoteChannel == '') {
+            console.log(quoteChannel);
+            if(isNullishOrEmpty(quoteChannel)) {
                 message.channel.send(`You did not enter a quote channel ID. `)
             } else {
                 await this.container.prisma.guild.update({
                     where: { id: message.guild?.id },
                     data: { quoteChannel: quoteChannel },
                 })
-                message.channel.send(`This server\'s prefix has been changed to <#${quoteChannel}>`)
+                message.channel.send(`This server\'s quote channel has been changed to <#${quoteChannel}>`)
             }
         }
     }
@@ -150,24 +151,25 @@ export class ConfCommand extends Subcommand {
         const guild = await this.container.prisma.guild.findUnique({ where: { id: interaction.guild?.id } });
 
         if(!guild) {
-            interaction.reply('Your server was not found in the database. Adding your server to the database now.')
+            interaction.reply('Your server was not found in the database. Adding your server to the database now. Please run this command again.')
             await this.container.prisma.guild.create({
                 data: {
                   id: interaction.guild?.id as string,
                   prefix: 'h!',
-                  quoteChannel: ''
+                  quoteChannel: 'N/A'
                 },
             })
         } else {
-            const quoteChannel = interaction.options.getString('quoteChannel', true);
-            if(quoteChannel == '') {
+            const quoteChannel = interaction.options.getString('quote', true);
+            console.log(quoteChannel)
+            if(isNullishOrEmpty(quoteChannel)) {
                 interaction.reply(`You did not enter a quote channel ID.`)
             } else {
                 await this.container.prisma.guild.update({
                     where: { id: interaction.guild?.id },
                     data: { quoteChannel: quoteChannel },
                   })
-                interaction.reply(`This server\'s prefix has been changed to <#${quoteChannel}>`)
+                interaction.reply(`This server\'s quote channel has been changed to <#${quoteChannel.trimStart()}>`)
             }
         }
     }
@@ -177,22 +179,22 @@ export class ConfCommand extends Subcommand {
         if(!guild) {
             await this.container.prisma.guild.create({
                 data: {
-                id: message.guild?.id as string,
-                prefix: 'h!',
-                quoteChannel: ''
+                    id: message.guild?.id as string,
+                    prefix: 'h!',
+                    quoteChannel: 'N/A'
                 },
             })
-            return message.channel.send('Your server was not found in the database. Adding your server to the database now.')
+            return message.channel.send('Your server was not found in the database. Adding your server to the database now. Please run this command again.')
         } else {
             let prefix = guild.prefix
             let id = guild.id
-            let quoteChannel = guild.quoteChannel
+            let quoteChannel = guild.quoteChannel.trimStart()
             let guildName = this.container.client.guilds.cache.get(id)
             const settingsEmbed = new MessageEmbed()
                 .setColor(BrandingColors.Primary)
                 .addFields({ name: `Guild Name`, value: `${guildName}`, inline: false })
                 .addFields({ name: 'Prefix', value: prefix, inline: false })
-                .addFields({ name: 'Quote Channel', value: quoteChannel, inline: false })
+                .addFields({ name: 'Quote Channel', value: `<#${quoteChannel}>`, inline: false })
             return message.channel.send({ embeds: [settingsEmbed] });
         }
     }
@@ -200,24 +202,25 @@ export class ConfCommand extends Subcommand {
     public async showIntSettings(interaction: Command.ChatInputInteraction) {
         const guild = await this.container.prisma.guild.findUnique({ where: { id: interaction.guild?.id } });
         if(!guild) {
-            interaction.reply('Your server was not found in the database. Adding your server to the database now.')
+            interaction.reply('Your server was not found in the database. Adding your server to the database now. Please run this command again.')
             await this.container.prisma.guild.create({
                     data: {
                     id: interaction.guild?.id as string,
                     prefix: 'h!',
-                    quoteChannel: ''
+                    quoteChannel: 'N/A'
                 },
             })
         } else {
             let prefix = guild.prefix
             let id = guild.id
-            let quoteChannel = guild.quoteChannel
+            let quoteChannel = guild.quoteChannel.trimStart()
+            console.log(quoteChannel)
             let guildName = this.container.client.guilds.cache.get(id)
             const settingsEmbed = new MessageEmbed()
                 .setColor(BrandingColors.Primary)
                 .addFields({ name: `Guild Name`, value: `${guildName}`, inline: false })
                 .addFields({ name: 'Prefix', value: prefix, inline: false })
-                .addFields({ name: 'Quote Channel', value: quoteChannel, inline: false })
+                .addFields({ name: 'Quote Channel', value: `<#${quoteChannel}>`, inline: false })
             return interaction.reply({ embeds: [settingsEmbed] });
         }
 
