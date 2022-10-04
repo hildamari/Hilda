@@ -30,9 +30,9 @@ export class HelpCommand extends Command {
                 .setDescription('Command name to get info for')
                 .setRequired(false)
             ),
-		//   {
-		// 	idHints: ['1013302072571068476'],
-		//   }
+		  {
+			idHints: ['1013484908649390131'],
+		  }
 		);
 	}
 
@@ -52,7 +52,7 @@ export class HelpCommand extends Command {
 
 			if (!command) throw 'Command not found. To view all commands run `help`';
 
-			const embed = new MessageEmbed().setColor(BrandingColors.Secondary);
+			const embed = new MessageEmbed().setColor(BrandingColors.Primary);
 
 			if (command.aliases.length) embed.addFields({ name: '❯ Aliases', value: `${command.aliases.map((alias) => `\`${alias}\``).join(' ')}`, inline: false });
 
@@ -80,7 +80,7 @@ export class HelpCommand extends Command {
 
 			if (!command) throw 'Command not found. To view all commands run `help`';
 
-			const embed = new MessageEmbed().setColor('#aad0fa');
+			const embed = new MessageEmbed().setColor(BrandingColors.Primary);
 
 			if (command.aliases.length) embed.addFields({ name: '❯ Aliases', value: `${command.aliases.map((alias) => `\`${alias}\``).join(' ')}`, inline: false });
 
@@ -100,7 +100,6 @@ export class HelpCommand extends Command {
 			template: new MessageEmbed()
                 .setDescription('All of these commands are slash commands. You must use `/` to use them.\nFor example, `/ping`.')
 				.setColor('#aad0fa')
-				// .setFooter('')
 		});
 
 		const commandsByCategory = new Map<string, Command[]>();
@@ -138,7 +137,6 @@ export class HelpCommand extends Command {
 		const paginatedMessage = new PaginatedMessage({
 			template: new MessageEmbed()
 				.setColor(BrandingColors.Primary)
-				.setFooter('')
 		});
 
 		const commandsByCategory = new Map<string, Command[]>();

@@ -1,14 +1,29 @@
 import { ApplyOptions } from '@sapphire/decorators';
-import { Command, CommandOptions } from '@sapphire/framework';
+import { ChatInputCommand, Command, CommandOptions } from '@sapphire/framework';
 import type { Message } from 'discord.js';
 import { stripIndents } from 'common-tags';
 
 @ApplyOptions<CommandOptions>({
+    name: 'flayn',
     fullCategory: ['Memes'],
-	aliases: ['fishy'],
-    description: 'Sends a parody of Edge of Dawn, Flayn style' 
+	  aliases: ['fishy'],
+    description: 'Edge of Dawn, Flayn style' 
 })
 export default class FlaynCommand extends Command {
+    public override registerApplicationCommands(
+		registry: ChatInputCommand.Registry
+	  ) {
+		registry.registerChatInputCommand(
+		  (builder) =>
+			builder
+			  .setName(this.name)
+			  .setDescription(this.description)
+			  .setDMPermission(false),
+		  {
+			  idHints: ['1021183665646075987'],
+		  }
+		);
+	}
     public async messageRun(message: Message) {
         const flayn = this.container.client.emojis.cache.find(emoji => emoji.name === "Fish");
         return message.channel.send(stripIndents`Reach for my hand,

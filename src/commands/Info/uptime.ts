@@ -1,12 +1,28 @@
 import { ApplyOptions } from '@sapphire/decorators';
-import { Command, CommandOptions } from '@sapphire/framework';
+import { ChatInputCommand, Command, CommandOptions } from '@sapphire/framework';
 import type { Message } from 'discord.js';
 
 @ApplyOptions<CommandOptions>({
+	name: 'uptime',
 	fullCategory: ['Info'],
 	description: "Shows you the bot's uptime"
 })
 export default class UptimeCommand extends Command {
+	// Register slash and context menu command
+	public override registerApplicationCommands(
+		registry: ChatInputCommand.Registry
+	  ) {
+		registry.registerChatInputCommand(
+		  (builder) =>
+			builder
+			  .setName(this.name)
+			  .setDescription(this.description)
+			  .setDMPermission(false),
+		  {
+			idHints: ['1021174722173612133'],
+		  }
+		);
+	}
 	public async messageRun(message: Message) {
 
 		let totalSeconds = (this.container.client.uptime as number / 1000);

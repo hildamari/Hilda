@@ -26,9 +26,9 @@ export class EightBallCommand extends Command {
                 .setDescription('Ask the eightball a question, get a random response.')
                 .setRequired(true)
             ),
-		//   {
-		// 	idHints: ['1013302072571068476'],
-		//   }
+		  {
+			idHints: ['1013302072571068476'],
+		  }
 		);
 	}
 

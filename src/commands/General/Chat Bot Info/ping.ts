@@ -19,9 +19,9 @@ export class PingCommand extends Command {
 			  .setName(this.name)
 			  .setDescription(this.description)
 			  .setDMPermission(false),
-		//   {
-		// 	idHints: ['1014618958000828496'],
-		//   }
+		  {
+			idHints: ['1011043765655449790'],
+		  }
 		);
 	}
 

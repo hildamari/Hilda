@@ -19,9 +19,9 @@ export class FortuneCommand extends Command {
 			  .setName(this.name)
 			  .setDescription(this.description)
 			  .setDMPermission(false),
-		//   {
-		// 	idHints: ['1013302072571068476'],
-		//   }
+		  {
+			idHints: ['1021172433421619241'],
+		  }
 		);
 	}
 

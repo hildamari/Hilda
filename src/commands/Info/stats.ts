@@ -1,5 +1,5 @@
 import { ApplyOptions } from '@sapphire/decorators';
-import { Command, CommandOptions } from '@sapphire/framework';
+import { ChatInputCommand, Command, CommandOptions } from '@sapphire/framework';
 import { roundNumber } from '@sapphire/utilities';
 import { Message, MessageEmbed } from 'discord.js';
 import { cpus } from 'os';
@@ -7,10 +7,27 @@ import { format } from '#lib/utils/durationFormat';
 import { BrandingColors } from '#lib/utils/Branding';
 
 @ApplyOptions<CommandOptions>({
+	name: 'stats',
     fullCategory: ['Info'],
 	description: 'View bot statistics'
 })
 export default class StatsCommand extends Command {
+	// Register slash and context menu command
+	public override registerApplicationCommands(
+		registry: ChatInputCommand.Registry
+	  ) {
+		registry.registerChatInputCommand(
+		  (builder) =>
+			builder
+			  .setName(this.name)
+			  .setDescription(this.description)
+			  .setDMPermission(false),
+		  {
+			idHints: ['1021174723335430214'],
+		  }
+		);
+	}
+
 	public async messageRun(message: Message) {
 		return message.channel.send({ embeds: [await this.buildEmbed()] });
 	}

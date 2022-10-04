@@ -20,9 +20,9 @@ export class AboutCommand extends Command {
 			  .setDescription(this.description)
 			  .setDMPermission(false),
 	
-		//   {
-		// 	idHints: ['1014618954943176854'],
-		//   }
+		  {
+			idHints: ['1011088870277914644'],
+		  }
 		);
 	}
 

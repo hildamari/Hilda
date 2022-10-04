@@ -1,12 +1,11 @@
 import { ApplyOptions } from '@sapphire/decorators';
 import { Args, ChatInputCommand, Command } from '@sapphire/framework';
 import { Timestamp } from '@sapphire/time-utilities';
-import { GuildEmoji, Message, MessageEmbed } from 'discord.js';
+import { GuildEmoji, GuildMember, Message, MessageEmbed } from 'discord.js';
 
 @ApplyOptions<Command.Options>({
-    name: 'emoji',
-	aliases: ['listemoji'],
-	description: "Displays the server's emoji"
+    name: 'emojiinfo',
+	description: "Get info about a specific emoji"
 })
 export class EmojiInfoCommand extends Command {
 	// Register slash and context menu command
@@ -18,11 +17,15 @@ export class EmojiInfoCommand extends Command {
 			builder
 			  .setName(this.name)
 			  .setDescription(this.description)
-			  .setDMPermission(false),
-	
-		//   {
-		// 	idHints: ['1014618954943176854'],
-		//   }
+			  .setDMPermission(false)
+			  .addStringOption((option) =>
+              option //
+                .setName('emoji')
+                .setDescription('Get info about a specific emoji')
+                .setRequired(true)),
+		  {
+			idHints: ['1021183667558678589'],
+		  }
 		);
 	}
 
@@ -50,8 +53,26 @@ export class EmojiInfoCommand extends Command {
 	}
 
 	public async chatInputRun(interaction: Command.ChatInputInteraction) {
-        const emojiList = interaction.guild?.emojis.cache.map((e) => e.toString()).join(' ');
-    
-		return interaction.reply({ content: emojiList });
+        const emojiName = interaction.options.getString('emoji', true);
+
+		if (!emojiName) throw 'Emoji not found.';
+
+		const emoji = interaction.guild?.emojis.resolve(emojiName);
+		const emojiID = emoji?.id;
+		const member = interaction?.member as GuildMember
+		const hexColor = member.displayHexColor as `#${string}`;
+		const timestamp = new Timestamp('dddd, MMMM DD YYYY, h:mm:ss a');
+		const formatted = timestamp.display(emoji?.createdAt);
+
+		// const emojiInfoEmbed = new MessageEmbed();
+		// emojiInfoEmbed.setColor(hexColor as `#${string}`).setTitle(`${emoji} ${emoji?.name}`).addField('ID', emojiID as string).addField('Added to Server', formatted);
+		const emojiInfoEmbed = new MessageEmbed()
+		.setColor(hexColor)
+		.setTitle(`${emoji} ${emoji?.name}`)
+		.addFields({ name: 'ID', value: emojiID as string })
+		.addFields({ name: 'Added to Server', value: formatted })
+		.setTimestamp();
+
+		return interaction.reply({ embeds: [emojiInfoEmbed] });
 	}
 }

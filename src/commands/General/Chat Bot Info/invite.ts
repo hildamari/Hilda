@@ -1,5 +1,6 @@
 import { ApplyOptions } from '@sapphire/decorators';
 import { ChatInputCommand, Command } from '@sapphire/framework';
+import type { Message } from 'discord.js';
 
 @ApplyOptions<Command.Options>({
     name: 'Invite',
@@ -17,12 +18,17 @@ export class InviteCommand extends Command {
 			  .setName(this.name)
 			  .setDescription(this.description)
 			  .setDMPermission(false),
-		//   {
-		// 	idHints: ['1014618953542275124'],
-		//   }
+		  {
+			idHints: ['1011043761318539305'],
+		  }
 		);
 	}
 	// slash command
+	public async messageRun(message: Message) {
+		const msg = await message.channel.send({ content: `To add me to your Discord guild: <https://discordapp.com/oauth2/authorize?client_id=614635423582650394&scope=bot&permissions=322630>\nDon't be afraid to uncheck some permissions, I will let you know if you're trying to run a command without permissions.` });
+
+		return msg;
+	}
 	public async chatInputRun(interaction: Command.ChatInputInteraction) {
 		const msg = await interaction.reply({ content: `To add me to your Discord guild: <https://discordapp.com/oauth2/authorize?client_id=614635423582650394&scope=bot&permissions=322630>\nDon't be afraid to uncheck some permissions, I will let you know if you're trying to run a command without permissions.`, fetchReply: true });
 

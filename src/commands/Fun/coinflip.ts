@@ -18,9 +18,9 @@ export class CoinFlipCommand extends Command {
 			  .setName(this.name)
 			  .setDescription(this.description)
 			  .setDMPermission(false),
-		//   {
-		// 	idHints: ['1013303438148374628'],
-		//   }
+		  {
+			idHints: ['1013303438148374628'],
+		  }
 		);
 	}
 

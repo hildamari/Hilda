@@ -7,7 +7,7 @@ import type { Message } from 'discord.js';
 	aliases: ['listemoji'],
 	description: "Displays the server's emoji"
 })
-export class AboutCommand extends Command {
+export class EmojiCommand extends Command {
 	// Register slash and context menu command
 	public override registerApplicationCommands(
 		registry: ChatInputCommand.Registry
@@ -18,10 +18,9 @@ export class AboutCommand extends Command {
 			  .setName(this.name)
 			  .setDescription(this.description)
 			  .setDMPermission(false),
-	
-		//   {
-		// 	idHints: ['1014618954943176854'],
-		//   }
+		  {
+			idHints: ['1021183666686263326'],
+		  }
 		);
 	}
 

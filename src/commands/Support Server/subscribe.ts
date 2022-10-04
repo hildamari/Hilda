@@ -17,9 +17,9 @@ export class SubscribeCommand extends Command {
 			  .setName(this.name)
 			  .setDescription(this.description)
 			  .setDMPermission(false),
-		//   {
-		// 	idHints: ['1014619040603447306'],
-		//   }
+		  {
+			idHints: ['1011088865995530250'],
+		  }
 		);
 	}
 
