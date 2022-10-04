@@ -4,7 +4,7 @@ import { HildaClient } from '#lib/HildaClient';
 import { PrismaClient } from '@prisma/client';
 
 const client = new HildaClient({
-	defaultPrefix: process.env.PREFIX,
+	defaultPrefix: 'h!',
 	regexPrefix: /^(hey +)?hilda[,! ]/i,
 	caseInsensitiveCommands: true,
 	logger: {
