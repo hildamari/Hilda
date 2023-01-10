@@ -209,12 +209,12 @@
     "@skyra/editable-commands" "^2.1.4"
     tslib "^2.4.0"
 
-"@sapphire/plugin-logger@next":
-  version "3.0.1-next.2a2ef5c.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/plugin-logger/-/plugin-logger-3.0.1-next.2a2ef5c.0.tgz#305c6da539c74b88ee0a2f2c7dc8b9cffc75f76d"
-  integrity sha512-74XsWzPT7cyCrrfpqE4JxU7v9O2SujHlT2I4abU1W3R78TlwJXsKv5wFf9tx/2MklBcL2m+ga5sXcz+OPGnPAg==
+"@sapphire/plugin-logger@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@sapphire/plugin-logger/-/plugin-logger-3.0.1.tgz#4b411eebb4dd49ad03b89dc93f5280aaa8fbf2d0"
+  integrity sha512-sGAYL16bIe8SrUk8k+HOFGVWppSYi8T0F4T+hVCfYw9eiqTvqy5wPQcrzmd5hkvGINb8Ob8INNEl0In7PxXT6Q==
   dependencies:
-    "@sapphire/time-utilities" "^1.7.6"
+    "@sapphire/timestamp" "^1.0.0"
     colorette "^2.0.19"
     tslib "^2.4.0"
 
