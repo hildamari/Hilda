@@ -50,7 +50,7 @@
 	},
 	"devDependencies": {
 		"@prisma/client": "^4.8.1",
-		"@sapphire/prettier-config": "^1.4.3",
+		"@sapphire/prettier-config": "^1.4.5",
 		"@sapphire/ts-config": "^3.3.4",
 		"@types/common-tags": "^1.8.1",
 		"@types/node": "^18.11.18",
