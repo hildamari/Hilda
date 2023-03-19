@@ -113,11 +113,6 @@
   resolved "https://registry.yarnpkg.com/@sapphire/discord-utilities/-/discord-utilities-2.11.6.tgz#d9588b79c1e6bbf5ac8c90ec3fe0898cd442203e"
   integrity sha512-oFZYl7Prtqy8nD3ymmMpSMRy9Sdhp8E5PSI8n3OoBkHr4eSBvoOcBTxKapvRkHWes+amWeH/uB4UH31x7mG0KQ==
 
-"@sapphire/discord-utilities@^2.11.7-next.f224a82.0":
-  version "2.11.7-pr-434.549335e.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/discord-utilities/-/discord-utilities-2.11.7-pr-434.549335e.0.tgz#91c5a4c0d6394d836af6bca1fa68c25325cdc5d4"
-  integrity sha512-PDeJyr9tq1Qjn5s+/8KT4Idib9Oy3FmIC/fbvAG4AeIXshO1w50n7krSd1/y1TOfzUCGnrHNBT3oYIO5YOhNAA==
-
 "@sapphire/discord-utilities@^3.0.1":
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/@sapphire/discord-utilities/-/discord-utilities-3.0.1.tgz#f6a690fc68428e58543a0c2134f1b288f7704e66"
@@ -135,17 +130,17 @@
     "@sapphire/utilities" "^3.9.2"
     tslib "^2.4.0"
 
-"@sapphire/discord.js-utilities@next":
-  version "5.0.1-next.f224a82.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/discord.js-utilities/-/discord.js-utilities-5.0.1-next.f224a82.0.tgz#c632031909ef30322ebd0d2ed976a41022bd8d1a"
-  integrity sha512-A30eGMLNU+gDsbAe5tWrt2PW33axFUkv+BTKCix9k/w6yV4IVVpfUpRjNnRHUZaz89vmleui7IqXoWZ7/dSiIg==
+"@sapphire/discord.js-utilities@^6.0.4":
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/@sapphire/discord.js-utilities/-/discord.js-utilities-6.0.4.tgz#8b6d8af0695e2947cccd5ee14e2ec68ef2e31345"
+  integrity sha512-ULdvISp6L4EBOrGD+0D6bis0ykLRI+M06mqCmr+zdvCeTY+Mk0oX9ViYotyfx6ycA9qEdW9zCr9YMY17nIrjVg==
   dependencies:
-    "@sapphire/discord-utilities" "^2.11.7-next.f224a82.0"
-    "@sapphire/time-utilities" "^1.7.6"
-    "@sapphire/utilities" "^3.9.3"
-    tslib "^2.4.0"
+    "@sapphire/discord-utilities" "^3.0.1"
+    "@sapphire/duration" "^1.0.0"
+    "@sapphire/utilities" "^3.11.0"
+    tslib "^2.5.0"
 
-"@sapphire/duration@^1.1.0":
+"@sapphire/duration@^1.0.0", "@sapphire/duration@^1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@sapphire/duration/-/duration-1.1.0.tgz#941d93585c6dd434d4d3416c28d2eb20d936db19"
   integrity sha512-ATb2pWPLcSgG7bzvT6MglUcDexFSufr2FLXUmhipWGFtZbvDhkopGBIuHyzoGy7LZvL8UY5T6pRLNdFv5pl/Lg==
