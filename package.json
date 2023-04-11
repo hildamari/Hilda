@@ -33,7 +33,7 @@
 		"@sapphire/pieces": "^3.5.1",
 		"@sapphire/plugin-api": "^5.0.1",
 		"@sapphire/plugin-editable-commands": "^3.0.0",
-		"@sapphire/plugin-logger": "^3.0.1",
+		"@sapphire/plugin-logger": "^3.0.3",
 		"@sapphire/plugin-scheduled-tasks": "^6.0.0",
 		"@sapphire/plugin-subcommands": "^4.0.0",
 		"@sapphire/stopwatch": "^1.5.0",
