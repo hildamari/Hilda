@@ -191,16 +191,15 @@
     "@sapphire/utilities" "^3.9.2"
     tslib "^2.4.0"
 
-"@sapphire/plugin-api@^5.0.1":
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/@sapphire/plugin-api/-/plugin-api-5.0.1.tgz#20e209a5a43407768801b8041040c9e48dee6636"
-  integrity sha512-rcIo7hKqiIkiJVCuDHJI/25f1QQnARTvsg5mwsdSQnwd8CgwDgysCgANYI1ikxhE1kPJCYofRl9frQlqEWv2Vw==
+"@sapphire/plugin-api@^5.0.4":
+  version "5.0.4"
+  resolved "https://registry.yarnpkg.com/@sapphire/plugin-api/-/plugin-api-5.0.4.tgz#9ff179909c46dd936883bb86bdb995ff7ea2a3bd"
+  integrity sha512-ROCbK3b4aY8u/z9v1tK54ljt3NU6e3Uc0fhp7UNLB+T5BzX7IoezRaUbwX8y6CVN9TWnVeu6cO82cHkba19dgA==
   dependencies:
-    "@types/psl" "^1.1.0"
     "@types/ws" "^8.5.4"
-    psl "^1.9.0"
+    tldts "^6.0.4"
     tslib "^2.5.0"
-    undici "^5.20.0"
+    undici "^5.22.0"
 
 "@sapphire/plugin-editable-commands@^3.0.0":
   version "3.0.0"
@@ -373,11 +372,6 @@
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@types/object-hash/-/object-hash-2.2.1.tgz#67c169f8f033e0b62abbf81df2d00f4598d540b9"
   integrity sha512-i/rtaJFCsPljrZvP/akBqEwUP2y5cZLOmvO+JaYnz01aPknrQ+hB5MRcO7iqCUsFaYfTG8kGfKUyboA07xeDHQ==
-
-"@types/psl@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@types/psl/-/psl-1.1.0.tgz#390c5df1613b166ce3c3eb9fda4d93dc3eeec7b5"
-  integrity sha512-HhZnoLAvI2koev3czVPzBNRYvdrzJGLjQbWZhqFmS9Q6a0yumc5qtfSahBGb5g+6qWvA8iiQktqGkwoIXa/BNQ==
 
 "@types/ws@^8.5.3":
   version "8.5.3"
@@ -1224,11 +1218,6 @@ ps-tree@^1.2.0:
   dependencies:
     event-stream "=3.3.4"
 
-psl@^1.9.0:
-  version "1.9.0"
-  resolved "https://registry.yarnpkg.com/psl/-/psl-1.9.0.tgz#d0df2a137f00794565fcaf3b2c00cd09f8d5a5a7"
-  integrity sha512-E/ZsdU4HLs/68gYzgGTkMicWTLPdAftJLfJFlLUAAKZGkStNU72sZjT66SnMDVOfOWY/YAoiD7Jxa9iHvngcag==
-
 read-pkg@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/read-pkg/-/read-pkg-3.0.0.tgz#9cbc686978fee65d16c00e2b19c237fcf6e38389"
@@ -1491,6 +1480,18 @@ through@2, through@~2.3, through@~2.3.1:
   resolved "https://registry.yarnpkg.com/through/-/through-2.3.8.tgz#0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5"
   integrity sha1-DdTJ/6q8NXlgsbckEV1+Doai4fU=
 
+tldts-core@^6.0.4:
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/tldts-core/-/tldts-core-6.0.4.tgz#57d5da2f30386c57ad84ac55839f6306ad75574d"
+  integrity sha512-1VTpdu9u8mHzqWlzgTYeGmocb9palfyRkVdv4jmgZHeBDYiT2EUN2Ij6lIhcAIbwv9MbPkAv84JBS4KXkpqI+A==
+
+tldts@^6.0.4:
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/tldts/-/tldts-6.0.4.tgz#32e26cedaff52a5dc3642d5abca96d4dcf26a730"
+  integrity sha512-6bPBpLZwjtY4XcLGc1zVEcjh9EMyauJDlF3QSqYq1bepKBK7QyDt9y0+OruFUVptDwl60cn8IsIuoSQAS6x+Cw==
+  dependencies:
+    tldts-core "^6.0.4"
+
 tr46@~0.0.3:
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/tr46/-/tr46-0.0.3.tgz#8184fd347dac9cdc185992f3a6622e14b9d9ab6a"
@@ -1551,10 +1552,10 @@ unbox-primitive@^1.0.1:
     has-symbols "^1.0.2"
     which-boxed-primitive "^1.0.2"
 
-undici@^5.20.0:
-  version "5.20.0"
-  resolved "https://registry.yarnpkg.com/undici/-/undici-5.20.0.tgz#6327462f5ce1d3646bcdac99da7317f455bcc263"
-  integrity sha512-J3j60dYzuo6Eevbawwp1sdg16k5Tf768bxYK4TUJRH7cBM4kFCbf3mOnM/0E3vQYXvpxITbbWmBafaDbxLDz3g==
+undici@^5.22.0:
+  version "5.22.0"
+  resolved "https://registry.yarnpkg.com/undici/-/undici-5.22.0.tgz#5e205d82a5aecc003fc4388ccd3d2c6e8674a0ad"
+  integrity sha512-fR9RXCc+6Dxav4P9VV/sp5w3eFiSdOjJYsbtWfd4s5L5C4ogyuVpdKIVHeW0vV1MloM65/f7W45nR9ZxwVdyiA==
   dependencies:
     busboy "^1.6.0"
 
