@@ -23,6 +23,11 @@
   resolved "https://registry.yarnpkg.com/@discordjs/collection/-/collection-1.0.1.tgz#4acc41dfdacd6a14a7cf3109968044a2d40593dd"
   integrity sha512-5V/wswzR3r2RVYXLxxg4TvrAnBhVCNgHTXhC+OUtLoriJ072rPMHo+Iw1SS1vrCckp8Es40XM411+WkNRPaXFw==
 
+"@discordjs/collection@^1.5.1":
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/@discordjs/collection/-/collection-1.5.1.tgz#bc7ca557838dc29247bf19860426637f103bc383"
+  integrity sha512-aWEc9DCf3TMDe9iaJoOnO2+JVAjeRNuRxPZQA6GVvBf+Z3gqUuWYBy2NWh4+5CLYq5uoc3MOvUQ5H5m8CJBqOA==
+
 "@discordjs/node-pre-gyp@^0.4.5":
   version "0.4.5"
   resolved "https://registry.yarnpkg.com/@discordjs/node-pre-gyp/-/node-pre-gyp-0.4.5.tgz#b33e38cedd821268c75923641783c68fcd1b55ae"
@@ -225,6 +230,15 @@
     "@discordjs/collection" "^1.0.1"
     "@sapphire/utilities" "^3.9.2"
     tslib "^2.4.0"
+
+"@sapphire/pieces@^3.7.0":
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/@sapphire/pieces/-/pieces-3.7.0.tgz#d58d74002a53d01970831b4ccbf2de93a57340be"
+  integrity sha512-DgkcvTja63rDPP4uByH2Ky3eNaYp+Yc1WoFaOsme5w5Nptruwj49sktY6KEbdBrxz23l3ofcxaqnfT/8RROJug==
+  dependencies:
+    "@discordjs/collection" "^1.5.1"
+    "@sapphire/utilities" "^3.13.0"
+    tslib "^2.6.0"
 
 "@sapphire/plugin-api@^5.1.0":
   version "5.1.0"
