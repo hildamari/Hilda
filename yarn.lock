@@ -253,15 +253,15 @@
     colorette "^2.0.20"
     tslib "^2.5.0"
 
-"@sapphire/plugin-scheduled-tasks@^7.1.0":
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/plugin-scheduled-tasks/-/plugin-scheduled-tasks-7.1.0.tgz#fe07bd737bc6429b412947802648ba397d6d927d"
-  integrity sha512-BITMiI3ySGRyaOaYR3nuxM4JpQ26FMwIpaPmASTeCnEDsSEeppzrN4Q9Gh9Bjj1cJvnZnQ+30c9Tbdzg3+af5Q==
+"@sapphire/plugin-scheduled-tasks@^7.1.1":
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/@sapphire/plugin-scheduled-tasks/-/plugin-scheduled-tasks-7.1.1.tgz#b01fe1cddc3d94899a6594b2e4293d8ed5f792da"
+  integrity sha512-2LVoskdi7++glZf2dTyJloQYzbFZNuc9cSAflIN5QGRRZlkBV5yW3PHKa3DmJn113gzfN5B5eAiUnEDsuTC/bw==
   dependencies:
     "@sapphire/stopwatch" "^1.5.0"
-    "@sapphire/utilities" "^3.11.2"
-    bullmq "3.14.0"
-    tslib "^2.5.2"
+    "@sapphire/utilities" "^3.13.0"
+    bullmq "3.15.8"
+    tslib "^2.6.0"
 
 "@sapphire/plugin-subcommands@^4.0.2":
   version "4.0.2"
@@ -355,11 +355,6 @@
     "@discordjs/node-pre-gyp" "^0.4.5"
     nan "^2.17.0"
     tslib "^2.5.0"
-
-"@sapphire/utilities@^3.11.2":
-  version "3.12.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-3.12.0.tgz#3ee8330338aa79a7e0cab04d4d0eec9ed69fc9bf"
-  integrity sha512-y1JP4FdPBkZjJGJcb5Zx0ok64mtpGvz0TLOC49HTwYsfBQL8tsTct93yoYdEEMWSZFmOF1ZvV8L6jIJ1CW8bJw==
 
 "@sapphire/utilities@^3.13.0":
   version "3.13.0"
@@ -490,10 +485,10 @@ brace-expansion@^2.0.1:
   dependencies:
     balanced-match "^1.0.0"
 
-bullmq@3.14.0:
-  version "3.14.0"
-  resolved "https://registry.yarnpkg.com/bullmq/-/bullmq-3.14.0.tgz#5f5327d63bc79bdf89cbf99bb8ec2cbdc961f9b0"
-  integrity sha512-kOrA65MedolaXVDWul4gs4pUMj0fUcZrjlTuvnTknk7Gjci8hgYwUf1PpYh1pYhvyjkgPkt8IATi7NT2j2wzkA==
+bullmq@3.15.8:
+  version "3.15.8"
+  resolved "https://registry.yarnpkg.com/bullmq/-/bullmq-3.15.8.tgz#e8ec5b46b0b7d7ce57e509280d03745109411e05"
+  integrity sha512-k3uimHGhl5svqD7SEak+iI6c5DxeLOaOXzCufI9Ic0ST3nJr69v71TGR4cXCTXdgCff3tLec5HgoBnfyWjgn5A==
   dependencies:
     cron-parser "^4.6.0"
     glob "^8.0.3"
@@ -1691,7 +1686,7 @@ tsc-watch@^6.0.4:
     ps-tree "^1.2.0"
     string-argv "^0.3.1"
 
-tslib@^2.0.0, tslib@^2.5.2, tslib@^2.5.3, tslib@^2.6.0:
+tslib@^2.0.0, tslib@^2.5.3, tslib@^2.6.0:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.6.0.tgz#b295854684dbda164e181d259a22cd779dcd7bc3"
   integrity sha512-7At1WUettjcSRHXCyYtTselblcHl9PJFFVKiCAy/bY97+BPZXSQ2wbq0P9s8tK2G7dFQfNnlJnPAiArVBVBsfA==
