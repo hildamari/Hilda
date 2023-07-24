@@ -244,14 +244,14 @@
     "@skyra/editable-commands" "^3.0.1"
     tslib "^2.5.0"
 
-"@sapphire/plugin-logger@^3.0.4":
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/@sapphire/plugin-logger/-/plugin-logger-3.0.4.tgz#f546a5fea31f1743c34fabdddaf4207315621fac"
-  integrity sha512-a5TnOouMiwTjXEj5HBbmq22csNijP07Xncsc5/eJA1e13lRCGoTbfQjQQ0/AOA4/g31hixycG8btQ4GOWptCIg==
+"@sapphire/plugin-logger@^3.0.5":
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/@sapphire/plugin-logger/-/plugin-logger-3.0.5.tgz#32bc89e7a7bf6dad743f56dc500a682867232a65"
+  integrity sha512-Y7D4f98TAyMSD/ZRIoQSg72HvzUtnjcV3NCk+Dk+SEv+uV5F0UI5SRVB4LRJIc4KW3qaQRxy3VLTIiEF8B2nIA==
   dependencies:
     "@sapphire/timestamp" "^1.0.1"
     colorette "^2.0.20"
-    tslib "^2.5.0"
+    tslib "^2.6.0"
 
 "@sapphire/plugin-scheduled-tasks@^7.1.1":
   version "7.1.1"
