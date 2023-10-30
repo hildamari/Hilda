@@ -256,10 +256,10 @@
     "@sapphire/timestamp" "^1.0.1"
     colorette "^2.0.20"
 
-"@sapphire/plugin-scheduled-tasks@^7.1.2":
-  version "7.1.2"
-  resolved "https://registry.yarnpkg.com/@sapphire/plugin-scheduled-tasks/-/plugin-scheduled-tasks-7.1.2.tgz#e3ab4071bb28e28d19cea408102a48dfff7e7873"
-  integrity sha512-+I+PGHIGiJ4OSZYbQpcnHG8/d2NWYlqT/fAowlftohQ9nyQZJ39iLcGk9iDFx3I4xa/Ho9T8fSnuLE0F3RmrGQ==
+"@sapphire/plugin-scheduled-tasks@^8.0.0":
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/@sapphire/plugin-scheduled-tasks/-/plugin-scheduled-tasks-8.0.0.tgz#acfa6e022fad4e51eee65da31c89c7eccd255c70"
+  integrity sha512-CWYyNICvb3/5lp4WcgVscCI9iGUssHgB1a/FE1lBxI4QWmXC5rvC611TRPdngxq+iX1PQirLI7WLhenefPPt2g==
   dependencies:
     "@sapphire/stopwatch" "^1.5.0"
     "@sapphire/utilities" "^3.13.0"
