@@ -266,10 +266,10 @@
     bullmq "3.15.8"
     tslib "^2.6.2"
 
-"@sapphire/plugin-subcommands@^5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/plugin-subcommands/-/plugin-subcommands-5.0.0.tgz#b377f8277ff58384102e76f2096b573c86fe455c"
-  integrity sha512-C1QL14QDHPgw5K9yXqhQJqOmRVuECLbtjQT5VNUV4mFZdqfDeGSpws3NdCOj+jcgMySqQfw+Cg572O8yP7kzhQ==
+"@sapphire/plugin-subcommands@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@sapphire/plugin-subcommands/-/plugin-subcommands-5.1.0.tgz#f22d1c5e4fbd49c7d96084e8ec615def65c6b60c"
+  integrity sha512-VBd6Ayjqa3bPTS4KCPnvFI5h/LCR53O1cJFyW7QN55Tzi/hXpzByo/HtR6IPdY2bQ5LuHVmKhvbAbI5LD0Q8LQ==
   dependencies:
     "@sapphire/utilities" "^3.13.0"
     tslib "^2.6.2"
