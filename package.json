@@ -25,7 +25,7 @@
 		"watch": "tsc-watch -b src --onSuccess \"node dist/Hilda.js\""
 	},
 	"dependencies": {
-		"@sapphire/decorators": "^6.0.2",
+		"@sapphire/decorators": "^6.0.3",
 		"@sapphire/discord-utilities": "^3.2.0",
 		"@sapphire/discord.js-utilities": "next",
 		"@sapphire/fetch": "^2.4.2",
