@@ -288,12 +288,12 @@
     bullmq "5.1.0"
     tslib "^2.6.2"
 
-"@sapphire/plugin-subcommands@^5.1.0":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/plugin-subcommands/-/plugin-subcommands-5.1.0.tgz#f22d1c5e4fbd49c7d96084e8ec615def65c6b60c"
-  integrity sha512-VBd6Ayjqa3bPTS4KCPnvFI5h/LCR53O1cJFyW7QN55Tzi/hXpzByo/HtR6IPdY2bQ5LuHVmKhvbAbI5LD0Q8LQ==
+"@sapphire/plugin-subcommands@^6.0.2":
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/@sapphire/plugin-subcommands/-/plugin-subcommands-6.0.2.tgz#31e66f8af3a85aea6d0d0b2a13de2c5e227872c5"
+  integrity sha512-AXRIRK2dVxPP3+bsZlvzQjfSrPYAf5C6ueyxzp9gRZE9N5zXKbeAFyL/HeXFB+Hr2zne0zBgqeH25NMeblpm0A==
   dependencies:
-    "@sapphire/utilities" "^3.13.0"
+    "@sapphire/utilities" "^3.15.1"
     tslib "^2.6.2"
 
 "@sapphire/prettier-config@^2.0.0":
@@ -380,11 +380,6 @@
     "@discordjs/node-pre-gyp" "^0.4.5"
     nan "^2.18.0"
     tslib "^2.6.2"
-
-"@sapphire/utilities@^3.13.0":
-  version "3.13.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-3.13.0.tgz#04fd73281ad4cd63c2c87ffbac3faa393d77cf95"
-  integrity sha512-BD5ycPjZX5dXxrAb90dJTY8ukpPVBXgU17gA5ghK2memS4hwAzFYpvK+R+6zh4d6HYIKVuqrVhGXjvZenAa/Aw==
 
 "@sapphire/utilities@^3.14.0":
   version "3.14.0"
