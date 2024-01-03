@@ -278,14 +278,14 @@
     "@sapphire/timestamp" "^1.0.2"
     colorette "^2.0.20"
 
-"@sapphire/plugin-scheduled-tasks@^8.1.0":
-  version "8.1.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/plugin-scheduled-tasks/-/plugin-scheduled-tasks-8.1.0.tgz#a45e48ec9cebee4439a1e7de1781eac38fbddc36"
-  integrity sha512-bjx89ifD0DrRAPP4ICpTtomD00M0kY/x90VdLDbp3oWw2i5tnvw++NyhcjmIDD9EJi5srKkjIw1H8QUX+AaQ0Q==
+"@sapphire/plugin-scheduled-tasks@^10.0.0":
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/@sapphire/plugin-scheduled-tasks/-/plugin-scheduled-tasks-10.0.0.tgz#4b7ca36d3adade042daa1d1bd814718ce2f0f7a4"
+  integrity sha512-al3ZH0+mn/b7Z7iA6nX1QeYoTt14ntFF+WeJzZ4a6zfLEA9QGxbJEGtUQjDGAGmxYVAqZgGmeapJOBmn1l+WCQ==
   dependencies:
-    "@sapphire/stopwatch" "^1.5.0"
-    "@sapphire/utilities" "^3.13.0"
-    bullmq "3.15.8"
+    "@sapphire/stopwatch" "^1.5.1"
+    "@sapphire/utilities" "^3.14.0"
+    bullmq "5.1.0"
     tslib "^2.6.2"
 
 "@sapphire/plugin-subcommands@^5.1.0":
@@ -329,13 +329,6 @@
   integrity sha512-FoZIM7oQ1kwkjWpl/rKReuDFSlkCDjDp//1Np2mmQD+xQ2Zyo/J2MaYAITprwQr3AUBu/OOUJvqm7f8lA9R7gA==
   dependencies:
     tslib "^2.3.1"
-
-"@sapphire/stopwatch@^1.5.0":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/stopwatch/-/stopwatch-1.5.0.tgz#4acf7352f969f0c81d69a838ecbfc8b6026ff660"
-  integrity sha512-DtyKugdy3JTqm6JnEepTY64fGJAqlusDVrlrzifEgSCfGYCqpvB+SBldkWtDH+z+zLcp+PyaFLq7xpVfkhmvGg==
-  dependencies:
-    tslib "^2.4.0"
 
 "@sapphire/stopwatch@^1.5.1":
   version "1.5.1"
@@ -536,17 +529,18 @@ brace-expansion@^2.0.1:
   dependencies:
     balanced-match "^1.0.0"
 
-bullmq@3.15.8:
-  version "3.15.8"
-  resolved "https://registry.yarnpkg.com/bullmq/-/bullmq-3.15.8.tgz#e8ec5b46b0b7d7ce57e509280d03745109411e05"
-  integrity sha512-k3uimHGhl5svqD7SEak+iI6c5DxeLOaOXzCufI9Ic0ST3nJr69v71TGR4cXCTXdgCff3tLec5HgoBnfyWjgn5A==
+bullmq@5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/bullmq/-/bullmq-5.1.0.tgz#9c527b1bd5121e082bd807a3bbab953b002aea1c"
+  integrity sha512-08rTUvXlAFIhKNIHVRL6KTc0xJf2pxVxnMH0Bvlq6WfKgW3uTWmTjw+oj1NDYCK5BTr3F8ih7dV2exoM8prA2w==
   dependencies:
     cron-parser "^4.6.0"
     glob "^8.0.3"
     ioredis "^5.3.2"
     lodash "^4.17.21"
     msgpackr "^1.6.2"
-    semver "^7.3.7"
+    node-abort-controller "^3.1.1"
+    semver "^7.5.4"
     tslib "^2.0.0"
     uuid "^9.0.0"
 
@@ -1233,6 +1227,11 @@ nice-try@^1.0.4:
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
   integrity sha512-1nh45deeb5olNY7eX82BkPO7SSxR5SSYJiPTrTdFUVYwAl8CKMA5N9PjTYkHiRjisVcxcQ1HXdLhx2qxxJzLNQ==
 
+node-abort-controller@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/node-abort-controller/-/node-abort-controller-3.1.1.tgz#a94377e964a9a37ac3976d848cb5c765833b8548"
+  integrity sha512-AGK2yQKIjRuqnc6VkX2Xj5d+QW8xZ87pa1UK6yA6ouUyuxfHuMP6umE5QK7UmTeOAymo+Zx1Fxiuw9rVx8taHQ==
+
 node-cleanup@^2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/node-cleanup/-/node-cleanup-2.1.2.tgz#7ac19abd297e09a7f72a71545d951b517e4dde2c"
@@ -1489,7 +1488,7 @@ semver@^7.3.5:
   dependencies:
     lru-cache "^6.0.0"
 
-semver@^7.3.7:
+semver@^7.5.4:
   version "7.5.4"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.5.4.tgz#483986ec4ed38e1c6c48c34894a9182dbff68a6e"
   integrity sha512-1bCSESV6Pv+i21Hvpxp3Dx+pSD8lIPt8uVjRrxAUt/nbswYc+tK6Y2btiULjd4+fnq15PX+nqQDC7Oft7WkwcA==
