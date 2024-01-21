@@ -278,14 +278,14 @@
     "@sapphire/timestamp" "^1.0.3"
     colorette "^2.0.20"
 
-"@sapphire/plugin-scheduled-tasks@^10.0.0":
-  version "10.0.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/plugin-scheduled-tasks/-/plugin-scheduled-tasks-10.0.0.tgz#4b7ca36d3adade042daa1d1bd814718ce2f0f7a4"
-  integrity sha512-al3ZH0+mn/b7Z7iA6nX1QeYoTt14ntFF+WeJzZ4a6zfLEA9QGxbJEGtUQjDGAGmxYVAqZgGmeapJOBmn1l+WCQ==
+"@sapphire/plugin-scheduled-tasks@^10.0.1":
+  version "10.0.1"
+  resolved "https://registry.yarnpkg.com/@sapphire/plugin-scheduled-tasks/-/plugin-scheduled-tasks-10.0.1.tgz#ddb6b06a6da3757c71a4bb69725383e3ef7afb61"
+  integrity sha512-/wS4mlyh5oRo3ADmkDEywNyb0hdUUJuudc5Nz9kuYWSpYZMWhecI24N6m8i4ktMdclLriV+ppW3jxZzGyD22LQ==
   dependencies:
-    "@sapphire/stopwatch" "^1.5.1"
-    "@sapphire/utilities" "^3.14.0"
-    bullmq "5.1.0"
+    "@sapphire/stopwatch" "^1.5.2"
+    "@sapphire/utilities" "^3.15.3"
+    bullmq "5.1.3"
     tslib "^2.6.2"
 
 "@sapphire/plugin-subcommands@^6.0.3":
@@ -329,13 +329,6 @@
   integrity sha512-FoZIM7oQ1kwkjWpl/rKReuDFSlkCDjDp//1Np2mmQD+xQ2Zyo/J2MaYAITprwQr3AUBu/OOUJvqm7f8lA9R7gA==
   dependencies:
     tslib "^2.3.1"
-
-"@sapphire/stopwatch@^1.5.1":
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/@sapphire/stopwatch/-/stopwatch-1.5.1.tgz#d2fb2eb62a77d42e84b40fcccdd623fb0f183eb3"
-  integrity sha512-DoBcYUp7zb2bxmZghDjePobemApng6Tu8BGRy3qTCrq41ylsvyiUqGcvaMLGX4MIJ0EaDNyG4AEYe0xoC6Mz0Q==
-  dependencies:
-    tslib "^2.6.2"
 
 "@sapphire/stopwatch@^1.5.2":
   version "1.5.2"
@@ -387,11 +380,6 @@
     "@discordjs/node-pre-gyp" "^0.4.5"
     nan "^2.18.0"
     tslib "^2.6.2"
-
-"@sapphire/utilities@^3.14.0":
-  version "3.14.0"
-  resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-3.14.0.tgz#4181145cf3cad127009d758e1a6ceb27db3c4eca"
-  integrity sha512-eYlpYlaKLvxTNjD3ymxpsf4MaSHW3x6vf+DMsLdMsV235J7i66VboHb8uxNcogR/lJ7khmMhMTCtabqUhNX4bA==
 
 "@sapphire/utilities@^3.15.3":
   version "3.15.3"
@@ -531,16 +519,16 @@ brace-expansion@^2.0.1:
   dependencies:
     balanced-match "^1.0.0"
 
-bullmq@5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/bullmq/-/bullmq-5.1.0.tgz#9c527b1bd5121e082bd807a3bbab953b002aea1c"
-  integrity sha512-08rTUvXlAFIhKNIHVRL6KTc0xJf2pxVxnMH0Bvlq6WfKgW3uTWmTjw+oj1NDYCK5BTr3F8ih7dV2exoM8prA2w==
+bullmq@5.1.3:
+  version "5.1.3"
+  resolved "https://registry.yarnpkg.com/bullmq/-/bullmq-5.1.3.tgz#c13af5359f63935cc0dd7acfb84c544946cc040f"
+  integrity sha512-safpGwiwKHsNPW01Wk8FPxdWbPS2mA0HZKqIhdQB10J4wWRSDWPeQE2p+YYnAmqEsk0FwJdZnzVcwCfn7w5cVA==
   dependencies:
     cron-parser "^4.6.0"
     glob "^8.0.3"
     ioredis "^5.3.2"
     lodash "^4.17.21"
-    msgpackr "^1.6.2"
+    msgpackr "^1.10.1"
     node-abort-controller "^3.1.1"
     semver "^7.5.4"
     tslib "^2.0.0"
@@ -1212,10 +1200,10 @@ msgpackr-extract@^3.0.2:
     "@msgpackr-extract/msgpackr-extract-linux-x64" "3.0.2"
     "@msgpackr-extract/msgpackr-extract-win32-x64" "3.0.2"
 
-msgpackr@^1.6.2:
-  version "1.9.5"
-  resolved "https://registry.yarnpkg.com/msgpackr/-/msgpackr-1.9.5.tgz#ac548c5f4546db895e84e46d39d813be961dc527"
-  integrity sha512-/IJ3cFSN6Ci3eG2wLhbFEL6GT63yEaoN/R5My2QkV6zro+OJaVRLPlwvxY7EtHYSmDlQpk8stvOQTL2qJFkDRg==
+msgpackr@^1.10.1:
+  version "1.10.1"
+  resolved "https://registry.yarnpkg.com/msgpackr/-/msgpackr-1.10.1.tgz#51953bb4ce4f3494f0c4af3f484f01cfbb306555"
+  integrity sha512-r5VRLv9qouXuLiIBrLpl2d5ZvPt8svdQTl5/vMvE4nzDMyEX4sgW5yWhuBBj5UmgwOTWj8CIdSXn5sAfsHAWIQ==
   optionalDependencies:
     msgpackr-extract "^3.0.2"
 
