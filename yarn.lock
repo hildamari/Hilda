@@ -288,12 +288,12 @@
     bullmq "5.1.0"
     tslib "^2.6.2"
 
-"@sapphire/plugin-subcommands@^6.0.2":
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/@sapphire/plugin-subcommands/-/plugin-subcommands-6.0.2.tgz#31e66f8af3a85aea6d0d0b2a13de2c5e227872c5"
-  integrity sha512-AXRIRK2dVxPP3+bsZlvzQjfSrPYAf5C6ueyxzp9gRZE9N5zXKbeAFyL/HeXFB+Hr2zne0zBgqeH25NMeblpm0A==
+"@sapphire/plugin-subcommands@^6.0.3":
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/@sapphire/plugin-subcommands/-/plugin-subcommands-6.0.3.tgz#69e32ed3550480653e741ce65975e94848111871"
+  integrity sha512-SLDlTjMrMpb3s89ZjrBvVbMWsXfNNciO6SnNQdKLKTUQwktaYxIdj+k3MmEWpN19i8W9ogRvIrLl0Hw20pPUng==
   dependencies:
-    "@sapphire/utilities" "^3.15.1"
+    "@sapphire/utilities" "^3.15.3"
     tslib "^2.6.2"
 
 "@sapphire/prettier-config@^2.0.0":
@@ -392,11 +392,6 @@
   version "3.14.0"
   resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-3.14.0.tgz#4181145cf3cad127009d758e1a6ceb27db3c4eca"
   integrity sha512-eYlpYlaKLvxTNjD3ymxpsf4MaSHW3x6vf+DMsLdMsV235J7i66VboHb8uxNcogR/lJ7khmMhMTCtabqUhNX4bA==
-
-"@sapphire/utilities@^3.15.1":
-  version "3.15.1"
-  resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-3.15.1.tgz#063b3709207ee5949936a5ae19e10336ea0680cd"
-  integrity sha512-Pce4++kXf+2vgVfO1kEJ2LiZzO8zB2TTyIu6XePHNmNEotcEHkq0RmOSaKw3ElA+5gRvTE269RMwmlAw1twuLg==
 
 "@sapphire/utilities@^3.15.3":
   version "3.15.3"
