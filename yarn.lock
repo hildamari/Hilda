@@ -270,12 +270,12 @@
   dependencies:
     "@skyra/editable-commands" "^3.0.1"
 
-"@sapphire/plugin-logger@^4.0.1":
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/@sapphire/plugin-logger/-/plugin-logger-4.0.1.tgz#abfb6b55c6ed53d59f8077e8696e7226d042da3f"
-  integrity sha512-G+xABXFCTYPs6oEUtuVtHpMOuUXBHmT5ThSqaIa/BknHTrtvSi+pJd0ndX6yTtZWLTmDog2pbaF+r/5DaXtXYg==
+"@sapphire/plugin-logger@^4.0.2":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@sapphire/plugin-logger/-/plugin-logger-4.0.2.tgz#e9422906a4d429bf687d677f24765a52243a1f91"
+  integrity sha512-5Nr++u+fA3/jZwj1aL9Z16RgyJZRE1gyUftfWjrzdndE5FkcbnLiVCKvnI8WzSupVhdn6kMaCWAteOSgAaq3lQ==
   dependencies:
-    "@sapphire/timestamp" "^1.0.2"
+    "@sapphire/timestamp" "^1.0.3"
     colorette "^2.0.20"
 
 "@sapphire/plugin-scheduled-tasks@^10.0.0":
@@ -365,11 +365,6 @@
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@sapphire/timer-manager/-/timer-manager-1.0.2.tgz#64aa523da819c2e0c3c128d1b7da1c396d52df1f"
   integrity sha512-0/wQEeiYeENQNtCVjhLZA2hDFqshNwWRR0ewXXENggTtkSqL7l+FadP1FZIMLRB69vnsZKdL2GuEHDuWayJbAQ==
-
-"@sapphire/timestamp@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@sapphire/timestamp/-/timestamp-1.0.2.tgz#b9ee94adda7b420945ac5232e16a0e0a76d88c53"
-  integrity sha512-Jn5armLFr3Z9u9CTF9h9qWFy0rFKA4UlalRPSAF9KL0xbXTSTLEJyZrRoTtQwLGcuXdSaaLc/u9Ywy4oW2eTEw==
 
 "@sapphire/timestamp@^1.0.3":
   version "1.0.3"
