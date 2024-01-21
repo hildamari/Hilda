@@ -214,10 +214,10 @@
   resolved "https://registry.yarnpkg.com/@sapphire/duration/-/duration-1.1.2.tgz#362ae72ae55521b7b19ba98ef227e5df627ebed1"
   integrity sha512-m+DpXedUHdnH3rM6P9Hiyb9dpdXKb8WeTAVIug0QuN8tarQedbymbOor+UFmBfCbKOkoW9HvGK10xDwDvSfKrw==
 
-"@sapphire/fetch@^3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@sapphire/fetch/-/fetch-3.0.1.tgz#06fc02745d9f01c9fc22342df9078a77272dbf21"
-  integrity sha512-BNnt4sA2yjQLKy6RBkkR93DCuUYP9wsC5FRdZoHxFPPB25K+C+Tf5pqige+vJHq54Qp8fZQWG2w9JZYOsGWYIg==
+"@sapphire/fetch@^3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@sapphire/fetch/-/fetch-3.0.2.tgz#a81276205850fbb74002443e67050f3b70ace173"
+  integrity sha512-Na3TP9B/ncq09YNj+9SWd2JXclTGYCIX+ZieGNfRsi38PpgE3hSSIn/7hAjpF/sV1uBfHHtc42mz24pEuEqZmQ==
 
 "@sapphire/framework@^3.1.1":
   version "3.1.1"
