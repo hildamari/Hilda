@@ -46,7 +46,7 @@
 		"discord.js": "^13.10.2",
 		"dotenv-cra": "^3.0.3",
 		"redis": "^4.6.13",
-		"reflect-metadata": "^0.2.1"
+		"reflect-metadata": "^0.2.2"
 	},
 	"devDependencies": {
 		"@prisma/client": "^5.11.0",
