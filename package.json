@@ -45,7 +45,7 @@
 		"discord-api-types": "^0.33.5",
 		"discord.js": "^13.10.2",
 		"dotenv-cra": "^3.0.3",
-		"redis": "^4.6.15",
+		"redis": "^4.7.0",
 		"reflect-metadata": "^0.2.2"
 	},
 	"devDependencies": {
