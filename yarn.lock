@@ -288,13 +288,12 @@
     bullmq "5.1.3"
     tslib "^2.6.2"
 
-"@sapphire/plugin-subcommands@^6.0.3":
-  version "6.0.3"
-  resolved "https://registry.yarnpkg.com/@sapphire/plugin-subcommands/-/plugin-subcommands-6.0.3.tgz#69e32ed3550480653e741ce65975e94848111871"
-  integrity sha512-SLDlTjMrMpb3s89ZjrBvVbMWsXfNNciO6SnNQdKLKTUQwktaYxIdj+k3MmEWpN19i8W9ogRvIrLl0Hw20pPUng==
+"@sapphire/plugin-subcommands@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@sapphire/plugin-subcommands/-/plugin-subcommands-7.0.0.tgz#038baf14c78be30b694a80876395b614033164ac"
+  integrity sha512-oBJ5o99hjq1sdBGcL4ksChyg73pZ1zhGVNBLnRHP4K5iegCA60GE4WRZqskrA94owy0hHNeCjj0etUpOCaihbQ==
   dependencies:
-    "@sapphire/utilities" "^3.15.3"
-    tslib "^2.6.2"
+    "@sapphire/utilities" "^3.17.0"
 
 "@sapphire/prettier-config@^2.0.0":
   version "2.0.0"
