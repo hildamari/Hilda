@@ -36,7 +36,7 @@
 		"@sapphire/plugin-logger": "^4.0.2",
 		"@sapphire/plugin-scheduled-tasks": "^10.0.2",
 		"@sapphire/plugin-subcommands": "^7.0.1",
-		"@sapphire/stopwatch": "^1.5.3",
+		"@sapphire/stopwatch": "^1.5.4",
 		"@sapphire/time-utilities": "^1.7.13",
 		"@sapphire/type": "^2.5.1",
 		"@sapphire/utilities": "^3.18.1",
