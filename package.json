@@ -37,7 +37,7 @@
 		"@sapphire/plugin-scheduled-tasks": "^10.0.2",
 		"@sapphire/plugin-subcommands": "^7.0.1",
 		"@sapphire/stopwatch": "^1.5.4",
-		"@sapphire/time-utilities": "^1.7.13",
+		"@sapphire/time-utilities": "^1.7.14",
 		"@sapphire/type": "^2.5.1",
 		"@sapphire/utilities": "^3.18.1",
 		"colorette": "^2.0.20",
