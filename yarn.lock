@@ -203,10 +203,10 @@
   resolved "https://registry.yarnpkg.com/@msgpackr-extract/msgpackr-extract-win32-x64/-/msgpackr-extract-win32-x64-3.0.2.tgz#0f164b726869f71da3c594171df5ebc1c4b0a407"
   integrity sha512-O+6Gs8UeDbyFpbSh2CPEz/UOrrdWPTBYNblZK5CxxLisYt4kGX3Sc+czffFonyjiGSq3jWLwJS/CCJc7tBr4sQ==
 
-"@prisma/client@^6.4.0":
-  version "6.4.0"
-  resolved "https://registry.yarnpkg.com/@prisma/client/-/client-6.4.0.tgz#341f56b747ea7b70e4f1d2d362f0e7cdc2b1bdb4"
-  integrity sha512-48tLb+VL7iuuqJXjD4Xbqa622fuh8UtqmjTf39AKrQjlTUdNaMc9sC/c49eXQkcnrAdh9FoS1qVupmZSYiZ9TQ==
+"@prisma/client@^6.4.1":
+  version "6.4.1"
+  resolved "https://registry.yarnpkg.com/@prisma/client/-/client-6.4.1.tgz#2666796c862e71eb2a6f39e30b192236893e07d3"
+  integrity sha512-A7Mwx44+GVZVexT5e2GF/WcKkEkNNKbgr059xpr5mn+oUm2ZW1svhe+0TRNBwCdzhfIZ+q23jEgsNPvKD9u+6g==
 
 "@prisma/debug@6.4.1":
   version "6.4.1"
