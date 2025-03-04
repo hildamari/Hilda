@@ -1,6 +1,7 @@
 <p align="center">
         <a href="https://discord.gg/phsGJdh"><img src="https://discordapp.com/api/guilds/650595160849121300/widget.png?style=banner3" alt="Join Discord Server" height="145px"/></a>
         <a href="https://top.gg/bot/614635423582650394"><img src="https://top.gg/api/widget/614635423582650394.svg"></a>
+        <img alt="GitHub Actions Workflow Status" src="https://img.shields.io/github/actions/workflow/status/hildamari/Hilda/continuous-integration.yml">
 </p>
 
 # Hilda
