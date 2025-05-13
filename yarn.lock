@@ -411,14 +411,14 @@
     "@sapphire/timestamp" "^1.0.3"
     colorette "^2.0.20"
 
-"@sapphire/plugin-scheduled-tasks@^10.0.2":
-  version "10.0.2"
-  resolved "https://registry.yarnpkg.com/@sapphire/plugin-scheduled-tasks/-/plugin-scheduled-tasks-10.0.2.tgz#485700012c72be107fd6ea03bb814dff13a1efe3"
-  integrity sha512-MIcRaZAJTJtFXyy14yYO/LMROYp2YbJlvb/0zlgWutNhCz0TcbZ50gVyers1SKnoQI04ZdL87iRYQjRIbLtZPQ==
+"@sapphire/plugin-scheduled-tasks@^10.0.3":
+  version "10.0.3"
+  resolved "https://registry.yarnpkg.com/@sapphire/plugin-scheduled-tasks/-/plugin-scheduled-tasks-10.0.3.tgz#c0e42e9c5d105f95a9fb25d871f44dd4bb9c1934"
+  integrity sha512-bzUNLuwHTs/ZWlVXmOaf76SNpMsxsYNy3wUUXKcgO7CuoCnb8wesNSfKSXNxlafvvVqDfpzT4H/KvmkdUmb1Pg==
   dependencies:
-    "@sapphire/stopwatch" "^1.5.3"
-    "@sapphire/utilities" "^3.18.0"
-    bullmq "5.22.0"
+    "@sapphire/stopwatch" "^1.5.4"
+    "@sapphire/utilities" "^3.18.2"
+    bullmq "5.52.2"
 
 "@sapphire/plugin-subcommands@^7.0.1":
   version "7.0.1"
@@ -460,13 +460,6 @@
   integrity sha512-FoZIM7oQ1kwkjWpl/rKReuDFSlkCDjDp//1Np2mmQD+xQ2Zyo/J2MaYAITprwQr3AUBu/OOUJvqm7f8lA9R7gA==
   dependencies:
     tslib "^2.3.1"
-
-"@sapphire/stopwatch@^1.5.3":
-  version "1.5.3"
-  resolved "https://registry.yarnpkg.com/@sapphire/stopwatch/-/stopwatch-1.5.3.tgz#ee7c2205b39220d2078e25361e3ceeaba3d026f6"
-  integrity sha512-HwsZZl5+BHWAMsRPALyabTlVLjPyXAIwZGSYZg7LxqK5neMaWLmc8Fh06ZZe85GkJQ2e+JDiNAaNRyD1Fya0Kw==
-  dependencies:
-    tslib "^2.8.1"
 
 "@sapphire/stopwatch@^1.5.4":
   version "1.5.4"
@@ -665,14 +658,14 @@ brace-expansion@^1.1.7:
     balanced-match "^1.0.0"
     concat-map "0.0.1"
 
-bullmq@5.22.0:
-  version "5.22.0"
-  resolved "https://registry.yarnpkg.com/bullmq/-/bullmq-5.22.0.tgz#81d776622da1848947fbfbe79d14724a7ad59921"
-  integrity sha512-nwjJSQt/kpO4bIfAznyKKz3+m5OZ6YSaz2Vg7oNoZWTD5wCnJJJy6b9iWM5QIF0bADhDWyorLCO0hU3de+iKMA==
+bullmq@5.52.2:
+  version "5.52.2"
+  resolved "https://registry.yarnpkg.com/bullmq/-/bullmq-5.52.2.tgz#2634ace2eeacf5618a3003d237e660d2b00de0a8"
+  integrity sha512-fK/dKIv8ymyys4K+zeNEPA+yuYWzRPmBWUmwIMz8DvYekadl8VG19yUx94Na0n0cLAi+spdn3a/+ufkYK7CBUg==
   dependencies:
-    cron-parser "^4.6.0"
+    cron-parser "^4.9.0"
     ioredis "^5.4.1"
-    msgpackr "^1.10.1"
+    msgpackr "^1.11.2"
     node-abort-controller "^3.1.1"
     semver "^7.5.4"
     tslib "^2.0.0"
@@ -749,10 +742,10 @@ console-control-strings@^1.0.0, console-control-strings@^1.1.0:
   resolved "https://registry.yarnpkg.com/console-control-strings/-/console-control-strings-1.1.0.tgz#3d7cf4464db6446ea644bf4b39507f9851008e8e"
   integrity sha1-PXz0Rk22RG6mRL9LOVB/mFEAjo4=
 
-cron-parser@^4.6.0:
-  version "4.8.1"
-  resolved "https://registry.yarnpkg.com/cron-parser/-/cron-parser-4.8.1.tgz#47062ea63d21d78c10ddedb08ea4c5b6fc2750fb"
-  integrity sha512-jbokKWGcyU4gl6jAfX97E1gDpY12DJ1cLJZmoDzaAln/shZ+S3KBFBuA2Q6WeUN4gJf/8klnV1EfvhA2lK5IRQ==
+cron-parser@^4.9.0:
+  version "4.9.0"
+  resolved "https://registry.yarnpkg.com/cron-parser/-/cron-parser-4.9.0.tgz#0340694af3e46a0894978c6f52a6dbb5c0f11ad5"
+  integrity sha512-p0SaNjrHOnQeR8/VnfGbmg9te2kfyYSQ7Sc/j/6DtPL3JQvKxmjO9TSjNFpujqV3vEYYBvNNvXSxzyksBWAx1Q==
   dependencies:
     luxon "^3.2.1"
 
@@ -1364,10 +1357,10 @@ msgpackr-extract@^3.0.2:
     "@msgpackr-extract/msgpackr-extract-linux-x64" "3.0.2"
     "@msgpackr-extract/msgpackr-extract-win32-x64" "3.0.2"
 
-msgpackr@^1.10.1:
-  version "1.10.1"
-  resolved "https://registry.yarnpkg.com/msgpackr/-/msgpackr-1.10.1.tgz#51953bb4ce4f3494f0c4af3f484f01cfbb306555"
-  integrity sha512-r5VRLv9qouXuLiIBrLpl2d5ZvPt8svdQTl5/vMvE4nzDMyEX4sgW5yWhuBBj5UmgwOTWj8CIdSXn5sAfsHAWIQ==
+msgpackr@^1.11.2:
+  version "1.11.2"
+  resolved "https://registry.yarnpkg.com/msgpackr/-/msgpackr-1.11.2.tgz#4463b7f7d68f2e24865c395664973562ad24473d"
+  integrity sha512-F9UngXRlPyWCDEASDpTf6c9uNhGPTqnTeLVt7bN+bU1eajoR/8V9ys2BRaV5C/e5ihE6sJ9uPIKaYt6bFuO32g==
   optionalDependencies:
     msgpackr-extract "^3.0.2"
 
