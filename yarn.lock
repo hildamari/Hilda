@@ -278,14 +278,14 @@
     "@sapphire/timestamp" "^1.0.5"
     colorette "^2.0.20"
 
-"@sapphire/plugin-scheduled-tasks@^10.0.3":
-  version "10.0.3"
-  resolved "https://registry.yarnpkg.com/@sapphire/plugin-scheduled-tasks/-/plugin-scheduled-tasks-10.0.3.tgz#c0e42e9c5d105f95a9fb25d871f44dd4bb9c1934"
-  integrity sha512-bzUNLuwHTs/ZWlVXmOaf76SNpMsxsYNy3wUUXKcgO7CuoCnb8wesNSfKSXNxlafvvVqDfpzT4H/KvmkdUmb1Pg==
+"@sapphire/plugin-scheduled-tasks@^10.0.4":
+  version "10.0.4"
+  resolved "https://registry.yarnpkg.com/@sapphire/plugin-scheduled-tasks/-/plugin-scheduled-tasks-10.0.4.tgz#23288d4d1a8b68d9eb41ad909c19320177ab28d6"
+  integrity sha512-H0Z9QgDavLDK38GVyKfMDsyruOA4NHSyhNk/LCzewCDqc1d5Nxvoo5PMTB19NvadO9RFvgnPqZk7g4k3HzvAvQ==
   dependencies:
     "@sapphire/stopwatch" "^1.5.4"
     "@sapphire/utilities" "^3.18.2"
-    bullmq "5.52.2"
+    bullmq "5.58.7"
 
 "@sapphire/plugin-subcommands@^7.0.1":
   version "7.0.1"
@@ -520,10 +520,10 @@ brace-expansion@^1.1.7:
     balanced-match "^1.0.0"
     concat-map "0.0.1"
 
-bullmq@5.52.2:
-  version "5.52.2"
-  resolved "https://registry.yarnpkg.com/bullmq/-/bullmq-5.52.2.tgz#2634ace2eeacf5618a3003d237e660d2b00de0a8"
-  integrity sha512-fK/dKIv8ymyys4K+zeNEPA+yuYWzRPmBWUmwIMz8DvYekadl8VG19yUx94Na0n0cLAi+spdn3a/+ufkYK7CBUg==
+bullmq@5.58.7:
+  version "5.58.7"
+  resolved "https://registry.yarnpkg.com/bullmq/-/bullmq-5.58.7.tgz#9e0095d33cf9b1f1e4b4c98fddbd73a056a06e0e"
+  integrity sha512-rqsKV/ip76wU90q7Cxpr1vS/6PYIVbhuzqr3wgILgjS6XbsnJtWyYrK23jqWHs9+m6/NXM4+62hyf8CSBpufAw==
   dependencies:
     cron-parser "^4.9.0"
     ioredis "^5.4.1"
@@ -531,7 +531,7 @@ bullmq@5.52.2:
     node-abort-controller "^3.1.1"
     semver "^7.5.4"
     tslib "^2.0.0"
-    uuid "^9.0.0"
+    uuid "^11.1.0"
 
 call-bind@^1.0.0, call-bind@^1.0.2:
   version "1.0.2"
@@ -1745,10 +1745,10 @@ util-deprecate@^1.0.1:
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=
 
-uuid@^9.0.0:
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/uuid/-/uuid-9.0.0.tgz#592f550650024a38ceb0c562f2f6aa435761efb5"
-  integrity sha512-MXcSTerfPa4uqyzStbRoTgt5XIe3x5+42+q1sDuy3R5MDk66URdLMOZe5aPX/SQd+kuYAh0FdP/pO28IkQyTeg==
+uuid@^11.1.0:
+  version "11.1.0"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-11.1.0.tgz#9549028be1753bb934fc96e2bca09bb4105ae912"
+  integrity sha512-0/A9rDy9P7cJ+8w1c9WD9V//9Wj15Ce2MPz8Ri6032usz+NfePxx5AcN3bN+r6ZL6jEo066/yNYB3tn4pQEx+A==
 
 validate-npm-package-license@^3.0.1:
   version "3.0.4"
