@@ -133,30 +133,30 @@
   dependencies:
     "@prisma/debug" "6.12.0"
 
-"@redis/bloom@6.3.1":
-  version "6.3.1"
-  resolved "https://registry.yarnpkg.com/@redis/bloom/-/bloom-6.3.1.tgz#5dbbab09a81329bf567a76cfc5a3a9b298ed84bb"
-  integrity sha512-dpF9j2yJDoPzSCaZn0MSB3xzmnXQVJeTSAWJcQVcgbmluwhpFeemmII0cF1t+WYfoVS+shEFq79+MmUItgzJLg==
+"@redis/bloom@6.4.0":
+  version "6.4.0"
+  resolved "https://registry.yarnpkg.com/@redis/bloom/-/bloom-6.4.0.tgz#5ed2d34d844d9e84f62a79ddf98d2163a52443a3"
+  integrity sha512-haBv1OKeJoKxoAxwKEHPDKdoZaLIuWAKNr4VFRF2C3Rjjn7Ese5fijEW6295rMBIyddZfuIOcvH1aZ/yKzy8vQ==
 
-"@redis/client@6.3.1":
-  version "6.3.1"
-  resolved "https://registry.yarnpkg.com/@redis/client/-/client-6.3.1.tgz#2c77b3835ddfecb7024b0518d363f0fba07fadb7"
-  integrity sha512-masbfVKULdoAofwddepZxRhWa4w6zvBHn6TRn90TRPrRkVIlGCur3pFqwWaCbMxtYI9twepkz63e/T/tEH8GjA==
+"@redis/client@6.4.0":
+  version "6.4.0"
+  resolved "https://registry.yarnpkg.com/@redis/client/-/client-6.4.0.tgz#5d0f49ef8f046f176e39752b71367e6f6ae57819"
+  integrity sha512-XEFSX0W1BUVFwtWC41vk5P/U5CqvacBWypFbmYHdF1gJeIYWWmEzsM2R5mPb+65SdODFQk7xuuMPFP6s1t9nhw==
 
-"@redis/json@6.3.1":
-  version "6.3.1"
-  resolved "https://registry.yarnpkg.com/@redis/json/-/json-6.3.1.tgz#b2ad71b13cbea2d2551537aee2d5c9ff06a6478c"
-  integrity sha512-fMz4kUwJzEftcU9EMaqsjZcUwzpTQLOYRqhQsAD6uKvZWeamblK13ZhgO5SzVSZVk31jmwLeTRpU5GAl5egfUw==
+"@redis/json@6.4.0":
+  version "6.4.0"
+  resolved "https://registry.yarnpkg.com/@redis/json/-/json-6.4.0.tgz#95057ae420c6d5fcd47cd9e548e59827a2364c4a"
+  integrity sha512-Dtxn3c2u5H5r3MA6kMrFI6iSOo4BIwibwkep94BMBD5ba1Eik1UYIwInX9lZ10RdUT4+BD7ZS9lAoORBvXUEYg==
 
-"@redis/search@6.3.1":
-  version "6.3.1"
-  resolved "https://registry.yarnpkg.com/@redis/search/-/search-6.3.1.tgz#db2fd8592c69d142f62626757ddbbc22d310bc52"
-  integrity sha512-T67pvPUpW82VrZLvihO8O2DFMC7eY2oMAzMzapCbiPZn7mdWqHMEIlohYim12gIawT5kn6qT/Cvmm4WulKB+kQ==
+"@redis/search@6.4.0":
+  version "6.4.0"
+  resolved "https://registry.yarnpkg.com/@redis/search/-/search-6.4.0.tgz#b1465bea266b76a126e2387b5d2db6bd0561ff10"
+  integrity sha512-B4L2OD5BMwbOYewQ9KGJfukLUkRQz1gc91TEOxz76KLeJsLbHB0XXa7sKMNoB3JURPWvhuY0PE04fHQVYZPZKg==
 
-"@redis/time-series@6.3.1":
-  version "6.3.1"
-  resolved "https://registry.yarnpkg.com/@redis/time-series/-/time-series-6.3.1.tgz#a5afcae70455603e5f8f9a9ce1f8836f7859d1e1"
-  integrity sha512-MNDgrm+i63M/1a+XA+HcDsScwt4uBh/fGGJ84swTQZTFK5K5wMmxdlTRa4ZgmNJzjxMaszW/ipPScMUGV3aAMg==
+"@redis/time-series@6.4.0":
+  version "6.4.0"
+  resolved "https://registry.yarnpkg.com/@redis/time-series/-/time-series-6.4.0.tgz#1f3427310f27a168a1c7f98fdd4a029461ae7b4c"
+  integrity sha512-5QpeIlX/r0h0//JfJ8h4/Il9i0SGHhnOkdcocOhFDp0pb8VgVCEkxeCkUx8IR3g3rlq+uiPIf4NCueveHS9Vbw==
 
 "@sapphire/async-queue@^1.5.0":
   version "1.5.0"
@@ -1411,16 +1411,16 @@ redis-parser@^3.0.0:
   dependencies:
     redis-errors "^1.0.0"
 
-redis@^6.3.1:
-  version "6.3.1"
-  resolved "https://registry.yarnpkg.com/redis/-/redis-6.3.1.tgz#2a8565c7254790b1346b241968b88304e949e6ef"
-  integrity sha512-mV96ZKxQ4CGn3SyEGaY0Lb9YA443mdVey3c+mdr0NAUaBxiOZGoYCWX8PoM55kictSOmxlJRtZJxIsmZm3jL+w==
+redis@^6.4.0:
+  version "6.4.0"
+  resolved "https://registry.yarnpkg.com/redis/-/redis-6.4.0.tgz#5b14472f998a01820b9712cf11a4c1a92703b88d"
+  integrity sha512-8Xk9zRovBNDzIO3xRi036QFgijIZKeIPjQJ5VhgxV8nxkxDP5GlE5se71G1I4TnUTojbCtmfKzXpioxlDhHJvg==
   dependencies:
-    "@redis/bloom" "6.3.1"
-    "@redis/client" "6.3.1"
-    "@redis/json" "6.3.1"
-    "@redis/search" "6.3.1"
-    "@redis/time-series" "6.3.1"
+    "@redis/bloom" "6.4.0"
+    "@redis/client" "6.4.0"
+    "@redis/json" "6.4.0"
+    "@redis/search" "6.4.0"
+    "@redis/time-series" "6.4.0"
 
 reflect-metadata@^0.2.2:
   version "0.2.2"
